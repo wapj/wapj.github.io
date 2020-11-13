@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/poetry/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/2020/introduce-poetry/"},"frontmatter":{"title":"파이썬 패키지 관리툴 poetry 소개","tags":["python","poetry"],"category":"dev","image":null}}}]}},"pageContext":{"tag":"poetry"}},"staticQueryHashes":["3159585216"]}

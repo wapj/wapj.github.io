@@ -1,0 +1,318 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><meta data-react-helmet="true" name="twitter:image" content="https://blog.gyus.me/images/seungkyoo.png"/><title data-react-helmet="true">파이썬 패키지 관리툴 poetry 소개 · 개발블로그</title><link data-react-helmet="true" rel="canonical" href="https://blog.gyus.me"/><meta data-react-helmet="true" charSet="utf-8"/><meta data-react-helmet="true" name="google-site-verification" content="DKf0uKbVabYGKz0sq8wWSyZz_1vtPx3Pey1ifAguz-E"/><meta data-react-helmet="true" name="description" content="poetry…"/><meta data-react-helmet="true" name="image" content="https://blog.gyus.me/images/seungkyoo.png"/><meta data-react-helmet="true" property="og:url" content="https://blog.gyus.me/2020/introduce-poetry/"/><meta data-react-helmet="true" property="og:title" content="파이썬 패키지 관리툴 poetry 소개"/><meta data-react-helmet="true" property="og:description" content="poetry…"/><meta data-react-helmet="true" property="og:image" content="https://blog.gyus.me/images/seungkyoo.png"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="@wapj2000"/><meta data-react-helmet="true" name="twitter:title" content="파이썬 패키지 관리툴 poetry 소개"/><meta data-react-helmet="true" name="twitter:description" content="poetry…"/><meta name="generator" content="Gatsby 2.26.0"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style data-href="/styles.eed497b18a50279190e4.css">body{color:#666;text-shadow:0 0 .1px rgba(48,48,48,.3);-webkit-text-size-adjust:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;text-rendering:optimizelegibility}h1{font-size:1.6rem}h2{font-size:1.3rem;margin-top:2.7rem}h3{font-size:1.1rem;margin-top:2rem}p{margin-top:1rem}li{font-size:.9rem}.gatsby-highlight-code-line{background-color:#45689c;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:.75em;border-left:.25em solid #f99}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.about-css-modules-module--user--2CXbd{display:flex;align-items:center;margin:0 auto 12px}.about-css-modules-module--user--2CXbd:last-child{margin-bottom:0}.about-css-modules-module--avatar--2lRF7{flex:0 0 96px;width:96px;height:96px;margin:0}.about-css-modules-module--description--ev5yS{flex:1 1;margin-left:18px;padding:12px}.about-css-modules-module--username--2EBkm{margin:0 0 12px;padding:0}.about-css-modules-module--excerpt--2Itwq{margin:0}.container-module--container--3C57J{margin:3rem auto;max-width:600px}:not(pre)>code[class*=language-]{background:#345d82}pre[class*=language-]{background:#002a4f}.mjx-chtml{display:inline-block;line-height:0;text-indent:0;text-align:left;text-transform:none;font-style:normal;font-weight:400;font-size:100%;font-size-adjust:none;letter-spacing:normal;word-wrap:normal;word-spacing:normal;white-space:nowrap;float:none;direction:ltr;max-width:none;max-height:none;min-width:0;min-height:0;border:0;margin:0;padding:1px 0}.MJXc-display{display:block;text-align:center;margin:1em 0;padding:0}.mjx-chtml[tabindex]:focus,body :focus .mjx-chtml[tabindex]{display:inline-table}.mjx-full-width{text-align:center;display:table-cell!important;width:10000em}.mjx-math{display:inline-block;border-collapse:separate;border-spacing:0}.mjx-math *{display:inline-block;box-sizing:content-box!important;text-align:left}.mjx-denominator,.mjx-numerator{display:block;text-align:center}.MJXc-stacked{height:0;position:relative}.MJXc-stacked>*{position:absolute}.mjx-stack,.MJXc-bevelled>*{display:inline-block}.mjx-op{display:block}.mjx-under{display:table-cell}.mjx-over{display:block}.mjx-over>*,.mjx-under>*{padding-left:0!important;padding-right:0!important}.mjx-prestack>.mjx-presub,.mjx-prestack>.mjx-presup,.mjx-stack>.mjx-sub,.mjx-stack>.mjx-sup{display:block}.mjx-delim-h>.mjx-char{display:inline-block}.mjx-surd{vertical-align:top}.mjx-surd+.mjx-box{display:inline-flex}.mjx-mphantom *{visibility:hidden}.mjx-merror{background-color:#ff8;color:#c00;border:1px solid #c00;padding:2px 3px;font-style:normal;font-size:90%}.mjx-annotation-xml{line-height:normal}.mjx-menclose>svg{fill:none;stroke:currentColor;overflow:visible}.mjx-mlabeledtr,.mjx-mtr{display:table-row}.mjx-mtd{display:table-cell;text-align:center}.mjx-label{display:table-row}.mjx-box{display:inline-block}.mjx-block{display:block}.mjx-span{display:inline}.mjx-char{display:block;white-space:pre}.mjx-itable{display:inline-table;width:auto}.mjx-row{display:table-row}.mjx-cell{display:table-cell}.mjx-table{display:table;width:100%}.mjx-line{display:block;height:0}.mjx-strut{width:0;padding-top:1em}.mjx-vsize{width:0}.MJXc-space1{margin-left:.167em}.MJXc-space2{margin-left:.222em}.MJXc-space3{margin-left:.278em}.mjx-test.mjx-test-display{display:table!important}.mjx-test.mjx-test-inline{display:inline!important;margin-right:-1px}.mjx-test.mjx-test-default{display:block!important;clear:both}.mjx-ex-box{display:inline-block!important;position:absolute;overflow:hidden;min-height:0;max-height:none;padding:0;border:0;margin:0;width:1px;height:60ex}.mjx-test-inline .mjx-left-box{display:inline-block;width:0;float:left}.mjx-test-inline .mjx-right-box{display:inline-block;width:0;float:right}.mjx-test-display .mjx-right-box{display:table-cell!important;width:10000em!important;min-width:0;max-width:none;padding:0;border:0;margin:0}.MJXc-TeX-unknown-R{font-family:monospace;font-style:normal;font-weight:400}.MJXc-TeX-unknown-I{font-family:monospace;font-style:italic;font-weight:400}.MJXc-TeX-unknown-B{font-family:monospace;font-style:normal;font-weight:700}.MJXc-TeX-unknown-BI{font-family:monospace;font-style:italic;font-weight:700}.MJXc-TeX-ams-R{font-family:MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}.MJXc-TeX-cal-B{font-family:MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}.MJXc-TeX-frak-R{font-family:MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}.MJXc-TeX-frak-B{font-family:MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}.MJXc-TeX-math-BI{font-family:MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}.MJXc-TeX-sans-R{font-family:MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}.MJXc-TeX-sans-B{font-family:MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}.MJXc-TeX-sans-I{font-family:MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}.MJXc-TeX-script-R{font-family:MJXc-TeX-script-R,MJXc-TeX-script-Rw}.MJXc-TeX-type-R{font-family:MJXc-TeX-type-R,MJXc-TeX-type-Rw}.MJXc-TeX-cal-R{font-family:MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}.MJXc-TeX-main-B{font-family:MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}.MJXc-TeX-main-I{font-family:MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}.MJXc-TeX-main-R{font-family:MJXc-TeX-main-R,MJXc-TeX-main-Rw}.MJXc-TeX-math-I{font-family:MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}.MJXc-TeX-size1-R{font-family:MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}.MJXc-TeX-size2-R{font-family:MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}.MJXc-TeX-size3-R{font-family:MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}.MJXc-TeX-size4-R{font-family:MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}.MJXc-TeX-vec-R{font-family:MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}.MJXc-TeX-vec-B{font-family:MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}@font-face{font-family:MJXc-TeX-ams-R;src:local("MathJax_AMS"),local("MathJax_AMS-Regular")}@font-face{font-family:MJXc-TeX-ams-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-cal-B;src:local("MathJax_Caligraphic Bold"),local("MathJax_Caligraphic-Bold")}@font-face{font-family:MJXc-TeX-cal-Bx;src:local("MathJax_Caligraphic");font-weight:700}@font-face{font-family:MJXc-TeX-cal-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-frak-R;src:local("MathJax_Fraktur"),local("MathJax_Fraktur-Regular")}@font-face{font-family:MJXc-TeX-frak-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-frak-B;src:local("MathJax_Fraktur Bold"),local("MathJax_Fraktur-Bold")}@font-face{font-family:MJXc-TeX-frak-Bx;src:local("MathJax_Fraktur");font-weight:700}@font-face{font-family:MJXc-TeX-frak-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-math-BI;src:local("MathJax_Math BoldItalic"),local("MathJax_Math-BoldItalic")}@font-face{font-family:MJXc-TeX-math-BIx;src:local("MathJax_Math");font-weight:700;font-style:italic}@font-face{font-family:MJXc-TeX-math-BIw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-R;src:local("MathJax_SansSerif"),local("MathJax_SansSerif-Regular")}@font-face{font-family:MJXc-TeX-sans-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-B;src:local("MathJax_SansSerif Bold"),local("MathJax_SansSerif-Bold")}@font-face{font-family:MJXc-TeX-sans-Bx;src:local("MathJax_SansSerif");font-weight:700}@font-face{font-family:MJXc-TeX-sans-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-I;src:local("MathJax_SansSerif Italic"),local("MathJax_SansSerif-Italic")}@font-face{font-family:MJXc-TeX-sans-Ix;src:local("MathJax_SansSerif");font-style:italic}@font-face{font-family:MJXc-TeX-sans-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-script-R;src:local("MathJax_Script"),local("MathJax_Script-Regular")}@font-face{font-family:MJXc-TeX-script-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-type-R;src:local("MathJax_Typewriter"),local("MathJax_Typewriter-Regular")}@font-face{font-family:MJXc-TeX-type-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-cal-R;src:local("MathJax_Caligraphic"),local("MathJax_Caligraphic-Regular")}@font-face{font-family:MJXc-TeX-cal-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-B;src:local("MathJax_Main Bold"),local("MathJax_Main-Bold")}@font-face{font-family:MJXc-TeX-main-Bx;src:local("MathJax_Main");font-weight:700}@font-face{font-family:MJXc-TeX-main-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-I;src:local("MathJax_Main Italic"),local("MathJax_Main-Italic")}@font-face{font-family:MJXc-TeX-main-Ix;src:local("MathJax_Main");font-style:italic}@font-face{font-family:MJXc-TeX-main-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-R;src:local("MathJax_Main"),local("MathJax_Main-Regular")}@font-face{font-family:MJXc-TeX-main-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-math-I;src:local("MathJax_Math Italic"),local("MathJax_Math-Italic")}@font-face{font-family:MJXc-TeX-math-Ix;src:local("MathJax_Math");font-style:italic}@font-face{font-family:MJXc-TeX-math-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size1-R;src:local("MathJax_Size1"),local("MathJax_Size1-Regular")}@font-face{font-family:MJXc-TeX-size1-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size2-R;src:local("MathJax_Size2"),local("MathJax_Size2-Regular")}@font-face{font-family:MJXc-TeX-size2-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size3-R;src:local("MathJax_Size3"),local("MathJax_Size3-Regular")}@font-face{font-family:MJXc-TeX-size3-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size4-R;src:local("MathJax_Size4"),local("MathJax_Size4-Regular")}@font-face{font-family:MJXc-TeX-size4-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-vec-R;src:local("MathJax_Vector"),local("MathJax_Vector-Regular")}@font-face{font-family:MJXc-TeX-vec-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-vec-B;src:local("MathJax_Vector Bold"),local("MathJax_Vector-Bold")}@font-face{font-family:MJXc-TeX-vec-Bx;src:local("MathJax_Vector");font-weight:700}@font-face{font-family:MJXc-TeX-vec-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf) format("opentype")}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-e90c85fc9af050d74c12.js"/><link as="script" rel="preload" href="/25e09f77e9a4533f7eb0f595b235b55b7df3f82b-afefde2965b05bf743a5.js"/><link as="script" rel="preload" href="/a302fdf6aec10395ed3ea85c70b5f45c90edb721-86ae281653dfbe6be546.js"/><link as="script" rel="preload" href="/styles-7d4153d260c0197f0043.js"/><link as="script" rel="preload" href="/app-98b694e90e427d8b0f0c.js"/><link as="script" rel="preload" href="/framework-acd7498685eeb36e39da.js"/><link as="script" rel="preload" href="/webpack-runtime-c2e825ae1de2e04dc144.js"/><link as="fetch" rel="preload" href="/page-data/2020/introduce-poetry/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3159585216.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/4202924991.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="t54o9o">.css-t54o9o{margin:0 auto;max-width:700px;padding:1.625rem;padding-top:2.4375rem;}</style><div class="css-t54o9o"><style data-emotion-css="1k6j4hi">.css-1k6j4hi{margin-bottom:2.4375rem;}</style><header class="css-1k6j4hi"><a style="text-shadow:none;background-image:none" href="/"><style data-emotion-css="6n7j50">.css-6n7j50{display:inline;}</style><h3 class="css-6n7j50">승귤입니다</h3></a><style data-emotion-css="1j0dwki">.css-1j0dwki{list-style=none;float:right;}</style><ul class="css-1j0dwki"><li style="margin-right:1rem;display:none"><a style="color:;text-decoration:none" href="/">Home</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/dev">Dev</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/diary">Diary</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/tags">Tags</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/about">About</a></li></ul></header><div style="clear:both"><h1>파이썬 패키지 관리툴 poetry 소개</h1><div><h2>poetry 소개</h2>
+<p><code class="language-text">poetry</code>는 파이썬 의존성 관리 툴입니다.
+단순하게 의존성 관리만 잘하는 툴이라면 추천할 이유가 별로 없을 것입니다. <code class="language-text">poetry</code>는 단순하게 잘 한다 정도를 넘어서서 매우 잘 지원 해줍니다. <code class="language-text">poetry.lock</code>을 사용해서 프로젝트의 의존성을 다른 환경에서도 동일하게 유지할 수 있고, 각 환경에서의 자동완성도 꽤나 잘 지원합니다.</p>
+<p>또한, 기존 파이썬 패키지 관리 툴에서 볼 수 없었던, <code class="language-text">build</code>와 <code class="language-text">publish</code>까지 지원해주고 있어서, 실제로 프로젝트를 만들고 저장소에 배포까지 하고자 하는 사람에게는 굉장히 좋은 도구라고 생각됩니다.</p>
+<p>깃헙의 <a href="https://github.com/python-poetry">python-poetry</a> 라는 계정에서 관리되는데, poetry 하나를 위해서 따로 만든 프로젝트가 있을 정도로 꽤나 정성스럽게 만든 프로젝트입니다.</p>
+<p>또한 사용법도 기존에 npm을 사용해 본적이 있다면 아주 친숙한 명령어들로 구성되어 있습니다.</p>
+<p>단점이라면 새로 커맨드를 익혀야 하는 문제가 있으며, 기존의 프로젝트에 적용하기에는 약간 부담스러울 수 있다는 것입니다.</p>
+<p>개인적으로는 새로만드는 프로젝트라면 주저없이 <code class="language-text">poetry</code>를 써보라고 추천하고 싶습니다.</p>
+<p>본 문서는 <code class="language-text">poetry</code>의 설치 및 기본적인 사용법을 정리해서 조금이라도 많은 분이 좋은 프로젝트 환경을 구축하도록 돕기위한 글입니다. 시간이 지나면 본 문서의 내용과 달라질 수 있으므로 최대한 <a href="https://python-poetry.org/docs">공식 사이트의 문서</a> 를 참고하도록 합시다.</p>
+<h2>설치</h2>
+<h3>리눅스에서 설치 하기</h3>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py <span class="token operator">|</span> python</code></pre></div>
+<h3>pip 로 설치</h3>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pip <span class="token function">install</span> --user poetry</code></pre></div>
+<p>설치를 하게되면 <code class="language-text">poetry</code> 명령이 설치됩니다.
+<code class="language-text">poetry</code> 명령어는 <code class="language-text">$HOME/.poetry/bin</code> 에 저장되는데,
+<code class="language-text">PATH</code> 환경 변수에도 추가가 됩니다. 추가가 되지 않았다면,
+<code class="language-text">.bash_profile</code> 등의 파일에 <code class="language-text">PATH</code> 의 환경변수에 추가해주세요.</p>
+<p>패스에 추가하지 않고 바로 사용하려면 아래 명령어를 입력해주세요.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">source</span> <span class="token environment constant">$HOME</span>/.poetry/env</code></pre></div>
+<h3>탭완성(tab completion) 활성화하기</h3>
+<p><code class="language-text">poetry</code> 는 Bash, Fish, Zsh 에서 탭완성을 지원합니다.
+<code class="language-text">poetry help completions</code> 명령어를 사용하면 각 쉘환경별 도움말을 확인할 수 있습니다.</p>
+<p>귀찮으시면 아래 커맨드들을 확인하시면 됩니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token comment"># Bash</span>
+poetry completions <span class="token function">bash</span> <span class="token operator">></span> /etc/bash_completion.d/poetry.bash-completion
+
+<span class="token comment"># Bash (Homebrew)</span>
+poetry completions <span class="token function">bash</span> <span class="token operator">></span> <span class="token variable"><span class="token variable">$(</span>brew --prefix<span class="token variable">)</span></span>/etc/bash_completion.d/poetry.bash-completion
+
+<span class="token comment"># Fish</span>
+poetry completions fish <span class="token operator">></span> ~/.config/fish/completions/poetry.fish
+
+<span class="token comment"># Fish (Homebrew)</span>
+poetry completions fish <span class="token operator">></span> <span class="token punctuation">(</span>brew --prefix<span class="token punctuation">)</span>/share/fish/vendor_completions.d/poetry.fish
+
+<span class="token comment"># Zsh</span>
+poetry completions <span class="token function">zsh</span> <span class="token operator">></span> ~/.zfunc/_poetry
+
+<span class="token comment"># Zsh (Homebrew)</span>
+poetry completions <span class="token function">zsh</span> <span class="token operator">></span> <span class="token variable"><span class="token variable">$(</span>brew --prefix<span class="token variable">)</span></span>/share/zsh/site-functions/_poetry
+
+<span class="token comment"># Zsh (Oh-My-Zsh)</span>
+<span class="token function">mkdir</span> <span class="token variable">$ZSH</span>/plugins/poetry
+poetry completions <span class="token function">zsh</span> <span class="token operator">></span> <span class="token variable">$ZSH</span>/plugins/poetry/_poetry
+
+<span class="token comment"># Zsh (prezto)</span>
+poetry completions <span class="token function">zsh</span> <span class="token operator">></span> ~/.zprezto/modules/completion/external/src/_poetry</code></pre></div>
+<blockquote>
+<p><code class="language-text">zsh</code> 에서는 ~/.zshrc <code class="language-text">compinit</code> 앞에 <code class="language-text">fpath+=~/.zfunc</code> 을 추가해줍니다.</p>
+</blockquote>
+<blockquote>
+<p><code class="language-text">oh-my-zsh</code> 에서는 ~/.zshrc 의 plugins에 poetry 를 추가해줘야 합니다.</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">plugins<span class="token punctuation">(</span>
+    poerty
+    <span class="token punctuation">..</span>.
+<span class="token punctuation">)</span></code></pre></div>
+<h2>간단 사용법</h2>
+<h3>프로젝트 셋업</h3>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">poetry new my-project</code></pre></div>
+<p>위의 명령으로 프로젝트를 생성하면 아래와 같은 구조의 프로젝트가 생성됩니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">my-project tree
+<span class="token builtin class-name">.</span>
+├── README.rst
+├── my_project
+│   └── __init__.py
+├── pyproject.toml
+└── tests
+    ├── __init__.py
+    └── test_my_project.py</code></pre></div>
+<p>위에 보이는 <code class="language-text">pyproject.toml</code> 파일이 바로 의존성을 관리하는 파일입니다.
+열어보면 아래와 같이 생겼습니다.</p>
+<div class="gatsby-highlight" data-language="toml"><pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">tool.poetry</span><span class="token punctuation">]</span>
+<span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">"my-project"</span>
+<span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token string">"0.1.0"</span>
+<span class="token key property">description</span> <span class="token punctuation">=</span> <span class="token string">""</span>
+<span class="token key property">authors</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">"andy.sg"</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">tool.poetry.dependencies</span><span class="token punctuation">]</span>
+<span class="token key property">python</span> <span class="token punctuation">=</span> <span class="token string">"^3.8"</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">tool.poetry.dev-dependencies</span><span class="token punctuation">]</span>
+<span class="token key property">pytest</span> <span class="token punctuation">=</span> <span class="token string">"^5.2"</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">build-system</span><span class="token punctuation">]</span>
+<span class="token key property">requires</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">"poetry>=0.12"</span><span class="token punctuation">]</span>
+<span class="token key property">build-backend</span> <span class="token punctuation">=</span> <span class="token string">"poetry.masonry.api"</span></code></pre></div>
+<p>의존성은 <code class="language-text">[tool.poetry.dependencies]</code> 와 <code class="language-text">[tool.poetry.dev-dependencies]</code> 에서 관리하고 있습니다. 의존성을 추가하고 싶다면 <code class="language-text">add</code> 서브 커맨드를 사용하면 됩니다. 장고를 한번 추가해보도록 하겠습니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ poetry <span class="token function">add</span> django</code></pre></div>
+<p>아래와 같이 출력이 나오게 됩니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">Using version ^3.0.7 <span class="token keyword">for</span> django
+
+Updating dependencies
+Resolving dependencies<span class="token punctuation">..</span>. <span class="token punctuation">(</span><span class="token number">7</span>.1s<span class="token punctuation">)</span>
+
+Writing lock <span class="token function">file</span>
+
+
+Package operations: <span class="token number">1</span> install, <span class="token number">9</span> updates, <span class="token number">0</span> removals
+
+  - Updating pyparsing <span class="token punctuation">(</span><span class="token number">2.4</span>.6 -<span class="token operator">></span> <span class="token number">2.4</span>.7<span class="token punctuation">)</span>
+  - Updating six <span class="token punctuation">(</span><span class="token number">1.13</span>.0 -<span class="token operator">></span> <span class="token number">1.15</span>.0<span class="token punctuation">)</span>
+  - Installing asgiref <span class="token punctuation">(</span><span class="token number">3.2</span>.7<span class="token punctuation">)</span>
+  - Updating more-itertools <span class="token punctuation">(</span><span class="token number">8.1</span>.0 -<span class="token operator">></span> <span class="token number">8.3</span>.0<span class="token punctuation">)</span>
+  - Updating packaging <span class="token punctuation">(</span><span class="token number">20.1</span> -<span class="token operator">></span> <span class="token number">20.4</span><span class="token punctuation">)</span>
+  - Updating pytz <span class="token punctuation">(</span><span class="token number">2019.3</span> -<span class="token operator">></span> <span class="token number">2020.1</span><span class="token punctuation">)</span>
+  - Updating sqlparse <span class="token punctuation">(</span><span class="token number">0.3</span>.0 -<span class="token operator">></span> <span class="token number">0.3</span>.1<span class="token punctuation">)</span>
+  - Updating wcwidth <span class="token punctuation">(</span><span class="token number">0.1</span>.8 -<span class="token operator">></span> <span class="token number">0.2</span>.3<span class="token punctuation">)</span>
+  - Updating django <span class="token punctuation">(</span><span class="token number">2.2</span>.9 -<span class="token operator">></span> <span class="token number">3.0</span>.7<span class="token punctuation">)</span>
+  - Updating pytest <span class="token punctuation">(</span><span class="token number">5.3</span>.5 -<span class="token operator">></span> <span class="token number">5.4</span>.3<span class="token punctuation">)</span></code></pre></div>
+<p><code class="language-text">Writing lock file</code> 에서 생성되는 파일이 바로 <code class="language-text">poetry.lock</code> 파일인데,
+<code class="language-text">poetry.lock</code> 파일이 있으면 내가 작성하고 있는 프로젝트의 의존성과 완전히 동일한 의존성을 가지도록 할 수 있습니다. 그러니 <code class="language-text">poetry.lock</code> 파일을 꼭 저장소에 커밋 하도록 합시다.</p>
+<p><code class="language-text">pyproject.toml</code> 을 보면 아래와 같이 django 의존성이 추가되어 있습니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token punctuation">[</span>tool.poetry.dependencies<span class="token punctuation">]</span>
+python <span class="token operator">=</span> <span class="token string">"^3.8"</span>
+django <span class="token operator">=</span> <span class="token string">"^3.0.7"</span></code></pre></div>
+<h3>버전 제약사항</h3>
+<p>django 의존성 설정을 보면 <code class="language-text">&quot;^3.0.7&quot;</code> 이라고 되어 있습니다. 여기서 <code class="language-text">^(캐럿)</code> 의 의미는 ( >= 3.0.7, &#x3C; 4.0.0) 의 의미입니다. 즉 <code class="language-text">3.9999....99999</code> 버전까지도 설치가 된다는 얘기입니다.</p>
+<p><a href="https://python-poetry.org/docs/dependency-specification/">의존성 스펙</a> 문서를 보면 좀더 자세히 나와 있습니다.</p>
+<h2>의존성을 최신으로 업데이트하기</h2>
+<p>아래의 커맨드를 입력하면 됩니다.
+<code class="language-text">$ poetry update</code></p>
+<p>위 커맨드는 <code class="language-text">poetry.lock</code> 파일을 삭제후 <code class="language-text">poetry install</code> 하는 것과 동일합니다.</p>
+<h2>패키징</h2>
+<p>poerty를 사용해서 <code class="language-text">tarball</code> <code class="language-text">wheel</code> 같은 배포가 가능한 파일로 빌드할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">poerty build</code></pre></div>
+<p>위에서 만든 my-project 에서 실행하면 아래와 같이 나옵니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">Building my-project <span class="token punctuation">(</span><span class="token number">0.1</span>.0<span class="token punctuation">)</span>
+ - Building sdist
+ - Built my-project-0.1.0.tar.gz
+
+ - Building wheel
+ - Built my_project-0.1.0-py3-none-any.whl</code></pre></div>
+<p>실행후 <code class="language-text">dist</code> 디렉토리에 가보면 아래와 같이 압축된 파일들이 있습니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">my-project-0.1.0.tar.gz
+my_project-0.1.0-py3-none-any.whl</code></pre></div>
+<h2>명령어들</h2>
+<h3>new</h3>
+<p><code class="language-text">new</code> 명령어로 새로운 프로젝트를 만들 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry new my-site</code></pre></div>
+<p>위 명령어를 실행하면 아래와 같은 기본 디렉토리 구성을 만들어줍니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">my-site
+├── pyproject.toml
+├── README.rst
+├── src
+│   └── my_site
+│       └── __init__.py
+└── tests
+    ├── __init__.py
+    └── test_my_site.py</code></pre></div>
+<h3>init</h3>
+<p><code class="language-text">init</code> 커맨드는 <code class="language-text">pyproject.toml</code> 파일을 인터렉티브 하게 만들 수 있도록 도와줍니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry init</code></pre></div>
+<h3>install</h3>
+<p><code class="language-text">install</code> 커맨드는 현재 프로젝트의 <code class="language-text">pyproject.toml</code> 파일을 읽어서 의존성 패키지를 설치해줍니다.
+<code class="language-text">poetry.lock</code> 이 없으면 만들어주고 있으면 해당파일을 사용하게됩니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># 의존성 설치
+poetry install
+
+# 개발환경의 의존성은 빼고 설치
+poetry install --no-dev
+
+# -E 또는 --extras 로 추가 의존성을 설정가능
+poetry install --extras &quot;mysql redis&quot;
+poerty install -E mysql -E redis</code></pre></div>
+<h3>update</h3>
+<p>의존성 패키지의 버전을 업데이트하고 <code class="language-text">poetry.lock</code> 파일을 업데이트 합니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># 패키지 업데이트
+poerty update
+
+# 하나씩 지정해서 업데이트도 가능
+poetry update requests toml
+
+# 업데이트는 하지 않고 poetry.lock 만 업데이트
+poerty update --lock</code></pre></div>
+<h3>add</h3>
+<p>패키지설정을 pyproject.toml 에 추가합니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry add django
+
+# 개발환경에서 필요한 패키지 설치
+poetry add pytest factory-boy --dev
+
+# 버전을 지정가능
+poetry add django@^3.0.0
+poetry add &quot;django=3.0.0&quot;
+
+# 최신버전을 설치
+poetry add django@latest
+
+# 깃 저장소에 있는 패키지 설치
+poetry add git+https://github.com/django/django.git
+
+# 깃 저장소의 패키지에서 브랜치를 지정
+poetry add git+https://github.com/django/django.git#stable/2.2.x
+
+# 로컬에 디렉토리의 파일로 설치하기
+poetry add ./my-package/
+poetry add ./my-package/dist/my-package-0.1.0.tar.gz
+poetry add ./my-package/dist/my-package-0.1.0.whl</code></pre></div>
+<h3>remove</h3>
+<p>패키지 삭제</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry remove flask
+
+# 개발환경 패키지 삭제
+poetry remove pytest</code></pre></div>
+<h3>show</h3>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># 설치된 모든 패키지를 보여준다.
+poetry show
+
+# 개발환경용 제외하고 보여준다.
+poetry show --no-dev
+
+# 특정패키지를 지정하면 상세내용을 보여줍니다.
+poetry show django
+
+# 최신 버전을 보여준다.
+poetry show --latest (-l)
+
+# 업데이트를 해야하는 패키지들을 보여준다.
+poetry show --outdate (-o)
+
+# 의존성 트리를 보여준다.
+poetry show --tree</code></pre></div>
+<h3>build</h3>
+<p>위에도 적었지만 소스를 배포가능한 형태로(tarball, wheel)빌드합니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry build</code></pre></div>
+<h3>publish</h3>
+<p>아래 명령어로 PyPI에 배포할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">poerty publish</code></pre></div>
+<p>배포를 하려면 PyPI 계정이 필요합니다.
+계정이 없다면 <a href="https://pypi.org/account/register/">여기를 클릭</a> 하시고 하나 만드셔도 좋습니다.
+프로젝트명이 겹치면 배포를 할 수 없으니, 자신만의 독특한 프로젝트 명을 정해서 배포를 해보도록 합시다.</p>
+<h3>config</h3>
+<p><code class="language-text">config</code> 커맨드로 poetry 관련 설정을 변경할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># 설정보기
+poetry config --list
+
+
+# 설정법
+poetry config [options] [setting-key] [setting-value1] ... [setting-valueN]</code></pre></div>
+<h3>run</h3>
+<p>프로젝트의 virtualenv 에 커맨드를 전달하여 실행하게 됩니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry run python -V</code></pre></div>
+<h3>check</h3>
+<p><code class="language-text">pyproject.toml</code> 의 유효함을 체크하는 명령어입니다.</p>
+<h3>search</h3>
+<p>패키지를 찾기위한 커맨드입니다.
+예를들어 beautifulsoup 의 패키지명의 철자가 기억이 안나고 beautiful 만 기억나면
+아래와 같이 할 수 있습니다 .</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ poetry search beautiful | grep soup
+
+---------------------------------
+# output
+beautifulsoup (3.2.2)
+beautifulsoup4 (4.9.1)</code></pre></div>
+<h3>lock</h3>
+<p><code class="language-text">pyproject.toml</code> 에 설정된 의존성들에 대한 lock 파일을 생성합니다. (설치X)</p>
+<h3>export</h3>
+<p>export 명령어는 lock 파일을 사용해서 다른 의존성 포맷으로 변경할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">poetry export -f requirements.txt &gt; requirements.txt</code></pre></div>
+<h2>가상 환경 관리하기</h2>
+<p>poetry 로 가상환경(virtualenv)을 관리 할 수 있습니다.</p>
+<p>일반적으로 아래와 같이 사용합니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ poetry <span class="token function">env</span> use <span class="token punctuation">{</span>파이썬경로<span class="token punctuation">}</span></code></pre></div>
+<p>만약에 python3 이 패스에 잡혀 있는 상황이라면 모든 경로를 적어주지 않아도 됩니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ poetry <span class="token function">env</span> use python3</code></pre></div>
+<h3>가상환경 정보보기</h3>
+<p><code class="language-text">poetry env info</code> 커맨드로 환경 정보를 확인할 수 있습니다.</p>
+<p>저의 경우는 아래와 같이 출력되었습니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">Virtualenv
+Python:         <span class="token number">3.8</span>.1
+Implementation: CPython
+Path:           /Users/gyus/Library/Caches/pypoetry/virtualenvs/my-project-0CozYJQl-py3.8
+Valid:          True
+
+System
+Platform: darwin
+OS:       posix
+Python:   /Users/gyus/.pyenv/versions/3.8.1</code></pre></div>
+<p>단순하게 가상환경의 path만 알고 싶은 경우라면 <code class="language-text">--path</code> 옵션을 주면 됩니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ poetry <span class="token function">env</span> info --path</code></pre></div>
+<h3>가상환경 리스트 보기</h3>
+<p>만들어진 가상환경의 리스트는 아래의 명령어로 확인 가능합니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ poetry <span class="token function">env</span> list</code></pre></div>
+<h3>가상환경 삭제하기</h3>
+<p>삭제는 아래의 명령어로 가능합니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ poetry <span class="token function">env</span> remove <span class="token punctuation">{</span>python경로<span class="token punctuation">}</span></code></pre></div>
+<h2>마무리</h2>
+<p>파이썬은 nodejs, ruby 보다는 상대적으로 프로젝트 환경 관리가 용이하지 않다고 느낀적이 많이 있는데,
+<code class="language-text">poetry</code> 는 기존에 사용하던 pyenv, virtualenv를 추가적인 연동 작업없이 자연스럽게 사용할 수 있게 해줍니다.
+거기다 패키징과 배포를 쉽게 할 수 있도록 커맨드를 만들어 둔 점이 좋다고 생각합니다.</p>
+<p>나온지 오래되지 않은 툴이기에 기존에 사용하던 프로젝트에 적용시에는 조심히 적용해야하겠지만,
+새로만드는 프로젝트라면 과감히 적용해보는 것은 어떨까요?!</p>
+<p>pipenv, pyenv, virutalenv 등등 많은 버전관리, 패키지 관리 툴들을 사용해보았지만,
+파이썬에서 앞으로의 프로젝트 및 패키지 관리는 <code class="language-text">poetry</code> 를 사용하는 사람들이 많아질 것 같습니다.</p>
+<p>부족한 글이지만, <code class="language-text">poetry</code> 사용에 도움이 되었으면 좋겠습니다.</p>
+<h2>참고</h2>
+<ul>
+<li><a href="https://python-poetry.org/">poetry 공식사이트</a></li>
+<li><a href="https://spoqa.github.io/2019/08/09/brand-new-python-dependency-manager-poetry.html">파이썬 의존성 관리자 Poetry 사용기</a></li>
+</ul></div><hr/><div style="font-family:avenir"><a href="/2020/ansible-up-and-running/">이전글: <!-- -->앤서블 시작과 실행을 읽은 후기</a></div><div style="margin-bottom:1rem;font-family:avenir"><a href="/2020/how-to-install-python-on-windows/">다음글: <!-- -->윈도우에 파이썬을 설치하는 방법 5가지</a></div></div><div><div id="inject-comments-for-uterances"></div></div><footer style="color:#aaa">(2019.5.13) made by seungkyoo</footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-140419734-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020/introduce-poetry/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b1e8269bf7d82e5fa523.js"],"app":["/app-98b694e90e427d8b0f0c.js"],"component---src-pages-about-css-modules-js":["/component---src-pages-about-css-modules-js-c868f185d35b3fda0470.js"],"component---src-pages-about-js":["/component---src-pages-about-js-6b8aaec8777bc351db09.js"],"component---src-pages-dev-js":["/component---src-pages-dev-js-e68a2c5d99b0cc0ae2d9.js"],"component---src-pages-diary-js":["/component---src-pages-diary-js-87b7cced261af433689b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-dd6ec11c0a468ac1b095.js"],"component---src-pages-my-files-js":["/component---src-pages-my-files-js-35da91ec22819d09bf78.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-83cd70468b5eead09eaf.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e90c85fc9af050d74c12.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-077dba582bb1aaa66374.js"]};/*]]>*/</script><script src="/polyfill-b1e8269bf7d82e5fa523.js" nomodule=""></script><script src="/webpack-runtime-c2e825ae1de2e04dc144.js" async=""></script><script src="/framework-acd7498685eeb36e39da.js" async=""></script><script src="/app-98b694e90e427d8b0f0c.js" async=""></script><script src="/styles-7d4153d260c0197f0043.js" async=""></script><script src="/a302fdf6aec10395ed3ea85c70b5f45c90edb721-86ae281653dfbe6be546.js" async=""></script><script src="/25e09f77e9a4533f7eb0f595b235b55b7df3f82b-afefde2965b05bf743a5.js" async=""></script><script src="/component---src-templates-blog-post-js-e90c85fc9af050d74c12.js" async=""></script></body></html>
