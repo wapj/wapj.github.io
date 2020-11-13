@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/webpack/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/2020/basic-webpack/"},"frontmatter":{"title":"웹팩에 대하여 알아보자1 : hello webpack","tags":["webpack"],"category":"dev","image":null}}}]}},"pageContext":{"tag":"webpack"}},"staticQueryHashes":["3159585216"]}

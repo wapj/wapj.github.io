@@ -1,0 +1,12 @@
+.container {
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+:not(pre) > code[class*="language-"] {
+  background: #345d82;
+}
+
+pre[class*="language-"] {
+  background: #002a4f;
+}

@@ -1,0 +1,60 @@
+{
+  "name": "gatsby-gyus-blog",
+  "private": true,
+  "description": "개츠비 블로그 스타터",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "deploy": "gatsby build && gh-pages -d public",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "@emotion/core": "^10.1.1",
+    "acorn": "^6.4.2",
+    "gatsby": "^2.26.0",
+    "gatsby-cli": "^2.13.0",
+    "gatsby-image": "^2.5.0",
+    "gatsby-plugin-emotion": "^4.4.0",
+    "gatsby-plugin-feed": "^2.7.0",
+    "gatsby-plugin-google-analytics": "^2.5.0",
+    "gatsby-plugin-mdx": "^1.4.0",
+    "gatsby-plugin-react-helmet": "^3.4.0",
+    "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-typography": "^2.6.0",
+    "gatsby-remark-images": "^3.5.0",
+    "gatsby-remark-mathjax-ssr": "^1.2.1",
+    "gatsby-remark-prismjs": "^3.7.0",
+    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-transformer-remark": "^2.10.0",
+    "gatsby-transformer-sharp": "^2.6.0",
+    "lodash": "^4.17.20",
+    "prismjs": "^1.22.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^5.2.1",
+    "react-refresh": "^0.8.3",
+    "react-typography": "^0.16.19",
+    "styled-components": "^5.2.1",
+    "tsutils": "^3.17.1",
+    "typescript": "^3.9.7",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19",
+    "typography-theme-github": "^0.16.19"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
