@@ -1,5 +1,4 @@
 public/
-public
 
 # Logs
 logs
@@ -42,6 +41,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+public/
 jspm_packages/
 
 # TypeScript v1 declaration files
