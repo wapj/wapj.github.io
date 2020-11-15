@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Nov 2020 05:13:49 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://blog.gyus.me/2020/learn-css/css를-배워보자1/</link><guid isPermaLink="false">https://blog.gyus.me/2020/learn-css/css를-배워보자1/</guid><content:encoded></content:encoded></item><item><title><![CDATA[파이썬의 기본 도구들]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2020/python-basic-tools/</link><guid isPermaLink="false">https://blog.gyus.me/2020/python-basic-tools/</guid><pubDate>Sun, 01 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;게임을 새로 시작하게 되면 주인공에게 기본 도구 몇 가지를 쥐어주고 시작하게 됩니다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Nov 2020 14:04:26 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://blog.gyus.me/2020/learn-css/css를-배워보자1/</link><guid isPermaLink="false">https://blog.gyus.me/2020/learn-css/css를-배워보자1/</guid><content:encoded></content:encoded></item><item><title><![CDATA[파이썬 창시자 귀도 반 로썸에 대하여]]></title><description><![CDATA[책의 한국어 제목이 좀 긴데, 이다. 제목이 좀 길다면 긴데, 저자가 하고자 했던 말들이 많았던 것 같다. 영어로는 Practice of the python pro…]]></description><link>https://blog.gyus.me/2020/review-practice-of-the-python-pro/</link><guid isPermaLink="false">https://blog.gyus.me/2020/review-practice-of-the-python-pro/</guid><pubDate>Sun, 15 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 459px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ddcbcfa8f9318588d58fc83dfd092f80/a3b4c/practice_python_image.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 130.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAaABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAFnHWlzpwAlqvfKOlQ3/8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAwQREBIx/9oACAEBAAEFAiHhdlI3NTIsY2VghJfV2sXxZrj/xAAVEQEBAAAAAAAAAAAAAAAAAAASIP/aAAgBAwEBPwFR/8QAFREBAQAAAAAAAAAAAAAAAAAAEAH/2gAIAQIBAT8BKf/EAB0QAQABAwUAAAAAAAAAAAAAAAERABAhIDEyQbH/2gAIAQEABj8Cx7QJl2rjaMkVCy2WetP/xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhMUFxgWHh/9oACAEBAAE/IbKcnEOlt2biZknsLZYzqKD9m5Kyw1NdcMe1BVPs59xCNhncOe5//9oADAMBAAIAAwAAABAj4Yz/xAAaEQACAgMAAAAAAAAAAAAAAAAAARARIVFx/9oACAEDAQE/EGlZRa0dj//EABgRAQADAQAAAAAAAAAAAAAAAAEAEBFB/9oACAECAQE/EEzsINr/xAAgEAEBAAICAgIDAAAAAAAAAAABEQAxIUFRYXGxkcHw/9oACAEBAAE/EJkeRiQLxs368ZBLgiG5zDWPLwzgv6w00+smsYvRb/DxghIKvbc0fGcfw3jmPZ7wpmgj8MxM59vvKQvIbmrgBg2nP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;practice python image&quot;
+        title=&quot;practice python image&quot;
+        src=&quot;/static/ddcbcfa8f9318588d58fc83dfd092f80/a3b4c/practice_python_image.jpg&quot;
+        srcset=&quot;/static/ddcbcfa8f9318588d58fc83dfd092f80/75985/practice_python_image.jpg 150w,
+/static/ddcbcfa8f9318588d58fc83dfd092f80/f93b5/practice_python_image.jpg 300w,
+/static/ddcbcfa8f9318588d58fc83dfd092f80/a3b4c/practice_python_image.jpg 459w&quot;
+        sizes=&quot;(max-width: 459px) 100vw, 459px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;책의 한국어 제목이 좀 긴데, &lt;code class=&quot;language-text&quot;&gt;실전 프로젝트로 배우는 소프트웨어 개발의 원리와 정석, 프로그래머를 위한 파이썬&lt;/code&gt;이다. 제목이 좀 길다면 긴데, 저자가 하고자 했던 말들이 많았던 것 같다. 영어로는 Practice of the python pro로 &lt;code class=&quot;language-text&quot;&gt;파이썬 실전연습&lt;/code&gt; 쯤 되는 제목인 것 같다.&lt;/p&gt;
+&lt;p&gt;제목처럼 이 책은 파이썬으로 &lt;code class=&quot;language-text&quot;&gt;프로젝트를 어떻게 개발할까?&lt;/code&gt; 에 초점을 맞춰서 책이 진행된다. 설계는 어떻게 하는지, 클래스는 어떻게 쪼갤지, 프로젝트에 패키지는 어떻게 배치를 하면 좋을지, 테스트, 성능, 확장성, 경량화 등 파이썬으로 개발할 때 생각해봐야 하는 문제들을 한번 독자로 하여금 생각을 하게 해 주고 있다.&lt;/p&gt;
+&lt;p&gt;이 책의 장점이라면 간단한 북마크 프로젝트를 만들면서 프로젝트의 설계에 대해서 생각을 할 수 있도록 유도한다는 점이다. 작은 프로젝트를 조금씩 발전시켜가면서 설계를 간접적으로 해보는 것은 좋은 결정이었다고 생각된다. 중간 중간에 교양 수준의 프로그래밍 지식이 나오게 되는데, 이 부분은 꽤나 흥미로운 내용이 많았다.&lt;/p&gt;
+&lt;p&gt;단점이라면 너무 많은 부분을 저자가 짧은 지면에 설명하려고 했기 때문에, 많은 부분들이 생략되어 있다는 것이다. 그래서 대부분은 다른 책에 있는 내용의 요약이 나오게 된다. 또한 개발자를 대상으로 쓴 책인 것 같은데, 기초적인 내용의 예제들이 대부분이라는 부분은 아쉽다.&lt;/p&gt;
+&lt;p&gt;개인적으로는 11장 향상과 진보가 가장 좋았다고 생각이 드는데, 아는 것과 모르는 것을 잘 파악하는 것은 평소에도 중요하다고 생각하고 있었지만, 책에서는 이 부분을 좀 더 잘 풀어서 설명을해주고 있다. 만약에 이 책을 구입하는 사람이 있다면 11장은 꼭 보시길 추천한다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;어떤 사람이 보면 좋을까?&lt;/code&gt; 파이썬 입문서적을 막 끝낸 시점의 개발자라면 괜찮을 것 같다. 혼자서는 방황하기 쉬운 파이썬의 바다에서 약간의 길잡이가 되어 줄 수 있을 것이다. 다만 방향만 알려줄 뿐이니 길을 가는 것은 스스로 해야 한다는 점은 꼭 인지하고 있어야 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[파이썬의 기본 도구들]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2020/python-basic-tools/</link><guid isPermaLink="false">https://blog.gyus.me/2020/python-basic-tools/</guid><pubDate>Sun, 01 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;게임을 새로 시작하게 되면 주인공에게 기본 도구 몇 가지를 쥐어주고 시작하게 됩니다.
 비록 초반에만 사용하긴 하지만, 게임에 적응할 수 있도록 도와주는 아주 고마운 존재 이지요.&lt;/p&gt;
 &lt;p&gt;이번 글에서는 파이썬의 좋은 기본도구 몇 가지를 소개하려고 합니다. 반드시 써야하는 것은 아니지만, 사용한다면 거의 매일 사용하게 되는 녀석들이니 혹시나 사용하고 있지 않다면, 이번 기회에 한번 함께 알아보는 것은 어떨까요?&lt;/p&gt;
 &lt;h2&gt;패키지 매니저 pip&lt;/h2&gt;
@@ -3043,32 +3077,7 @@ $ ipython kernel &lt;span class=&quot;token function&quot;&gt;install&lt;/span&g
 sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;실행후에 아래와 같이 pypy 정보가 나오면 성공이다. python3.6.1 과 호환되는 pypy7.1.1 버전을 쓰고 있음을 알 수 있다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;3.6.1 (784b254d6699, Apr 14 2019, 10:22:55)
-[PyPy 7.1.1-beta0 with GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)]&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[gatsby helmet 사용하기]]></title><description><![CDATA[설치  설정  사용법 나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다. 끝~]]></description><link>https://blog.gyus.me/2019/gatsby-use-helmet/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-use-helmet/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-react-helmet react-helmet&lt;/code&gt;&lt;/p&gt;
-&lt;h3&gt;설정&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
-  plugins: [`gatsby-plugin-react-helmet`]
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;사용법&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;quot;react&amp;quot;
-import { Helmet } from &amp;quot;react-helmet&amp;quot;
-
-class Application extends React.Component {
-  render() {
-    return (
-      &amp;lt;div className=&amp;quot;application&amp;quot;&amp;gt;
-        &amp;lt;Helmet&amp;gt;
-        &amp;lt;meta charSet=&amp;quot;utf-8&amp;quot; /&amp;gt;
-        &amp;lt;title&amp;gt;My Title&amp;lt;/title&amp;gt;
-        &amp;lt;link rel=&amp;quot;canonical&amp;quot; href=&amp;quot;http://mysite.com/example&amp;quot; /&amp;gt;
-        &amp;lt;/Helmet&amp;gt;
-    &amp;lt;/div&amp;gt;
-    )
-  }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다.&lt;/p&gt;
-&lt;p&gt;끝~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개츠비에 구글 아날리틱스 달기]]></title><description><![CDATA[설치  사용법  에 아래와 같이 설정해야한다. 클릭수를 추적하고 싶으면??  컴포넌트를 쓰자 요렇게 쓰면 된다고 함 그럼 또 다음에 보아요~ 안녕~]]></description><link>https://blog.gyus.me/2019/gatsby-google-analytics/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-google-analytics/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
+[PyPy 7.1.1-beta0 with GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)]&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[개츠비에 구글 아날리틱스 달기]]></title><description><![CDATA[설치  사용법  에 아래와 같이 설정해야한다. 클릭수를 추적하고 싶으면??  컴포넌트를 쓰자 요렇게 쓰면 된다고 함 그럼 또 다음에 보아요~ 안녕~]]></description><link>https://blog.gyus.me/2019/gatsby-google-analytics/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-google-analytics/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-google-analytics&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;사용법&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; 에 아래와 같이 설정해야한다.&lt;/p&gt;
@@ -3110,7 +3119,32 @@ export default () =&amp;gt; {
     &amp;lt;/OutboundLink&amp;gt;
   &amp;lt;/div&amp;gt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;그럼 또 다음에 보아요~ 안녕~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개츠비로 코드하이라이팅하기]]></title><description><![CDATA[를 써야된다고 함 설치 이 글을 쓰는 시점에는 하이라이팅이 안되고 있는 중이다..ㅎㅎ gatsby-transformer-remark 는 미리 설치를 해둔 상태여야한다. gatsby-config.js 설정 CSS include PrismJS…]]></description><link>https://blog.gyus.me/2019/gatsby-code-highlight/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-code-highlight/</guid><pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-remark-prismjs&lt;/code&gt; 를 써야된다고 함&lt;/p&gt;
+&lt;p&gt;그럼 또 다음에 보아요~ 안녕~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[gatsby helmet 사용하기]]></title><description><![CDATA[설치  설정  사용법 나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다. 끝~]]></description><link>https://blog.gyus.me/2019/gatsby-use-helmet/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-use-helmet/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-react-helmet react-helmet&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;설정&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  plugins: [`gatsby-plugin-react-helmet`]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;사용법&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;quot;react&amp;quot;
+import { Helmet } from &amp;quot;react-helmet&amp;quot;
+
+class Application extends React.Component {
+  render() {
+    return (
+      &amp;lt;div className=&amp;quot;application&amp;quot;&amp;gt;
+        &amp;lt;Helmet&amp;gt;
+        &amp;lt;meta charSet=&amp;quot;utf-8&amp;quot; /&amp;gt;
+        &amp;lt;title&amp;gt;My Title&amp;lt;/title&amp;gt;
+        &amp;lt;link rel=&amp;quot;canonical&amp;quot; href=&amp;quot;http://mysite.com/example&amp;quot; /&amp;gt;
+        &amp;lt;/Helmet&amp;gt;
+    &amp;lt;/div&amp;gt;
+    )
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다.&lt;/p&gt;
+&lt;p&gt;끝~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개츠비로 코드하이라이팅하기]]></title><description><![CDATA[를 써야된다고 함 설치 이 글을 쓰는 시점에는 하이라이팅이 안되고 있는 중이다..ㅎㅎ gatsby-transformer-remark 는 미리 설치를 해둔 상태여야한다. gatsby-config.js 설정 CSS include PrismJS…]]></description><link>https://blog.gyus.me/2019/gatsby-code-highlight/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-code-highlight/</guid><pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-remark-prismjs&lt;/code&gt; 를 써야된다고 함&lt;/p&gt;
 &lt;h3&gt;설치&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;이 글을 쓰는 시점에는 하이라이팅이 안되고 있는 중이다..ㅎㅎ&lt;/p&gt;
