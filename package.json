@@ -16,6 +16,7 @@
   "dependencies": {
     "@emotion/core": "^10.1.1",
     "acorn": "^6.4.2",
+    "core-js-compat": "3.4.7",
     "gatsby": "^2.26.1",
     "gatsby-cli": "^2.13.1",
     "gatsby-image": "^2.5.0",
