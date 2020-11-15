@@ -1,5 +1,5 @@
 ---
-title: "파이썬 창시자 귀도 반 로썸에 대하여"
+title: "[책소개] 프로그래머를 위한 파이썬"
 date: "2020-11-15"
 category: "dev"
 published: true
