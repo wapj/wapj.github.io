@@ -3,10 +3,10 @@ title: "[책소개] 프로그래머를 위한 파이썬"
 date: "2020-11-15"
 category: "dev"
 published: true
-featured: images/practice_python_image.jpg
+featured: images/practice-python-image.jpg
 ---
 
-![](./images/practice_python_image.jpg)
+![프로그래머를 위한 파이썬](images/practice-python-image.jpg)
 
 책의 한국어 제목이 좀 긴데, `실전 프로젝트로 배우는 소프트웨어 개발의 원리와 정석, 프로그래머를 위한 파이썬`이다. 제목이 좀 길다면 긴데, 저자가 하고자 했던 말들이 많았던 것 같다. 영어로는 Practice of the python pro로 `파이썬 실전연습` 쯤 되는 제목인 것 같다.
 
