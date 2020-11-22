@@ -1,5 +1,5 @@
 ---
-title: "파이썬으로 샘플데이터 만들기"
+title: "파이썬으로 테스트 데이터 만들기"
 date: 2020-11-22
 tags: ["python", "data", "generate"]
 category: dev
@@ -17,16 +17,16 @@ published: true
 
 이름, 학년, 반, 년도, 학기, 과목, 성적 이렇게 7개의 데이터를 추가해줘야합니다.
 
-| Field    | Type          | Null | Key | Default | Extra          |
-| :------- | :------------ | :--- | :-- | :------ | :------------- |
-| uid      | int           | NO   | PRI | NULL    | auto_increment |
-| name     | varchar\(30\) | YES  |     | NULL    |                |
-| grade    | int           | YES  |     | NULL    |                |
-| class_no | int           | YES  |     | NULL    |                |
-| year     | int           | YES  |     | NULL    |                |
-| semester | int           | YES  |     | NULL    |                |
-| subject  | varchar\(30\) | YES  |     | NULL    |                |
-| score    | int           | YES  |     | NULL    |                |
+| 컬럼명   | 타입          |
+| :------- | :------------ |
+| uid      | int           |
+| name     | varchar\(30\) |
+| grade    | int           |
+| class_no | int           |
+| year     | int           |
+| semester | int           |
+| subject  | varchar\(30\) |
+| score    | int           |
 
 하나의 데이터를 넣으려면 아래와 같은 쿼리가 필요하죠.
 
@@ -39,7 +39,7 @@ VALUES
  1997, 1, '국어', 100);
 ```
 
-입력해야 하는 데이터가 7가 있으니, 10개만 해도 타이핑 해야하는 양이 상당합니다.
+입력해야 하는 데이터가 7종류가 있으니, 10개만 해도 타이핑 해야하는 양이 상당합니다.
 이런 데이터를 랜덤하게 넣을 수 있는 프로그램이 있으면 좋겠다는 생각이 마구마구 들죠. 우선 랜덤한 데이터를 사용하기 위해 필요한 것들을 찾아봅시다.
 
 ## random 모듈을 사용한 랜덤 데이터 만들기
