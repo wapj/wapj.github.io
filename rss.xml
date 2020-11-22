@@ -1,4 +1,227 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Nov 2020 02:18:57 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://blog.gyus.me/2020/learn-css/css를-배워보자1/</link><guid isPermaLink="false">https://blog.gyus.me/2020/learn-css/css를-배워보자1/</guid><content:encoded></content:encoded></item><item><title><![CDATA[[책소개] 프로그래머를 위한 파이썬]]></title><description><![CDATA[책의 한국어 제목이 좀 긴데, 이다. 제목이 좀 길다면 긴데, 저자가 하고자 했던 말들이 많았던 것 같다. 영어로는 Practice of the python pro…]]></description><link>https://blog.gyus.me/2020/review-practice-of-the-python-pro/</link><guid isPermaLink="false">https://blog.gyus.me/2020/review-practice-of-the-python-pro/</guid><pubDate>Sun, 15 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Nov 2020 13:47:34 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://blog.gyus.me/2020/learn-css/css를-배워보자1/</link><guid isPermaLink="false">https://blog.gyus.me/2020/learn-css/css를-배워보자1/</guid><content:encoded></content:encoded></item><item><title><![CDATA[파이썬으로 샘플데이터 만들기]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2020/generate-sample-data-with-python/</link><guid isPermaLink="false">https://blog.gyus.me/2020/generate-sample-data-with-python/</guid><pubDate>Sun, 22 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;프로그램을 작성하다보면 테스트 데이터가 필요한 경우가 많이 있습니다. 특히나 다른팀과 협을 해야하는데, 같은 테이블을 사용하는 경우에는 테이블에 뭐라도 들어가 있어야 테스트를 해볼 수가 있는데, 제가 데이터를 만들어 주는 것을 기다리는 팀이 있는 상황에는 뭐라도 일단 수동으로 넣고 테스트 해보시라고 말씀을 드리곤 합니다.&lt;/p&gt;
+&lt;p&gt;그렇지만, 만들어야 하는 데이터가 열개 스무개가 아니라 몇백개가 된다면, 그것만으로도 일이 되겠지요. 이런 상황에서 프로그램을 사용하여 데이터를 만들수 있다면 좋지 않을까? 하는 생각에서 파이썬으로 프로그램을 작성하여 보았습니다. 같이 보실까요.&lt;/p&gt;
+&lt;h2&gt;테이블 구조&lt;/h2&gt;
+&lt;p&gt;학생의 성적을 관리하는 테이블이 있다고 합시다. 테이블의 스키마는 아래와 같습니다. 테스트용으로 만들어본 것이니 참고만 하시면 좋겠습니다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Field&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Type&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Null&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Key&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Default&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Extra&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;uid&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NO&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;PRI&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;auto_increment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;varchar(30)&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;grade&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;class_no&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;year&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;semester&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;subject&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;varchar(30)&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;score&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;YES&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;NULL&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;하나의 데이터를 넣으려면 아래와 같은 쿼리가 필요하죠.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INSERT INTO my_db.student_score
+(name, grade, class_no,
+ year, semester, subject, score)
+VALUES
+(&amp;#39;승귤&amp;#39;, 3, 10,
+ 1997, 1, &amp;#39;국어&amp;#39;, 100);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;입력해야 하는 데이터가 무려 7개나 있네요.
+10개만 해도 타이핑 해야하는 양이 상당합니다.
+이런 데이터를 랜덤하게 넣을 수 있는 프로그램이 있으면 좋겠다는 생각이 마구마구 들죠. 우선 랜덤한 데이터를 사용하기 위해 필요한 것들을 찾아봅시다.&lt;/p&gt;
+&lt;h2&gt;random 모듈을 사용한 랜덤 데이터 만들기&lt;/h2&gt;
+&lt;p&gt;랜덤한 데이터를 만들기 위해 파이썬에서는 &lt;code class=&quot;language-text&quot;&gt;random&lt;/code&gt; 이라는 모듈을 제공하고 있습니다. 그래서 오늘 만들어볼 프로그램에서는 대부분 이녀석으로 처리할 예정입니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;random&lt;/code&gt;의 함수를 모두 설명하면 그걸로 오늘 분량이 끝날것이라 오늘은 딱 두가지 함수만 소개 드리겠습니다.&lt;/p&gt;
+&lt;p&gt;하나는 일정 숫자범위에서 랜덤한 숫자를 리턴해주는 &lt;code class=&quot;language-text&quot;&gt;random.randrange(start, stop, [Optional])&lt;/code&gt; 함수입니다. 예를들어 2010에서 2020 사이의 숫자를 랜덤하게 나오게 해주려면 아래와 같이 하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;random&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;randrange&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2010&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2021&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;randrange 함수의 숫자 범위는 반폐구간인데요. 무슨말이냐면 위의 예시에서 2010은 포함하고 2021은 포함하지 않는다는 뜻입니다. 학교에서 수학에서는 [2010, 2021) 요렇게 표현합니다. 파이썬에서 시퀀스의 슬라이드 문법도 동일하게 반폐구간이죠.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;또 다른 하나의 함수는 &lt;code class=&quot;language-text&quot;&gt;random.choice(리스트)&lt;/code&gt; 인데요. 숫자가 아닌 내가 원하는 리스트를 넣으면 랜덤하게 출력해줍니다.
+사실 오늘만들 프로그램에서는 위의 함수보단 다음절에 소개드릴 faker를 사용하긴 했습니다만, 내가 만든 리스트를 랜덤하게 출력할 때 필요하기 때문에 소개드렸습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;과목들 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;국어&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;영어&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;수학&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;과학&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;사회&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;윤리&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;지리&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;기술&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;체육&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;random&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;choice&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;과목들&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;faker를 사용해서 이름 가져오기&lt;/h2&gt;
+&lt;p&gt;입력해야하는 데이터 중에 &lt;code class=&quot;language-text&quot;&gt;이름&lt;/code&gt;이 있는데요. 위에 말씀드린 random.choice 를 사용해도 되지만, 이름들을 만드는 것도 일이 될 수 있습니다. 이런경우에 기본적인 가짜데이터를 만들 수 있도록 도와주는 &lt;a href=&quot;https://github.com/joke2k/faker&quot;&gt;faker&lt;/a&gt; 를 쓰시면 되는데요. 저는 한글 이름 가져오는 것만 예시로 보여드리고자 합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; faker &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Faker
+fake &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Faker&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;ko_KR&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fake&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;너무 간단하게 한글로된 이름을 가져올 수 있습니다.
+이름 외에도, 주소, 색깔, 회사, 신용카드, 직업, 휴대폰번호, user_agent 등의 데이터가 있고 &lt;code class=&quot;language-text&quot;&gt;providers&lt;/code&gt; 를 상속하면 자신만의 랜덤 데이터 셋을 만들 수도 있습니다. 테스트 데이터를 자주 만드시는 편이라면 꼭 한번 살펴보시는것을 추천합니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://faker.readthedocs.io/en/master/&quot;&gt;faker 문서&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;테스트 sql 파일 만들기&lt;/h2&gt;
+&lt;p&gt;자 이제, 테스트 파일을 만들기 위한 재료에 대한 설명은 대부분 끝났으니 테스트 데이터를 만들어 봅시다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; random
+&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; faker &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Faker
+fake &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Faker&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;ko_KR&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+과목들 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;국어&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;영어&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;수학&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;과학&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;사회&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;윤리&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;지리&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;기술&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;체육&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get_test_data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  이름 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fake&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  연도 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; random&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;randrange&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2010&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2021&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  학년 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; random&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;randrange&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  반 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; random&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;randrange&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; y &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      학기 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; idx&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 과목 &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;과목들&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          점수 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; random&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;randrange&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&quot;(&apos;&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;이름&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;,&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;연도&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;학기&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;학년&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;반&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;, &apos;&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;과목&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;, &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;점수&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;),&quot;&lt;/span&gt;&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;
+&amp;lt;결과&gt;
+(&apos;서지후&apos;,2017, 2, 2, 1, &apos;기술&apos;, 71),
+...
+(&apos;서지후&apos;,2017, 2, 2, 1, &apos;체육&apos;, 61),
+&quot;&quot;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;아주 쉽게 테스트 데이터를 만들어 볼 수 있습니다.
+다만 위의 함수는 한사람의 1년동안의 데이터를 만들어주고 있습니다. 1000명의 데이터를 만들도록 로직을 조금더 추가해봅시다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;create_datas&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# 1000명의 데이터를 생성한다.&lt;/span&gt;
+  datas &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; x &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    one_person_data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; get_test_data&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;one_person_data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    datas &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; one_person_data&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;네 이제 1000명의 데이터를 만들수 있게 되었습니다.
+하지만, 데이터를 화면에 출력만 할뿐인데요. mysql에 바로 넣어주도록 할 수 있으면 좋을것 같습니다.&lt;/p&gt;
+&lt;p&gt;sql 파일로 만들수 있도록 수정해보겠습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;filename &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;student_score.sql&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get_test_data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# 생략&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;create_datas&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    f &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 쓰기모드로 파일 오픈&lt;/span&gt;
+    f&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;write&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;INSERT INTO my_db.student_score (name, year, semester, grade, class_no, subject, score)
+VALUES
+&quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# insert 문을 미리 써놓는다.&lt;/span&gt;
+    datas &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; x &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        one_person_data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; get_test_data&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        datas &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; one_person_data
+
+    &lt;span class=&quot;token comment&quot;&gt;# 마지막에 있는 ,(콤마) 를 ; (세미콜론) 으로 변경하기 위한 코드&lt;/span&gt;
+    datas&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; datas&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;;&apos;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; data &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; datas&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        f&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;write&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    f&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;close&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;파이썬의 기본모듈을 쓰기모드로 열고 &lt;code class=&quot;language-text&quot;&gt;f.write(문장)&lt;/code&gt; 을 사용하여 한줄씩 넣는 코드입니다. 마지막줄에 있는 콤마만 세미콜론으로 바꾸기위한 코드가 있는것에 주의해주세요. 없으면 mysql에 밀어넣을때 에러가 나게됩니다.&lt;/p&gt;
+&lt;p&gt;여기까지 하시고 파이썬 프로그램을 실행하시면 같은 디렉토리에 &lt;code class=&quot;language-text&quot;&gt;student_score.sql&lt;/code&gt; 이라는 파일이 생성되어 있을 것입니다.&lt;/p&gt;
+&lt;p&gt;커맨드 라인에서 &lt;code class=&quot;language-text&quot;&gt;mysql -u &amp;lt;유저&amp;gt; -p &amp;lt; student_score.sql&lt;/code&gt; 를 해주면 데이터를 생성할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;그런데, 이렇게 커맨드를 일일이 실행해주는 것도 귀찮을 수 있습니다. 해당 작업도 할 수 있도록 수정해 봅시다.&lt;/p&gt;
+&lt;h2&gt;mysql에 테스트 데이터 바로 추가하기&lt;/h2&gt;
+&lt;p&gt;파이썬에서 &lt;code class=&quot;language-text&quot;&gt;os.system&lt;/code&gt; 을 사용하면 shell 에서 사용하는 명령어를 사용할 수 있습니다. (mac환경에서 실행해보았습니다.)&lt;/p&gt;
+&lt;p&gt;아래와 같은 코드가 가능하죠.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;system&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&quot;mysql -u root -p&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;mypass&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; &amp;lt; &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;dump_file&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;할일은 덤프파일 경로를 가져오는 것과 패스워드를 입력받도록 하는 것입니다.&lt;/p&gt;
+&lt;p&gt;덤프파일은 파이썬 파일과 동일한 경로에 있으니 현재 디렉토리의 절대경로를 찾는 함수를 사용하면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;current_dir &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pathlib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Path&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;absolute&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+dump_file &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string-interpolation&quot;&gt;&lt;span class=&quot;token string&quot;&gt;f&quot;&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;current_dir&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;filename&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;덤프파일 경로 : &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dump_file&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pathlib&lt;/code&gt; 모듈을 사용하면 간단하게 찾을 수 있습니다.
+filename은 위에서 미리 정의한 변수입니다.&lt;/p&gt;
+&lt;p&gt;패스워드는 민감정보이기 때문에 보이면 안되니 사용자에게 입력을 받는 방식으로 해보겠습니다. 입력또한 패스워드가 노출되면 안되니 리눅스에서처럼 패스워드를 입력하도록 해주는 &lt;code class=&quot;language-text&quot;&gt;getpass&lt;/code&gt; 라는 함수를 사용해보겠습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; getpass &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; getpass
+mypass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; getpass&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;패스워드를 입력해주세요 : &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 또한 너무 쉽게 할 수 있네요.&lt;/p&gt;
+&lt;p&gt;참고로 pycharm 에서는 패스워드 입력시에 노출이 되는데, &lt;code class=&quot;language-text&quot;&gt;edit configurations&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;Execution -&amp;gt; Emulate terminal in output console&lt;/code&gt; 을 활성화하면 노출이 되지 않습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 564px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3f8875d0d5eb9785e4b4a397cb669943/ba4d9/generate-sample-data-with-python2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABO0lEQVQoz31R2W7DMAzLV3VrmvuyHSfO3aHb/3+HJspJEAzbHggLkkyTdJDXimpjaZhX6oaJ+nGmcdmoVJoeaU5xVlB0QbzjZ++oA2nkJZneCbTtqXUDpWVNb4+Y3qNkRyrn0bvH6TlDL0wyERBAoe7cCSgEqekHqaHaDiMZninuu3mRftN2ZN3IM+8KokAqhBgq6xdgHZdbrlsmNTsQi+I9Ny3UjZOQ99MsGJaVHVWeMOGi4LzwMpagDhmKmsmrOS4fqiEANg/cwovlpKgoqxpZqnVLDZSw2qJRolR3PVXKUMWzdifEHATIHyRRlst5EuYNbFu5DMKi0UIOknIng2WQhEkqJzL7DQF+E5dg8/n6onn7EBXIcnt9slVve1qf4gQC/iITQnz/nb/+FkYnfDbXmsE1dh/I6h98AwpPRXxyCZApAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Execution -&amp;gt; Emulate terminal in output console&quot;
+        title=&quot;Execution -&amp;gt; Emulate terminal in output console&quot;
+        src=&quot;/static/3f8875d0d5eb9785e4b4a397cb669943/ba4d9/generate-sample-data-with-python2.png&quot;
+        srcset=&quot;/static/3f8875d0d5eb9785e4b4a397cb669943/8a4e8/generate-sample-data-with-python2.png 150w,
+/static/3f8875d0d5eb9785e4b4a397cb669943/5a46d/generate-sample-data-with-python2.png 300w,
+/static/3f8875d0d5eb9785e4b4a397cb669943/ba4d9/generate-sample-data-with-python2.png 564w&quot;
+        sizes=&quot;(max-width: 564px) 100vw, 564px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;정리하기&lt;/h2&gt;
+&lt;p&gt;테스트 데이터를 만들기 위해서 직접 DB연동을 한다음 생성하는 방법도 있을 것입니다.&lt;/p&gt;
+&lt;p&gt;예제를 만드는중 faker를 더 적극적으로 사용하고, python-fire 를 사용해서 아주 힙한 녀석을 만들어 볼까도 생각하였습니다만 아무래도 기본에 충실한게 좋은 것 같아서 외부라이브러리는 최대한 적게 사용하였습니다.&lt;/p&gt;
+&lt;p&gt;파이썬은 기본라이브러리도 너무 충실하게 되어 있는 점이 아주 매력적인 언어로 생각됩니다.&lt;/p&gt;
+&lt;p&gt;최종적인 코드는 &lt;a href=&quot;https://gist.github.com/wapj/256605c28d5650620ffbb1f395dd59fe&quot;&gt;gist&lt;/a&gt;에 올려두었으니 혹시나 테스트 데이터를 만드실때 참고하시면 될 것 같습니다.&lt;/p&gt;
+&lt;p&gt;파이썬 관련해서 궁금한 사항이나 더 알고 싶은 것이 있다면 댓글로 남겨주세요~ 부끄러우신 분은 &lt;a href=&quot;https://twitter.com/wapj2000&quot;&gt;트위터&lt;/a&gt;에서 DM으로 보내셔도 됩니다. 그럼 오늘도 힘찬 하루 보내세요~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[책소개] 프로그래머를 위한 파이썬]]></title><description><![CDATA[책의 한국어 제목이 좀 긴데, 이다. 제목이 좀 길다면 긴데, 저자가 하고자 했던 말들이 많았던 것 같다. 영어로는 Practice of the python pro…]]></description><link>https://blog.gyus.me/2020/review-practice-of-the-python-pro/</link><guid isPermaLink="false">https://blog.gyus.me/2020/review-practice-of-the-python-pro/</guid><pubDate>Sun, 15 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 459px; &quot;
     &gt;
