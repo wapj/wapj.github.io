@@ -21,7 +21,7 @@ const SEO = ({ title, description, image, article }) => {
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta charSet="utf-8" />
       <title>{title}</title>
-      <link rel="canonical" href="https://home.gyus.me" />
+      <link rel="canonical" href="https://blog.gyus.me" />
       <meta name="google-site-verification" content="DKf0uKbVabYGKz0sq8wWSyZz_1vtPx3Pey1ifAguz-E" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

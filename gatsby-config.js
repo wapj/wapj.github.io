@@ -8,8 +8,8 @@ module.exports = {
   siteMetadata: {
     title: `승귤입니다`,
     titleTemplate: "%s · 개발블로그",
-    url: `https://home.gyus.me`,
-    siteUrl: `https://home.gyus.me`,
+    url: `https://blog.gyus.me`,
+    siteUrl: `https://blog.gyus.me`,
     keywords: "승귤의 개발블로그",
     author: "seungkyoo.park@gmail.com",
     description: "판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.",
