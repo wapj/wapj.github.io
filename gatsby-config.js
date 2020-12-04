@@ -52,27 +52,24 @@ module.exports = {
               });
             });
           },
-          query: `
-            {
-              allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, 
-                filter: {frontmatter: {published: {eq: true}}}) {
-                edges {
-                  node {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                      published
-                    }
-                  }
-                }
-              }
-            }
-          `,
+          query: `{
+  allMarkdownRemark(filter: {frontmatter: {published: {eq: true}}}, sort: {order: DESC, fields: frontmatter___date}) {
+    edges {
+      node {
+        excerpt(pruneLength: 100, truncate: true, format: PLAIN)
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          published
+        }
+      }
+    }
+  }
+}`,
           output: "/rss.xml",
           title: "승귤의 블로그",
         },

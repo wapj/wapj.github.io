@@ -49,13 +49,13 @@ export default ({ data }) => {
                 {node.frontmatter.date}
               </span>
               <br />
-              <div >
-                {node.frontmatter.tags &&  <span>tags : </span> }
-              
-              {node.frontmatter.tags &&
-                node.frontmatter.tags.map((value, _) => {
-                  return `${value} `;
-                })}
+              <div>
+                {node.frontmatter.tags && <span>tags : </span>}
+
+                {node.frontmatter.tags &&
+                  node.frontmatter.tags.map((value, _) => {
+                    return `${value} `;
+                  })}
               </div>
               <p>{node.excerpt}</p>
             </Link>
@@ -79,7 +79,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 100, truncate: true, format: PLAIN)
 
           frontmatter {
             title

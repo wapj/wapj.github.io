@@ -26,7 +26,7 @@ export default ({ data, pageContext }) => {
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        <hr></hr>        
+        <hr></hr>
         <div style={{ fontFamily: "avenir" }}>
           {prev && <Link to={prev.fields.slug}>이전글: {`${prev.frontmatter.title}`}</Link>}
         </div>
@@ -45,7 +45,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      excerpt
+      excerpt(pruneLength: 100, truncate: false, format: HTML)
       tableOfContents
       timeToRead
       frontmatter {
