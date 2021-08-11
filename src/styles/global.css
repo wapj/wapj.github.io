@@ -16,6 +16,7 @@ pre[class*="language-"] {
   background: #002a4f;
 }
 
+
 h1 {
   font-size: 1.6rem;
 }
@@ -46,4 +47,12 @@ li {
   padding-right: 1em;
   padding-left: 0.75em;
   border-left: 0.25em solid #f99;
+}
+
+.gatsby-highlight{
+  font-size: 0.9em;
+}
+
+.gatsby-highlight:hover {
+  width: 1000px;
 }
