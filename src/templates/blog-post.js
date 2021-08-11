@@ -35,7 +35,7 @@ export default ({ data, pageContext }) => {
         </div>
       </div>
       <div>
-        <Comment></Comment>
+        <Comment repo="wapj/wapj.github.io" />
       </div>
     </Layout>
   );

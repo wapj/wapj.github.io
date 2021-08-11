@@ -1,19 +1,22 @@
-import React, { Component } from "react"
+import React, { createRef, useEffect } from "react"
 
-export default class Comments extends Component {
-  componentDidMount() {
-    let script = document.createElement("script")
-    let anchor = document.getElementById("inject-comments-for-uterances")
-    script.setAttribute("src", "https://utteranc.es/client.js")
-    script.setAttribute("crossorigin", "anonymous")
-    script.setAttribute("async", true)
-    script.setAttribute("repo", "wapj/wapj.github.io")
-    script.setAttribute("issue-term", "pathname")
-    script.setAttribute("theme", "github-light")
-    anchor.appendChild(script)
-  }
-
-  render() {
-    return <div id="inject-comments-for-uterances"></div>
-  }
+export default function Comment({ repo }) {
+  const containerRef = createRef()
+  useEffect(() => {
+    const utterances = document.createElement("script")
+    const attributes = {
+      src: "https://utteranc.es/client.js",
+      repo,
+      "issue-term": "title",
+      label: "comment",
+      theme: "github-light",
+      crossOrigin: "anonymous",
+      async: "true",
+    }
+    Object.entries(attributes).forEach(([key, value]) => {
+      utterances.setAttribute(key, value)
+    })
+    containerRef.current.appendChild(utterances)
+  }, [repo, containerRef])
+  return <div id="comment" ref={containerRef} />
 }
