@@ -18,20 +18,23 @@ pre[class*="language-"] {
 
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  color: #000;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-top: 2.7rem;
+  color: #000;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-top: 2rem;
 }
 
 p {
+  color: #353535;
   margin-top: 1rem;
 }
 
