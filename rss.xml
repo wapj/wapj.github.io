@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Aug 2021 01:28:22 GMT</lastBuildDate><item><title><![CDATA[리액트를 하면서 배운 것들 정리]]></title><description><![CDATA[리액트는 완전 초보라 모르는게 너무 많다. 나중에 까먹었을때 찾아보는 용도로 정리한다. Object를 루프 돌려서 리액트 컴포넌트 그리기 좀 놀라운 일이지만 자바스크립트의 Object는 iterable이 아니다. 즉 for…]]></description><link>https://blog.gyus.me/2021/2021_08_til/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_08_til/</guid><pubDate>Fri, 13 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Aug 2021 01:55:03 GMT</lastBuildDate><item><title><![CDATA[리액트를 하면서 배운 것들 정리]]></title><description><![CDATA[리액트는 완전 초보라 모르는게 너무 많다. 나중에 까먹었을때 찾아보는 용도로 정리한다. Object를 루프 돌려서 리액트 컴포넌트 그리기 좀 놀라운 일이지만 자바스크립트의 Object는 iterable이 아니다. 즉 for…]]></description><link>https://blog.gyus.me/2021/2021_08_til/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_08_til/</guid><pubDate>Fri, 13 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;리액트는 완전 초보라 모르는게 너무 많다. 나중에 까먹었을때 찾아보는 용도로 정리한다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Object를 루프 돌려서 리액트 컴포넌트 그리기&lt;/h2&gt;
@@ -17,7 +17,7 @@
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;다른 방법으로는 keys, forEach 를 사용하는 방법도 있다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;object.keys().forEach((key) =&amp;gt; { // do something })&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;object.keys().forEach((key) =&gt; { // do something })&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;오브젝트로 리액트의 컴포넌트를 루프를 돌려서 그리고 싶은 경우 사용한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;object&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Option value&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;object&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Option&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -30,7 +30,7 @@
 &lt;/blockquote&gt;
 &lt;h2&gt;antd의 셀렉트 박스의 사이즈 고정하기&lt;/h2&gt;
 &lt;p&gt;별다른 것은 없고 style에서 width 속성을 줘서 사이즈를 고정시킬 수 있다. 안그러면 선택된 값에 따라 셀렉트 박스의 가로 크기가 동적으로 변하게 된다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Select&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;{{width:&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;100}}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Select&lt;/span&gt; &lt;span class=&quot;token special-attr&quot;&gt;&lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token value css language-css&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;100}}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ...
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;Select&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;조건부 렌더링&lt;/h2&gt;
@@ -39,13 +39,13 @@
   return (
     &amp;lt;&gt;
       {category === &quot;9999&quot; &amp;amp;&amp;amp; (
-        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Select&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;large&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;-대분류-&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;{{&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;width:&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Select&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;large&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;-대분류-&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token special-attr&quot;&gt;&lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token value css language-css&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;width:&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
           ... 생략
         &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;Select&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
       )}
 
       {category !== &quot;9999&quot; &amp;amp;&amp;amp; (
-        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Select&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;large&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;{category}&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;{{&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;width:&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Select&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;large&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;{category}&lt;/span&gt; &lt;span class=&quot;token special-attr&quot;&gt;&lt;span class=&quot;token attr-name&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token value css language-css&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;width:&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
           ... 생략
         &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;Select&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
       )}
@@ -319,16 +319,16 @@
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ImportError: dlopen(..._mysql.cpython-38-darwin.so, 2): Library not loaded: @rpath/libmysqlclient.21.dylib
   Referenced from: .../site-packages/_mysql.cpython-38-darwin.so
   Reason: image not found
-NameError: name &amp;#39;_mysql&amp;#39; is not defined&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+NameError: name &apos;_mysql&apos; is not defined&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;에러를 보면 &lt;code class=&quot;language-text&quot;&gt;_mysql&lt;/code&gt; 이 정의되지 않았다고 한다.
 또 그 녀석은 cpython-38-darwin.so 이라는 파일에 있는 것 같다. 그렇다는 얘기는 &lt;code class=&quot;language-text&quot;&gt;cpython-38-darwin.so&lt;/code&gt; 이 잘못되었다는 것 같은데, 사실 파이썬만 보면 저 파일이 잘못됐는지 아닌지 알 수가 없다.&lt;/p&gt;
 &lt;p&gt;문제를 좀 더 쉽게 재현해 보자.&lt;/p&gt;
 &lt;h2&gt;문제 재현&lt;/h2&gt;
 &lt;p&gt;문제를 재현하는것은 의외로 쉬운데 &lt;code class=&quot;language-text&quot;&gt;MySQLdb&lt;/code&gt; 모듈을 임포트 해보면 된다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python -c &amp;quot;import MySQLdb&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python -c &quot;import MySQLdb&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;그러면 아래와 같이 _mysql 이 없다고 에러가 난다. ImportError 쪽을 보면 Library not loaded: @rpath/libmysqlclient.21.dylib 라고 위에 나왔던 에러가 그대로 나오게 된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Traceback (most recent call last):
-  File &amp;quot;/Users/gyus/.pyenv/versions/py38/lib/python3.8/site-packages/MySQLdb/__init__.py&amp;quot;, line 18, in &amp;lt;module&amp;gt;
+  File &quot;/Users/gyus/.pyenv/versions/py38/lib/python3.8/site-packages/MySQLdb/__init__.py&quot;, line 18, in &amp;lt;module&gt;
     from . import _mysql
 ImportError: dlopen(/Users/gyus/.pyenv/versions/py38/lib/python3.8/site-packages/MySQLdb/_mysql.cpython-38-darwin.so, 2):
 Library not loaded: @rpath/libmysqlclient.21.dylib
@@ -338,10 +338,10 @@ Library not loaded: @rpath/libmysqlclient.21.dylib
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File &amp;quot;&amp;lt;string&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;
-  File &amp;quot;/Users/gyus/.pyenv/versions/py38/lib/python3.8/site-packages/MySQLdb/__init__.py&amp;quot;, line 24, in &amp;lt;module&amp;gt;
+  File &quot;&amp;lt;string&gt;&quot;, line 1, in &amp;lt;module&gt;
+  File &quot;/Users/gyus/.pyenv/versions/py38/lib/python3.8/site-packages/MySQLdb/__init__.py&quot;, line 24, in &amp;lt;module&gt;
     version_info, _mysql.version_info, _mysql.__file__
-NameError: name &amp;#39;_mysql&amp;#39; is not defined&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+NameError: name &apos;_mysql&apos; is not defined&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;원인&lt;/h2&gt;
 &lt;p&gt;brew 로 mysql-client 를 설치한 경우 &lt;code class=&quot;language-text&quot;&gt;/usr/local/mysql/bin/mysql/lib&lt;/code&gt;의 경로에 &lt;code class=&quot;language-text&quot;&gt;cpython-38-darwin.so&lt;/code&gt; 파일이 위치해 있는데, 파이썬에서 찾지 못해서 에러가 난다. 간단하게는 심볼릭 링크를 만들어주면 해결이 된다.&lt;/p&gt;
 &lt;h2&gt;해결하기&lt;/h2&gt;
@@ -575,7 +575,7 @@ filename은 위에서 미리 정의한 변수입니다.&lt;/p&gt;
 mypass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; getpass&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;패스워드를 입력해주세요 : &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 또한 너무 쉽게 할 수 있네요.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;참고로 pycharm 에서는 패스워드 입력시에 노출이 되는데, &lt;code class=&quot;language-text&quot;&gt;edit configurations&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;Execution -&amp;gt; Emulate terminal in output console&lt;/code&gt; 을 활성화하면 노출이 되지 않습니다.&lt;/p&gt;
+&lt;p&gt;참고로 pycharm 에서는 패스워드 입력시에 노출이 되는데, &lt;code class=&quot;language-text&quot;&gt;edit configurations&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;Execution -&gt; Emulate terminal in output console&lt;/code&gt; 을 활성화하면 노출이 되지 않습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span
@@ -658,7 +658,7 @@ mypass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; getpass&lt;sp
 &lt;p&gt;pip는 생각보다 많은 기능을 제공하고 있는데요. 이번글은 소개글이니 제가 사용하는 기능 한 가지만 소개하려고 합니다.&lt;/p&gt;
 &lt;p&gt;바로 &lt;code class=&quot;language-text&quot;&gt;pip freeze&lt;/code&gt; 라는 기능입니다. 해당 명령어를 사용해서 해당 파이썬 환경에 설치된 라이브러리들을 모두 확인 할 수 있습니다.
 그리고 아래의 명령을 사용해서 &lt;code class=&quot;language-text&quot;&gt;requirements.txt&lt;/code&gt; 파일을 바로 만들어 낼 수 있죠.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pip freeze &amp;gt; requirements.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pip freeze &gt; requirements.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;제가 사용하는 pip의 다른 기능 두 가지는 다음 기회에 또 소개 드리겠습니다.&lt;/p&gt;
 &lt;h2&gt;파이썬 스러운 테스팅을 위한 pytest&lt;/h2&gt;
 &lt;p&gt;패키지 매니저는 표준 라이브러리를 소개해 놓고, 테스팅에서는 unitest가 아닌 pytest 를 소개하는지 궁금하실 겁니다.&lt;/p&gt;
@@ -727,9 +727,9 @@ black {디렉토리}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;설치시에는 &lt;a href=&quot;https://github.com/pyenv/pyenv-installer&quot;&gt;pyenv-installer&lt;/a&gt; 를 사용하시면 아주 깔끔하게 설치가 됩니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; https://pyenv.run &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;.bashrc 같은 설정파일에&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export PATH=&amp;quot;$HOME/.pyenv/bin:$PATH&amp;quot;
-eval &amp;quot;$(pyenv init -)&amp;quot;
-eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export PATH=&quot;$HOME/.pyenv/bin:$PATH&quot;
+eval &quot;$(pyenv init -)&quot;
+eval &quot;$(pyenv virtualenv-init -)&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;도 넣어 두시고 쉘을 껏다가 켜시면 됩니다.&lt;/p&gt;
 &lt;h3&gt;여러 버전의 파이썬 설치하기&lt;/h3&gt;
 &lt;p&gt;pyenv 의 install 서브 커맨드를 사용하면 됩니다.&lt;/p&gt;
@@ -805,7 +805,7 @@ git pull&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;저런 커널들이 설치가 되지 않으면 동작을 하지 않을 때가 있는데요. 파이썬 3.9.0 을 설치하고 가상환경인 py39를 추가했지만 주피터에서 사용할 수 없다면 커널을 추가해주어야합니다.&lt;/p&gt;
 &lt;p&gt;커널을 추가하기 위해서는 &lt;code class=&quot;language-text&quot;&gt;pip install ipykernel&lt;/code&gt;로 ipykernel 이라는 패키지를 설치해야합니다.&lt;/p&gt;
 &lt;p&gt;그리고 아래 명령어를 입력해서 추가를 한다음 주피터 노트북을 재시작 하면됩니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python -m ipykernel install --user --name py39 --display-name &amp;quot;py39&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python -m ipykernel install --user --name py39 --display-name &quot;py39&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;마무리&lt;/h2&gt;
 &lt;p&gt;이상으로 개인적으로는 가장 많이 사용하는 기본도구들 5가지를 소개해 드렸습니다. 파이썬을 좋아하시고 많이 사용하시지만, 아직까지 사용해본 적이 없는 도구들이 있다면 이번기회에 알아보시는 것은 어떨까요?&lt;/p&gt;
 &lt;p&gt;궁금하신 점은 댓글로 남겨주세요~ 감사합니다.&lt;/p&gt;
@@ -1221,7 +1221,7 @@ document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;sp
 &lt;h3&gt;번들 만들기&lt;/h3&gt;
 &lt;p&gt;위에서 만들었던 index.html 을 dist 디렉토리로 옮기자&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── dist
-│   └── index.html # 여기로 옮김
+│   └── index.html # 여기로 옮김
 ├── package-lock.json
 ├── package.json
 └── src
@@ -1337,7 +1337,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;그림과 같이 한글자씩 연달아서 메모리에 저장되게 되는데, 그 모양이 끈처럼 생겼기때문에 스트링이라는 이름을 붙인것이다. 스트링은 사실 charactor string 을 스트링으로 단축해서 부르는 것으로 이해하면 된다.&lt;/p&gt;
 &lt;p&gt;메모리에 할당된 주소가 궁금한 사람은 id(변수) 를 해보면 메모리의 주소가 나오게 된다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;str = &amp;quot;안녕하세요&amp;quot;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;str = &quot;안녕하세요&quot;
 print(id(str))
 
 # 16진수로 보고 싶은경우 hex를 사용하면 된다.
@@ -2747,7 +2747,7 @@ Package operations: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; in
 python &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^3.8&quot;&lt;/span&gt;
 django &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;^3.0.7&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;버전 제약사항&lt;/h3&gt;
-&lt;p&gt;django 의존성 설정을 보면 &lt;code class=&quot;language-text&quot;&gt;&amp;quot;^3.0.7&amp;quot;&lt;/code&gt; 이라고 되어 있습니다. 여기서 &lt;code class=&quot;language-text&quot;&gt;^(캐럿)&lt;/code&gt; 의 의미는 ( &gt;= 3.0.7, &amp;#x3C; 4.0.0) 의 의미입니다. 즉 &lt;code class=&quot;language-text&quot;&gt;3.9999....99999&lt;/code&gt; 버전까지도 설치가 된다는 얘기입니다.&lt;/p&gt;
+&lt;p&gt;django 의존성 설정을 보면 &lt;code class=&quot;language-text&quot;&gt;&quot;^3.0.7&quot;&lt;/code&gt; 이라고 되어 있습니다. 여기서 &lt;code class=&quot;language-text&quot;&gt;^(캐럿)&lt;/code&gt; 의 의미는 ( &gt;= 3.0.7, &amp;#x3C; 4.0.0) 의 의미입니다. 즉 &lt;code class=&quot;language-text&quot;&gt;3.9999....99999&lt;/code&gt; 버전까지도 설치가 된다는 얘기입니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://python-poetry.org/docs/dependency-specification/&quot;&gt;의존성 스펙&lt;/a&gt; 문서를 보면 좀더 자세히 나와 있습니다.&lt;/p&gt;
 &lt;h2&gt;의존성을 최신으로 업데이트하기&lt;/h2&gt;
 &lt;p&gt;아래의 커맨드를 입력하면 됩니다.
@@ -2793,7 +2793,7 @@ poetry install
 poetry install --no-dev
 
 # -E 또는 --extras 로 추가 의존성을 설정가능
-poetry install --extras &amp;quot;mysql redis&amp;quot;
+poetry install --extras &quot;mysql redis&quot;
 poerty install -E mysql -E redis&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;update&lt;/h3&gt;
 &lt;p&gt;의존성 패키지의 버전을 업데이트하고 &lt;code class=&quot;language-text&quot;&gt;poetry.lock&lt;/code&gt; 파일을 업데이트 합니다.&lt;/p&gt;
@@ -2814,7 +2814,7 @@ poetry add pytest factory-boy --dev
 
 # 버전을 지정가능
 poetry add django@^3.0.0
-poetry add &amp;quot;django=3.0.0&amp;quot;
+poetry add &quot;django=3.0.0&quot;
 
 # 최신버전을 설치
 poetry add django@latest
@@ -2889,7 +2889,7 @@ beautifulsoup4 (4.9.1)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pyproject.toml&lt;/code&gt; 에 설정된 의존성들에 대한 lock 파일을 생성합니다. (설치X)&lt;/p&gt;
 &lt;h3&gt;export&lt;/h3&gt;
 &lt;p&gt;export 명령어는 lock 파일을 사용해서 다른 의존성 포맷으로 변경할 수 있습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;poetry export -f requirements.txt &amp;gt; requirements.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;poetry export -f requirements.txt &gt; requirements.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;가상 환경 관리하기&lt;/h2&gt;
 &lt;p&gt;poetry 로 가상환경(virtualenv)을 관리 할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;일반적으로 아래와 같이 사용합니다.&lt;/p&gt;
@@ -3009,7 +3009,7 @@ Python:   /Users/gyus/.pyenv/versions/3.8.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;command, shell 절이 너무 복잡해지고 반복해서 사용해야하는 코드가 있다면, 사용자 정의 모듈을 사용해볼수있다. (입력파싱, JSON포맷으로 리턴, 외부 프로그램 호출)&lt;/li&gt;
 &lt;li&gt;파이썬으로 만들면 &lt;code class=&quot;language-text&quot;&gt;AnsibleModule&lt;/code&gt; 클래스의 지원을 받을 수 있다.&lt;/li&gt;
-&lt;li&gt;사용자 정의 모듈은 &lt;code class=&quot;language-text&quot;&gt;playbooks/libaray/&amp;lt;사용자정의모듈&amp;gt;&lt;/code&gt; 에 저장하면 된다.&lt;/li&gt;
+&lt;li&gt;사용자 정의 모듈은 &lt;code class=&quot;language-text&quot;&gt;playbooks/libaray/&amp;lt;사용자정의모듈&gt;&lt;/code&gt; 에 저장하면 된다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;복잡한 루프&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -3419,7 +3419,7 @@ mac은 &lt;code class=&quot;language-text&quot;&gt;MecTeX&lt;/code&gt; 라는것
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/usr/local/texlive/2020/bin/x86_64-darwin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위 패스를 .bash_profile 에 추가하자.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# .bash_profile 에 추가해주자
-export PATH=&amp;quot;/usr/local/texlive/2020/bin/x86_64-darwin:$PATH&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+export PATH=&quot;/usr/local/texlive/2020/bin/x86_64-darwin:$PATH&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;latex을 설치했으니, pdf로 내보내기를 다시 해보면 에러는 나지 않지만, 아래와 같은 화면을 볼 수 있다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -3467,7 +3467,7 @@ pdf내보내기 할때 latex에서 한글 폰트를 읽어올 수 있도록 변�
 &lt;p&gt;latex 설정파일인데, kotex 라는 패키지를 사용하여 한글폰트를 사용할 수 있게한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;((=- Default to the notebook output style -=))
  ((*- if not cell_style is defined -*))
-     ((* set cell_style = &amp;#39;style_jupyter.tplx&amp;#39; *))
+     ((* set cell_style = &apos;style_jupyter.tplx&apos; *))
  ((*- endif -*))
 
  ((=- Inherit from the specified cell style. -=))
@@ -3486,12 +3486,12 @@ pdf내보내기 할때 latex에서 한글 폰트를 읽어올 수 있도록 변�
 &lt;p&gt;jupyter notebook 설정파일이다.&lt;/p&gt;
 &lt;p&gt;우리는 pdf 내보내기할 때의 커맨드만 설정하겠지만, 더 궁금한게 있는 사람은 &lt;a href=&quot;https://jupyter-notebook.readthedocs.io/en/stable/config_overview.html?highlight=jupyter_notebook_config&quot;&gt;공식문서&lt;/a&gt;를 참고하자.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import os
-# custom_path = os.path.expanduser(&amp;quot;~/.jupyter/nbconvert_templates&amp;quot;)
+# custom_path = os.path.expanduser(&quot;~/.jupyter/nbconvert_templates&quot;)
 # c.TemplateExporter.template_path.append(custom_path)
-c.LatexExporter.template_file = &amp;#39;hangul&amp;#39;
+c.LatexExporter.template_file = &apos;hangul&apos;
 c.PDFExporter.latex_count = 3
-c.PDFExporter.template_file = &amp;#39;hangul&amp;#39;
-c.PDFExporter.latex_command = [&amp;#39;xelatex&amp;#39;, &amp;#39;{filename}&amp;#39;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+c.PDFExporter.template_file = &apos;hangul&apos;
+c.PDFExporter.latex_command = [&apos;xelatex&apos;, &apos;{filename}&apos;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;LatexExporter&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;PDFExporter&lt;/code&gt; 의 템플릿파일을 hangul 로 변경해준다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;PDFExporter&lt;/code&gt;에 딸려서 실행하는 latex_command 를 &lt;code class=&quot;language-text&quot;&gt;xelatex filename&lt;/code&gt; 으로 변경해준다.&lt;/li&gt;
@@ -3545,8 +3545,8 @@ HTTPS=true &amp;amp;&amp;amp; npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;core-js 를 사용하면 폴리필을 사용할 수 있다.&lt;/p&gt;
 &lt;p&gt;설치&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install core-js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import &amp;#39;core-js/features/string/pad-start&amp;#39;;
-const val = &amp;#39;123&amp;#39;.padStart(5, &amp;#39;0&amp;#39;);
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import &apos;core-js/features/string/pad-start&apos;;
+const val = &apos;123&apos;.padStart(5, &apos;0&apos;);
 
 console.log(val); // 00123&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;autoprefixer&lt;/h4&gt;
@@ -3618,20 +3618,20 @@ console.log(val); // 00123&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;모델에서 하나의 속성만 뽑아내서 리스트로 만들고 싶은 경우&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pluck&lt;/code&gt; 을 사용하면 된다.&lt;/p&gt;
 &lt;p&gt;ex)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;groups = Group.where(name like &amp;#39;%#{keyword}%&amp;#39;)
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;groups = Group.where(name like &apos;%#{keyword}%&apos;)
 gruops.pluck(:id)
 
 ------------------------
 output
 ------------------------
-=&amp;gt; [1,2,3,4,5,6]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[TIL] irb 자동완성 설정 irb가 실행할때 자동으로 설정되게 하기]]></title><description><![CDATA[파일을 만든다. () 아래와 같이 편집하면 된다.]]></description><link>https://blog.gyus.me/ruby/2019-07-12_irb_config/</link><guid isPermaLink="false">https://blog.gyus.me/ruby/2019-07-12_irb_config/</guid><pubDate>Fri, 12 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.irbrc&lt;/code&gt; 파일을 만든다. (&lt;code class=&quot;language-text&quot;&gt;touch ~/.irbrc&lt;/code&gt;)&lt;/p&gt;
+=&gt; [1,2,3,4,5,6]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[TIL] irb 자동완성 설정 irb가 실행할때 자동으로 설정되게 하기]]></title><description><![CDATA[파일을 만든다. () 아래와 같이 편집하면 된다.]]></description><link>https://blog.gyus.me/ruby/2019-07-12_irb_config/</link><guid isPermaLink="false">https://blog.gyus.me/ruby/2019-07-12_irb_config/</guid><pubDate>Fri, 12 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.irbrc&lt;/code&gt; 파일을 만든다. (&lt;code class=&quot;language-text&quot;&gt;touch ~/.irbrc&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;아래와 같이 편집하면 된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# irb autocomplete
 IRB.conf[:AUTO_INDENT] = true
 IRB.conf[:USE_READLINE] = true
 IRB.conf[:LOAD_MODULES] = [] unless IRB.conf.key?(:LOAD_MODULES)
-unless IRB.conf[:LOAD_MODULES].include?(&amp;#39;irb/completion&amp;#39;)
-  IRB.conf[:LOAD_MODULES] &amp;lt;&amp;lt; &amp;#39;irb/completion&amp;#39;
+unless IRB.conf[:LOAD_MODULES].include?(&apos;irb/completion&apos;)
+  IRB.conf[:LOAD_MODULES] &amp;lt;&amp;lt; &apos;irb/completion&apos;
 end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[jupyter notebook에서 pypy사용하기]]></title><description><![CDATA[시작하기 전에 pyenv를 사용중이고 pyenv virtualenv 를 쓴다고 가정한다. jupyter notebook…]]></description><link>https://blog.gyus.me/2019/pypy-in-jupyternotebook/</link><guid isPermaLink="false">https://blog.gyus.me/2019/pypy-in-jupyternotebook/</guid><pubDate>Sat, 01 Jun 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;시작하기 전에&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;pyenv를 사용중이고 pyenv virtualenv 를 쓴다고 가정한다.&lt;/li&gt;
@@ -3688,8 +3688,8 @@ $ ipython kernel &lt;span class=&quot;token function&quot;&gt;install&lt;/span&g
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
 sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;실행후에 아래와 같이 pypy 정보가 나오면 성공이다. python3.6.1 과 호환되는 pypy7.1.1 버전을 쓰고 있음을 알 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;3.6.1 (784b254d6699, Apr 14 2019, 10:22:55)
-[PyPy 7.1.1-beta0 with GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)]&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[개츠비에 구글 아날리틱스 달기]]></title><description><![CDATA[설치  사용법  에 아래와 같이 설정해야한다. 클릭수를 추적하고 싶으면??  컴포넌트를 쓰자 요렇게 쓰면 된다고 함 그럼 또 다음에 보아요~ 안녕~]]></description><link>https://blog.gyus.me/2019/gatsby-google-analytics/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-google-analytics/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&apos;3.6.1 (784b254d6699, Apr 14 2019, 10:22:55)
+[PyPy 7.1.1-beta0 with GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)]&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[개츠비에 구글 아날리틱스 달기]]></title><description><![CDATA[설치  사용법  에 아래와 같이 설정해야한다. 클릭수를 추적하고 싶으면??  컴포넌트를 쓰자 요렇게 쓰면 된다고 함 그럼 또 다음에 보아요~ 안녕~]]></description><link>https://blog.gyus.me/2019/gatsby-google-analytics/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-google-analytics/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-google-analytics&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;사용법&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; 에 아래와 같이 설정해야한다.&lt;/p&gt;
@@ -3720,16 +3720,16 @@ sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;version&lt;/cod
 &lt;h3&gt;클릭수를 추적하고 싶으면?? &lt;OutboundLink&gt; 컴포넌트를 쓰자&lt;/h3&gt;
 &lt;p&gt;요렇게 쓰면 된다고 함&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React
-import { OutboundLink } from &amp;#39;gatsby-plugin-google-analytics&amp;#39;
+import { OutboundLink } from &apos;gatsby-plugin-google-analytics&apos;
 
-export default () =&amp;gt; {
-  &amp;lt;div&amp;gt;
+export default () =&gt; {
+  &amp;lt;div&gt;
     &amp;lt;OutboundLink
-      href=&amp;quot;https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/&amp;quot;
-    &amp;gt;
+      href=&quot;https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/&quot;
+    &gt;
       구글 아날리틱스 플러그인 페이지에 가보셈
-    &amp;lt;/OutboundLink&amp;gt;
-  &amp;lt;/div&amp;gt;
+    &amp;lt;/OutboundLink&gt;
+  &amp;lt;/div&gt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;그럼 또 다음에 보아요~ 안녕~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[gatsby helmet 사용하기]]></title><description><![CDATA[설치  설정  사용법 나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다. 끝~]]></description><link>https://blog.gyus.me/2019/gatsby-use-helmet/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-use-helmet/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-react-helmet react-helmet&lt;/code&gt;&lt;/p&gt;
@@ -3739,19 +3739,19 @@ export default () =&amp;gt; {
   plugins: [`gatsby-plugin-react-helmet`]
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;사용법&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;quot;react&amp;quot;
-import { Helmet } from &amp;quot;react-helmet&amp;quot;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &quot;react&quot;
+import { Helmet } from &quot;react-helmet&quot;
 
 class Application extends React.Component {
   render() {
     return (
-      &amp;lt;div className=&amp;quot;application&amp;quot;&amp;gt;
-        &amp;lt;Helmet&amp;gt;
-        &amp;lt;meta charSet=&amp;quot;utf-8&amp;quot; /&amp;gt;
-        &amp;lt;title&amp;gt;My Title&amp;lt;/title&amp;gt;
-        &amp;lt;link rel=&amp;quot;canonical&amp;quot; href=&amp;quot;http://mysite.com/example&amp;quot; /&amp;gt;
-        &amp;lt;/Helmet&amp;gt;
-    &amp;lt;/div&amp;gt;
+      &amp;lt;div className=&quot;application&quot;&gt;
+        &amp;lt;Helmet&gt;
+        &amp;lt;meta charSet=&quot;utf-8&quot; /&gt;
+        &amp;lt;title&gt;My Title&amp;lt;/title&gt;
+        &amp;lt;link rel=&quot;canonical&quot; href=&quot;http://mysite.com/example&quot; /&gt;
+        &amp;lt;/Helmet&gt;
+    &amp;lt;/div&gt;
     )
   }
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -3983,16 +3983,16 @@ Salute&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&l
     }
 }
 
-&amp;gt;&amp;gt;&amp;gt; val p1 = Point(10, 20)
-&amp;gt;&amp;gt;&amp;gt; val p2 = Point(30, 40)
-&amp;gt;&amp;gt;&amp;gt; println(p1 + p2)
+&gt;&gt;&gt; val p1 = Point(10, 20)
+&gt;&gt;&gt; val p2 = Point(30, 40)
+&gt;&gt;&gt; println(p1 + p2)
 output
 
 Point(x=40, y=60)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;연산자를 오버로딩 하는 함수 앞에는 &lt;code class=&quot;language-text&quot;&gt;operator&lt;/code&gt; 키워드가 있어야 한다.&lt;/li&gt;
 &lt;li&gt;operator 키워드로 plus 함수를 선언하면 &lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt; 기호로 두 객체를 더할 수 있다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;a + b -&amp;gt; a.plus(b)&lt;/code&gt; 와 같이 작동한다. &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;a + b -&gt; a.plus(b)&lt;/code&gt; 와 같이 작동한다. &lt;/li&gt;
 &lt;li&gt;교환법칙을 자동으로 지원하지 않는다. 필요한 경우 구현해야함.&lt;/li&gt;
 &lt;li&gt;확장함수로 정의도 가능&lt;/li&gt;
 &lt;/ul&gt;
@@ -4225,7 +4225,7 @@ Point(x=40, y=60)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;위의 경우는 컴파일러가 알아서 함수타입임을 추론함&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;(파라메터 타입, 파라메터 타입) -&amp;gt; 리턴 타입&lt;/code&gt; 이런식으로 좀 더 명시적으로 할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;(파라메터 타입, 파라메터 타입) -&gt; 리턴 타입&lt;/code&gt; 이런식으로 좀 더 명시적으로 할 수 있다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; sum&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Int&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; Int &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; action&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; Unit &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;리턴타입이 null 이 되는 경우에는 아래와 같은 식으로 한다. &lt;/p&gt;
