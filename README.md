@@ -11,7 +11,6 @@
   </a>
 </p>
 
-## 💫 netlify 로 배포되고 있어요~
 
 ## 개츠비 사용법
 
@@ -22,5 +21,3 @@ npm install --global gatsby-cli
 # 개발모드
 gatsby devlop
 ```
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/23c90938-58a6-4d49-a3f0-5eab6b8def75/deploy-status)](https://app.netlify.com/sites/gyus/deploys)
