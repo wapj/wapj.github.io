@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description, image, article }) => {
+const SEO = ({ canonical, title, description, image, article }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
@@ -17,11 +17,11 @@ const SEO = ({ title, description, image, article }) => {
     url: `${siteUrl}${pathname}`,
   };
 
+  console.log(pathname);
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta charSet="utf-8" />
-      <title>{title}</title>
-      <link rel="canonical" href="https://blog.gyus.me" />
+      <title>{title}</title>  
       <meta name="google-site-verification" content="DKf0uKbVabYGKz0sq8wWSyZz_1vtPx3Pey1ifAguz-E" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

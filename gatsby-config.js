@@ -22,6 +22,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://blog.gyus.me`,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -128,5 +135,6 @@ module.exports = {
         trackingId: "UA-140419734-1",
       },
     },
+
   ],
 };
