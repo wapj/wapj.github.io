@@ -1,22 +1,34 @@
-import React, { createRef, useEffect } from "react"
+import React, { createRef, useLayoutEffect } from 'react';
 
-export default function Comment({ repo }) {
-  const containerRef = createRef()
-  useEffect(() => {
-    const utterances = document.createElement("script")
+const src = 'https://utteranc.es/client.js';
+
+
+const Comment = React.memo(({ repo, theme ='github-light'}) => {
+  const containerRef = createRef();
+
+  useLayoutEffect(() => {
+    const utterances = document.createElement('script');
+
     const attributes = {
-      src: "https://utteranc.es/client.js",
+      src,
       repo,
-      "issue-term": "title",
-      label: "comment",
-      theme: "github-light",
-      crossOrigin: "anonymous",
-      async: "true",
-    }
+      theme,
+      'issue-term': 'pathname',
+      label: '✨💬 comments ✨',
+      crossOrigin: 'anonymous',
+      async: 'true',
+    };
+
     Object.entries(attributes).forEach(([key, value]) => {
-      utterances.setAttribute(key, value)
-    })
-    containerRef.current.appendChild(utterances)
-  }, [repo, containerRef])
-  return <div id="comment" ref={containerRef} />
-}
+      utterances.setAttribute(key, value);
+    });
+
+    containerRef.current.appendChild(utterances);
+  }, [containerRef, repo, theme]);
+
+  return <div ref={containerRef} />;
+});
+
+Comment.displayName = 'Utterances';
+
+export default Comment;
