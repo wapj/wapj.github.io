@@ -35,11 +35,11 @@ https://leetcode.com/problems/subsets/
 
 ## 풀이
 
-![](2021_09_05_01.jpg)
+![images/2021_09_05_01.jpg](images/2021_09_05_01.jpg)
 
 정답 풀이에도 있는데, cascading 방식으로 풀었다.
 
-
+ 
 ```python
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
