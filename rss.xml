@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Sep 2021 23:42:31 GMT</lastBuildDate><item><title><![CDATA[leetcode 78번 부분집합문제]]></title><description><![CDATA[문제 링크 https://leetcode.com/problems/subsets/ 문제 예 1: 예 2: 풀이  정답 풀이에도 있는데, cascading 방식으로 풀었다. 백트래킹으로 푸는 방식도 있던데, 이건 다음에 알아봐야겠다.]]></description><link>https://blog.gyus.me/2021/2021_09_subsets/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_09_subsets/</guid><pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 링크&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 13 Sep 2021 00:11:44 GMT</lastBuildDate><item><title><![CDATA[호캉스를 가봤다.]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2021/2021_09_vacation/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_09_vacation/</guid><pubDate>Sun, 12 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;내 돈 주고 간 첫 호캉스&lt;/h2&gt;
+&lt;p&gt;여행을 가게 되면 교통비와 숙박비, 식비가 대부분의 비용을 차지하는데, 교통비는 거의 아끼기가 힘드니 숙박비와 식비를 항상 아껴서 가곤 했었다. 그래서 그런지 나는 호캉스라는 문화가 사실 이해가 잘 안되는 사람중에 하나였는데, 이번에 결혼 3주년 기념으로 인천의 네스트 호텔로 여행 대신 호캉스를 갔다오면서 생각이 좀 바뀌게 되었다. 호캉스 너무 편하고 좋았다.&lt;/p&gt;
+&lt;h2&gt;집안일을 안해도 되는게 이렇게 좋구나&lt;/h2&gt;
+&lt;p&gt;결혼하기 전에는 집안일을 조금씩 하긴 했었어도, 지금 보다 훨씬 적게 했었기 때문에 호텔서비스의 만족도를 잘 몰랐는데, 이번에 확실히 알게 됐다. 집안일을 하지 않고 아기만 봤을때의 스트레스가 아기를 같이 돌보면서 집안일도 하는 것 보다는 훨씬 수월했다. 청소와 빨래, 식사준비등등을 안해도 되는 것이 이렇게 좋은 것이었구나~&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;물론 나보다는 아내가 집안일을 훨씬 많이 한다. 그래서 그런지 아내가 굉장히 만족스러워 했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;룸서비스도 처음 시켜봄&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 450px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4f7495c488c934c73006e3fc2b936329/20e5d/202109122.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAwACBAH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAfMlvLdY6gFeNCnuOR//xAAbEAACAwEBAQAAAAAAAAAAAAABAgADERIQM//aAAgBAQABBQIL0rIItiIvTMTkWapgwnax5R9TP//EABcRAAMBAAAAAAAAAAAAAAAAAAABEhH/2gAIAQMBAT8Bkkpo1n//xAAYEQEBAQEBAAAAAAAAAAAAAAABAAIREv/aAAgBAgEBPwF1eoyLcL//xAAgEAABAwMFAQAAAAAAAAAAAAAAAQIRECIxAxIhMlGh/9oACAEBAAY/Apjb5Ja9FER2i6TJccOgnqvwy1TE0Sn/xAAeEAACAgICAwAAAAAAAAAAAAAAAREhMUFhkVGBof/aAAgBAQABPyGfk+khXHQxNXLSmRu27cF1J4QzixdITdvMEqRVLyzEbe0DO1TNT//aAAwDAQACAAMAAAAQfz2D/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQARITH/2gAIAQMBAT8QHkrfZBy2v//EABkRAAMAAwAAAAAAAAAAAAAAAAABIRExQf/aAAgBAgEBPxCsSQo0URi4f//EAB4QAQACAwACAwAAAAAAAAAAAAERIQAxYVGhQXHB/9oACAEBAAE/EGWbTIQfnvZxpoli7cw8mUpXkR1iBVEMtT+YgzQEonJe+2oxkoS9IVPHZ9OSucp2g4Y3TNy+k8ZrlBNS6COWZXUe3P/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/202109122.jpg&quot;
+        title=&quot;images/202109122.jpg&quot;
+        src=&quot;/static/4f7495c488c934c73006e3fc2b936329/20e5d/202109122.jpg&quot;
+        srcset=&quot;/static/4f7495c488c934c73006e3fc2b936329/75985/202109122.jpg 150w,
+/static/4f7495c488c934c73006e3fc2b936329/f93b5/202109122.jpg 300w,
+/static/4f7495c488c934c73006e3fc2b936329/20e5d/202109122.jpg 450w&quot;
+        sizes=&quot;(max-width: 450px) 100vw, 450px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;룸서비스 목록에 있는 음식들의 가격은 정말 미쳤다. 그래서 호텔에 가본적은 많았지만, 한번도 시켜본적이 없은데, 이번에는 룸서비스도 한번 시켜보았다. 가격이 무려 3만원이 넘었지만, 돈값하는 맛이었다고 생각한다. 짬뽕이 이렇게 맛이 있을 수 도 있는거였군?!&lt;/p&gt;
+&lt;h2&gt;분기에 한번씩 가볼까?&lt;/h2&gt;
+&lt;p&gt;코로나에 육아에 집에만 있어서 나도 아내도 스트레스가 쌓인 상황이었는데, 호캉스가서 편하게 있다가 오는게 굉장히 도움이 됐다.  또 이번에 호캉스를 가면서 아내가 굉장히 만족스러워했어서, 매달은 좀 힘들겠지만, 분기에 한번씩은 호캉스를 가보기로 하였다. 네스트 호텔은 회사와 제휴도 되어 있어서 성수기가 아니라면 가격도 나름 착하게 갈 수 있는게 좋았다. 한달에 10만원 정도를 모으면 그래도 숙박비는 나오니깐 실제로 분기에 한번 정도는 가더라도 가계에 크게 부담이 가지는 않을 것 같다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;물론 그냥 월급이 올라서 돈을 더 벌게 돼면 좋지만....&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;네스트 호텔에서 숙박할 때의 뷰를 보면서 마무리~&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c1961a1f68c570685f86dfb3cc85fcc1/a2510/202109123.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABpbOvZUoF/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERIgIDEyH/2gAIAQEAAQUCqxSdEh1y1vyT/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Bp//EABsQAAEEAwAAAAAAAAAAAAAAAAABEBEhUZGx/9oACAEBAAY/ApRSuFzorD//xAAbEAADAAIDAAAAAAAAAAAAAAAAAREhkTFRYf/aAAgBAQABPyFLJNEVduQ2JB+sO021QwV2f//aAAwDAQACAAMAAAAQh+//xAAVEQEBAAAAAAAAAAAAAAAAAAAREP/aAAgBAwEBPxAJ/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EBOz/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFRsf/aAAgBAQABPxAfRrKxLlLDotF4CeN+TVwF3ukYFewp6n//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/202109123.jpg&quot;
+        title=&quot;images/202109123.jpg&quot;
+        src=&quot;/static/c1961a1f68c570685f86dfb3cc85fcc1/b4294/202109123.jpg&quot;
+        srcset=&quot;/static/c1961a1f68c570685f86dfb3cc85fcc1/75985/202109123.jpg 150w,
+/static/c1961a1f68c570685f86dfb3cc85fcc1/f93b5/202109123.jpg 300w,
+/static/c1961a1f68c570685f86dfb3cc85fcc1/b4294/202109123.jpg 600w,
+/static/c1961a1f68c570685f86dfb3cc85fcc1/8e1fc/202109123.jpg 900w,
+/static/c1961a1f68c570685f86dfb3cc85fcc1/a2510/202109123.jpg 1000w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[leetcode 78번 부분집합문제]]></title><description><![CDATA[문제 링크 https://leetcode.com/problems/subsets/ 문제 예 1: 예 2: 풀이  정답 풀이에도 있는데, cascading 방식으로 풀었다. 백트래킹으로 푸는 방식도 있던데, 이건 다음에 알아봐야겠다.]]></description><link>https://blog.gyus.me/2021/2021_09_subsets/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_09_subsets/</guid><pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 링크&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/subsets/&quot;&gt;https://leetcode.com/problems/subsets/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;문제&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;고유한 요소 의 정수 배열 nums이 주어지면 가능한 모든 부분집합을 반환한다.
