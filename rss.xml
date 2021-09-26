@@ -1,4 +1,176 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Sep 2021 01:09:19 GMT</lastBuildDate><item><title><![CDATA[카카오페이지 운영툴을 점진적으로 개선한 이야기]]></title><description><![CDATA[이글은 기승전채용의 형식으로 쓰여진 꽤 긴 이야기입니다. 긴 글을 읽는 게 힘드신 분은 가장 아래에 채용 링크가 있으니 많은 지원 부탁드립니다!! 시작하며 이 이야기는 내가 카카오페이지에 재입사하게 되면서, 시작되게 된다. 때는 2017년 1…]]></description><link>https://blog.gyus.me/2021/2021_09_about_kakaopage_admin_tool/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_09_about_kakaopage_admin_tool/</guid><pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Sep 2021 22:50:20 GMT</lastBuildDate><item><title><![CDATA[넷플릭스와 함께한 추석]]></title><description><![CDATA[넷플릭스를 결제했다.  사실 회사에서 카카오 페이지 캐시를 한달에 5만원씩 주기 때문에 개인적으로는
+넷플릭스를 쓸 이유가 전혀 없었는데, 장모님께서 응답하라 198…]]></description><link>https://blog.gyus.me/diary/2021/chuseok_on_netflix/</link><guid isPermaLink="false">https://blog.gyus.me/diary/2021/chuseok_on_netflix/</guid><pubDate>Sun, 26 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;넷플릭스를 결제했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 311px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e932bdc7dbef59fa8cf09043313caed8/2242b/20210926.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHCmsFgXE//xAAZEAABBQAAAAAAAAAAAAAAAAAAAREgIUH/2gAIAQEAAQUC2hGh/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAECAx/9oACAEBAAY/AhE//8QAGxABAAICAwAAAAAAAAAAAAAAAQARICExUXH/2gAIAQEAAT8hoehE5WQE2H3D/9oADAMBAAIAAwAAABD4D//EABcRAQADAAAAAAAAAAAAAAAAAAEQETH/2gAIAQMBAT8QErI//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxAAAgMAAwAAAAAAAAAAAAAAAREAIUEgUcH/2gAIAQEAAT8QC54M5AmJOgk5dQN494f/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/20210926.jpg&quot;
+        title=&quot;images/20210926.jpg&quot;
+        src=&quot;/static/e932bdc7dbef59fa8cf09043313caed8/2242b/20210926.jpg&quot;
+        srcset=&quot;/static/e932bdc7dbef59fa8cf09043313caed8/75985/20210926.jpg 150w,
+/static/e932bdc7dbef59fa8cf09043313caed8/f93b5/20210926.jpg 300w,
+/static/e932bdc7dbef59fa8cf09043313caed8/2242b/20210926.jpg 311w&quot;
+        sizes=&quot;(max-width: 311px) 100vw, 311px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;사실 회사에서 카카오 페이지 캐시를 한달에 5만원씩 주기 때문에 개인적으로는
+넷플릭스를 쓸 이유가 전혀 없었는데, 장모님께서 응답하라 1988이 보고싶으시다고 하셔서
+구독을 하게 됐다. 이때까지만 해도 나는 넷플릭스 별로 안볼거라고 생각했다.&lt;/p&gt;
+&lt;h2&gt;미스터 션샤인을 보다&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9fafecc9d438074fdc64ad4a3a78b10a/47311/20210926_1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFPWWwNIRJr/8QAGhAAAwEAAwAAAAAAAAAAAAAAAAECEgMTIf/aAAgBAQABBQLHGOYZiWKmTXnZR//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAEEAwAAAAAAAAAAAAAAAAEAEBExAhIi/9oACAEBAAY/AgaCjaZXWLUG/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERITFBUWH/2gAIAQEAAT8hsQ3BT6U65LZlWeiU7no3UJNn/9oADAMBAAIAAwAAABDjH//EABcRAQADAAAAAAAAAAAAAAAAAAEQEUH/2gAIAQMBAT8QC8j/xAAXEQADAQAAAAAAAAAAAAAAAAAAASFB/9oACAECAQE/EHNKf//EAB0QAAICAgMBAAAAAAAAAAAAAAERACExQVFxgZH/2gAIAQEAAT8QAwCsm02Ry4FJoVwMH3s/JhshQyK1uoZZKRFvY8WQWBxMqvQn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/20210926_1.jpg&quot;
+        title=&quot;images/20210926_1.jpg&quot;
+        src=&quot;/static/9fafecc9d438074fdc64ad4a3a78b10a/b4294/20210926_1.jpg&quot;
+        srcset=&quot;/static/9fafecc9d438074fdc64ad4a3a78b10a/75985/20210926_1.jpg 150w,
+/static/9fafecc9d438074fdc64ad4a3a78b10a/f93b5/20210926_1.jpg 300w,
+/static/9fafecc9d438074fdc64ad4a3a78b10a/b4294/20210926_1.jpg 600w,
+/static/9fafecc9d438074fdc64ad4a3a78b10a/8e1fc/20210926_1.jpg 900w,
+/static/9fafecc9d438074fdc64ad4a3a78b10a/47311/20210926_1.jpg 1080w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;넷플릭스 결제와 함께 시작한 &lt;code class=&quot;language-text&quot;&gt;미스터 션샤인&lt;/code&gt;.
+개인적으로는 한국 드라마의 기승전 사랑 이라는 뻔한 스토리가 싫어서 잘 안보는 편인데,
+미스터 션샤인은 3명의 남자가 의병을 하는 한 여자를 위해 인생을 거는 내용임에도 불구하고 너무나 재미있게 봤다. 아마도 연애를 하는 장면보다는 시대적 상황 때문에 인내하는 모습이 너무나 안타까웠기 때문일것 같다. 24편까지 있는 매우 긴 호흡의 드라마였으나, 배우들의 연기도 너무 좋고 스토리도 좋고 감명깊었다. 일본어는 서울말씨 들어간 일본어가 주로 들려서 약간 일본어를 할 줄아는 입장에서는 약간 집중을 흐트리기는 했으나 그마저도 굉장히 노력한 것이 보여서 훌륭했다.&lt;/p&gt;
+&lt;p&gt;가장 좋아하는 한국드라마가 뭐요? 라고 묻는 질문에 이제 답할 준비가 된 것 같다.&lt;/p&gt;
+&lt;h2&gt;화제의 오징어게임&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 360px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/aa3a71a0f3cfbe2c257a2b9121469b29/158ba/20210926_2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAFBZZVwnGf/xAAaEAACAwEBAAAAAAAAAAAAAAABAgADEhET/9oACAEBAAEFArD5jHUNTQuEL3sRsz//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8BW0v/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPwEJ/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECIRARIlGB/9oACAEBAAY/AqS2XJvw4xZUTrH/xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIUH/2gAIAQEAAT8hgpUzu4q6EcS162IM9eDa9P/aAAwDAQACAAMAAAAQP+//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxAYf//EABcRAQADAAAAAAAAAAAAAAAAAAABEVH/2gAIAQIBAT8QkxT/xAAcEAEBAQACAwEAAAAAAAAAAAABEQAhUTFxkYH/2gAIAQEAAT8QBSzICz3haT4WPm/bWk1ojkRVfmFAVPLpzBXXpd//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/20210926_2.jpg&quot;
+        title=&quot;images/20210926_2.jpg&quot;
+        src=&quot;/static/aa3a71a0f3cfbe2c257a2b9121469b29/158ba/20210926_2.jpg&quot;
+        srcset=&quot;/static/aa3a71a0f3cfbe2c257a2b9121469b29/75985/20210926_2.jpg 150w,
+/static/aa3a71a0f3cfbe2c257a2b9121469b29/f93b5/20210926_2.jpg 300w,
+/static/aa3a71a0f3cfbe2c257a2b9121469b29/158ba/20210926_2.jpg 360w&quot;
+        sizes=&quot;(max-width: 360px) 100vw, 360px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;배틀로얄, 카이지, 라이어게임 같은 게임을 통해 살아남는 류의 스토리의 드라마이다. 여러가지로 연출이 훌륭했고 보는 재미가 있었다. 주인공이 시련을 당하면서도 죽지는 않을 것을 알고 봐서 그런지 스토리는 크게 재미가 없긴했다. 카이지나 라이어게임 같은 경우는 승리를 하기위한 과정들이 굉장히 치밀하고 위기의 위기의 위기에서 빠져나오는 장면이 재밌었는데, 오징어게임은 그런 재미는 없고 좀 단순한 편이었다. 한국식 라이어게임 같은 느낌인데 개인적으로는 더 재미없었다.&lt;/p&gt;
+&lt;p&gt;이건 내가 이쪽 장르에 익숙해서 그런것이니 카이지나 라이어게임 안본사람은 보면 재미있을 것이다.&lt;/p&gt;
+&lt;h2&gt;섬광의 하사웨이&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b4ac90a67b05d37cf5d244938812bc49/b4294/20210926_3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABm6d5yqqUgP8A/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAERIDIf/aAAgBAQABBQJRcpayxmBOCeMtn//EABYRAAMAAAAAAAAAAAAAAAAAABARIf/aAAgBAwEBPwF0f//EABYRAQEBAAAAAAAAAAAAAAAAAAARQf/aAAgBAgEBPwHFf//EABkQAAIDAQAAAAAAAAAAAAAAAAEQAAIRUf/aAAgBAQAGPwLLCdZ1f//EABsQAQACAwEBAAAAAAAAAAAAAAEAESExQVFx/9oACAEBAAE/IQ7vsLjWDA1hR8l2+EB2MwdiT//aAAwDAQACAAMAAAAQh8//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QcC0v/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EBFtu//EABsQAQEBAQEAAwAAAAAAAAAAAAERADEhQXHw/9oACAEBAAE/EKIlciJwwwXQhyfGknyDAF9KS/WaXYCyfuax8BIb/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/20210926_3.jpg&quot;
+        title=&quot;images/20210926_3.jpg&quot;
+        src=&quot;/static/b4ac90a67b05d37cf5d244938812bc49/b4294/20210926_3.jpg&quot;
+        srcset=&quot;/static/b4ac90a67b05d37cf5d244938812bc49/75985/20210926_3.jpg 150w,
+/static/b4ac90a67b05d37cf5d244938812bc49/f93b5/20210926_3.jpg 300w,
+/static/b4ac90a67b05d37cf5d244938812bc49/b4294/20210926_3.jpg 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;건담은 카카페나 넷플릭스에서 찾기가 좀 힘든데, 넷플릭스에 건담 신작이 있어서 봤다. 정말 후반부까지 이게 무슨내용이지? 라는 생각이 많이 들었다. (좀 찾아보니 건담의 스토리를 이해하고 있어야 한다고 한다. 나도 100%는 아니라도 이해하고 있는데... 얼마나 더..?)&lt;/p&gt;
+&lt;p&gt;건담하면 전투장면이 좀 나와줘야 되는데, 전투장면이 적다. 그래도 몇 안되는 전투장면은 매우 멋지다. 작은 화면으로 봐서 아쉬움.&lt;/p&gt;
+&lt;p&gt;섬광의 하사웨이는 2편, 3편이 더 재미있을 것 같다. 건담을 잘 모른다면 패스하시길&lt;/p&gt;
+&lt;h2&gt;D.P&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f5b3a51d9a7009fbb7adee9b354ce88d/80e3c/20210926_4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABwzdRSKCz/8QAGRABAQADAQAAAAAAAAAAAAAAAwIBERIA/9oACAEBAAEFAiLqCLFqs8IV69OjVc4tP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAECAQE/Aaf/xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhMQIScf/aAAgBAQAGPwJ8xOq1HjuoAzeSWT//xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhUUFh/9oACAEBAAE/IUvuN6jvBgxPOi1z0NI/VMKG6VOD0X//2gAMAwEAAgADAAAAEP8A3//EABcRAAMBAAAAAAAAAAAAAAAAAAABITH/2gAIAQMBAT8QkHp//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEhMUH/2gAIAQIBAT8Q0KpP/8QAHRABAQACAgMBAAAAAAAAAAAAAREAIUFhMVGh4f/aAAgBAQABPxAOltNEDDt+5NEihLtsH3ihxCpHr5MF2HLoc2CABVEu8DZiBXmHnP/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;images/20210926_4.jpg&quot;
+        title=&quot;images/20210926_4.jpg&quot;
+        src=&quot;/static/f5b3a51d9a7009fbb7adee9b354ce88d/b4294/20210926_4.jpg&quot;
+        srcset=&quot;/static/f5b3a51d9a7009fbb7adee9b354ce88d/75985/20210926_4.jpg 150w,
+/static/f5b3a51d9a7009fbb7adee9b354ce88d/f93b5/20210926_4.jpg 300w,
+/static/f5b3a51d9a7009fbb7adee9b354ce88d/b4294/20210926_4.jpg 600w,
+/static/f5b3a51d9a7009fbb7adee9b354ce88d/80e3c/20210926_4.jpg 720w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;사실 나는 군대를 가지 못했기 때문에, 크게 재미는 없을 것이라는 생각이 있었는데, 굉장히 속도감이 있고 말로만 들었던 가혹행위를 간접체험 할 수 있었다. 요즘에는 때리지는 않고 욕을 한다고 한다. 그마저도 자유시간에 고참들이 게임을 해야해서 괴롭히는 시간이 많이 줄었들었다고 한다.&lt;/p&gt;
+&lt;p&gt;보고 나서 좀 여운이 남는 그런 드라마였다. 예전에 기사로 봤던 윤일병 가해사건 등이 생각나는 드라마였다. 원작이 웹툰이라고 하는데 한번 찾아봐야겠다는 생각이 들었다.&lt;/p&gt;
+&lt;h2&gt;추석 연휴에 정말 많이 봤네&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;미스터 션샤인&lt;/code&gt;은 추석전부터 보고 있었긴 했지만, 마지막편을 추석연휴에 다봤고, 나머지도 틈틈히 봤더니 어느새 4편을 모두 다봤다... 이제 좀 천천히 봐도 될 것 같다. 너무 오랜만에 몰아서 좋은 작품들을 많이 봤다. 이제 당분간은 좀 줄여야겠다.&lt;/p&gt;
+&lt;p&gt;P.S 넷플릭스 추천작 알려주세요~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카카오페이지 운영툴을 점진적으로 개선한 이야기]]></title><description><![CDATA[이글은 기승전채용의 형식으로 쓰여진 꽤 긴 이야기입니다. 긴 글을 읽는 게 힘드신 분은 가장 아래에 채용 링크가 있으니 많은 지원 부탁드립니다!! 시작하며 이 이야기는 내가 카카오페이지에 재입사하게 되면서, 시작되게 된다. 때는 2017년 1…]]></description><link>https://blog.gyus.me/2021/2021_09_about_kakaopage_admin_tool/</link><guid isPermaLink="false">https://blog.gyus.me/2021/2021_09_about_kakaopage_admin_tool/</guid><pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이글은 기승전채용의 형식으로 쓰여진 꽤 긴 이야기입니다.&lt;br&gt;
 긴 글을 읽는 게 힘드신 분은 가장 아래에 채용 링크가 있으니 많은 지원 부탁드립니다!!&lt;/p&gt;
 &lt;/blockquote&gt;
