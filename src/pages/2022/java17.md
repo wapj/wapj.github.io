@@ -7,7 +7,7 @@ featured: "images/java17.webp"
 published: true
 ---
 
-# 자바17은 왜이리 인기가 없나
+## 자바17은 왜이리 인기가 없나
 
 2021년 9월 14일에 자바의 새로운 LTS(Long-Term-Support)버전인 17이 나왔다.
 그런데, 내가 느끼는 반응은 `나왔는데 뭐?` 이렇다.
@@ -25,9 +25,9 @@ published: true
 
 ## 자바17로 바꿀려면, 주의해야되는 것들
 
-글을 잠깐 읽어보니 업그레이드에 노력(effort)이 필요하다고 되어 있다. 이게 원인이구나 싶었다.
+글을 잠깐 읽어보니 업그레이드에 노력(effort)이 필요하다고 되어 있다. 이게 인기가 없는 원인이구나 싶었다.
 
-업그레이 내용을 잠깐 보면 변경되는게 꽤 있다.
+업그레이드 내용을 잠깐 보면 변경되는게 꽤 있다.
 
 - JavaFX가 없어진다. [gluon](https://gluonhq.com/products/javafx/) 이나 [OpenJFX](https://mvnrepository.com/artifact/org.openjfx)를
 사용하라고 가이드가 되어있다.
@@ -36,7 +36,7 @@ published: true
 
 - Java Mission Control : 모니터링과 프로파일링에 사용하는 녀석인데, 요녀석도 JDK에 포함되어 있었으나, 이제 따로 받아야한다. [JDK Mission Control](https://www.oracle.com/java/technologies/javase/products-jmc8-downloads.html)
 
-- Java EE : 자바11에서 Java EE모듈을 삭제했다. JAXB 이런 것 들이다. Java EE는 많으니 표로 알려주고 있다. 아마도... artifactId만 될것이다.. 아마도..
+- Java EE : 자바11에서 Java EE모듈을 삭제했다. JAXB 이런 것 들이다. Java EE는 많으니 표로 알려주고 있다. 아마도... artifactId만 바꾸면 될 것이다.. 아마도..
 
 | 모듈 | 바꿔야하는 artifactId |
 | --- | --- |
@@ -47,13 +47,12 @@ published: true
 | java.xml.ws | jakarta.xml.ws-api, jaxws-rt |
 
 - CORBA : 요녀석도 Java11에 삭제당했다!
-- Nashorn : 자바 15에 삭제됐다. [nashorn-core](https://mvnrepository.com/artifact/org.openjdk.nashorn/nashorn-core)를 쓰면 된다. V8은 자바구현체가 없나..흠..
+- Nashorn : 자바 15에 삭제됐다. [nashorn-core](https://mvnrepository.com/artifact/org.openjdk.nashorn/nashorn-core)를 쓰면 된다. 나름 관심있는 기능이었는데 아쉽다.
 - 시험용 컴파일러들 : 자바17에는 GraalVM의 AOT(ahead-of-time), JIT(just-in-time)컴파일러가 제거된다. 자세한것은 [JEP410](https://openjdk.java.net/jeps/410)을 보라고..
 
 
 마리안 차이코프스키라는 사람의 글도 보자.
 
-> 사실 이글을 먼저봤다.
 
 [자바8과 자바17비교 모던 자바는 자바8보다 얼마나 좋은가?](https://marian-caikovski.medium.com/java-17-language-compared-to-java-8-how-modern-java-is-better-than-java-8-65a4e39c448e)
 
@@ -63,7 +62,7 @@ published: true
 
 - 코드의 재사용을 방지
 - 장황한 코드를 줄이기 (잘했다.)
-- Object같은 shared type 인자를 받는 메서드를 오버로딩 하는 메서드들을 사용안함
+- Object같은 shared type 인자를 받는 메서드를 오버로딩 하는 메서드들을 사용안함 (shared type이 뭔지 잘모르겠다. 아시는분 댓글로 좀...)
 
 ### 캡슐화
 
@@ -89,4 +88,4 @@ published: true
 
 나의 개인적인 결론은 `일단 자바부터 잘하자` 이다.
 
-왜냐면 앞으로 내가 해야하는 업무의 70%이상이 자바일테니까...ㅎㅎ 
+왜냐면 앞으로 내가 해야하는 업무의 70%이상이 자바일테니까...ㅎㅎ
