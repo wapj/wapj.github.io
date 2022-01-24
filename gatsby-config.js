@@ -103,6 +103,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        footnotes: true,
+        gfm: true,
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
