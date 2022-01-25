@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Jan 2022 23:50:52 GMT</lastBuildDate><item><title><![CDATA[Java17을 쓰면 좋을까?]]></title><description><![CDATA[자바17은 왜이리 인기가 없나 2021년 9월 14일에 자바의 새로운 LTS(Long-Term-Support)버전인 1…]]></description><link>https://blog.gyus.me/2022/java17/</link><guid isPermaLink="false">https://blog.gyus.me/2022/java17/</guid><pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;자바17은 왜이리 인기가 없나&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Jan 2022 01:44:27 GMT</lastBuildDate><item><title><![CDATA[Java17을 쓰면 좋을까?]]></title><description><![CDATA[자바17은 왜이리 인기가 없나 2021년 9월 14일에 자바의 새로운 LTS(Long-Term-Support)버전인 1…]]></description><link>https://blog.gyus.me/2022/java17/</link><guid isPermaLink="false">https://blog.gyus.me/2022/java17/</guid><pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;자바17은 왜이리 인기가 없나&lt;/h2&gt;
 &lt;p&gt;2021년 9월 14일에 자바의 새로운 LTS(Long-Term-Support)버전인 17이 나왔다.
 그런데, 아직까지는 사람들이 많이 도입을 꺼리는 것 같다.&lt;/p&gt;
 &lt;p&gt;보통 새로운 버전이 나오면 &lt;code class=&quot;language-text&quot;&gt;와 신난다. 새로운기능이 뭐지? 어서 써보고싶다!&lt;/code&gt; 이래야 맞는거 아닌가 싶은데,
@@ -56,7 +56,7 @@
 &lt;/ul&gt;
 &lt;p&gt;마리안 차이코프스키라는 사람의 글도 보자.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://marian-caikovski.medium.com/java-17-language-compared-to-java-8-how-modern-java-is-better-than-java-8-65a4e39c448e&quot;&gt;자바8과 자바17비교 모던 자바는 자바8보다 얼마나 좋은가?&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;자바8에서 변하는 것들&lt;/h2&gt;
+&lt;h2&gt;자바17에서 변하는 것들 (자바8부터의 변경점)&lt;/h2&gt;
 &lt;p&gt;자바의 새로운 피쳐들의 특징은 아래 3가지라고 한다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;코드의 재사용을 방지&lt;/li&gt;
