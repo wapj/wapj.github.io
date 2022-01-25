@@ -57,7 +57,7 @@ published: true
 [자바8과 자바17비교 모던 자바는 자바8보다 얼마나 좋은가?](https://marian-caikovski.medium.com/java-17-language-compared-to-java-8-how-modern-java-is-better-than-java-8-65a4e39c448e)
 
 
-## 자바8에서 변하는 것들
+## 자바17에서 변하는 것들 (자바8부터의 변경점)
 자바의 새로운 피쳐들의 특징은 아래 3가지라고 한다.
 
 - 코드의 재사용을 방지
