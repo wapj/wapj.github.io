@@ -2,18 +2,16 @@
 &lt;p&gt;회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…&lt;/p&gt;&lt;/blockquote&gt;"/><meta data-react-helmet="true" name="image" content="https://blog.gyus.me/static/9efb5afd8d9031fc9997c08acdb37c42/497c6/1.png"/><meta data-react-helmet="true" property="og:url" content="https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/"/><meta data-react-helmet="true" property="og:title" content="안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자"/><meta data-react-helmet="true" property="og:description" content="&lt;blockquote&gt;
 &lt;p&gt;회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…&lt;/p&gt;&lt;/blockquote&gt;"/><meta data-react-helmet="true" property="og:image" content="https://blog.gyus.me/static/9efb5afd8d9031fc9997c08acdb37c42/497c6/1.png"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="@wapj2000"/><meta data-react-helmet="true" name="twitter:title" content="안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자"/><meta data-react-helmet="true" name="twitter:description" content="&lt;blockquote&gt;
 &lt;p&gt;회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…&lt;/p&gt;&lt;/blockquote&gt;"/><meta data-react-helmet="true" name="twitter:image" content="https://blog.gyus.me/static/9efb5afd8d9031fc9997c08acdb37c42/497c6/1.png"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-c3faa1c4a742e04626af.js"/><link as="script" rel="preload" href="/framework-beda7bde9d7dca0755ce.js"/><link as="script" rel="preload" href="/app-5e816781b9d2bacacc08.js"/><link as="script" rel="preload" href="/styles-e9d24b1846c7d6eb9685.js"/><link as="script" rel="preload" href="/a302fdf6aec10395ed3ea85c70b5f45c90edb721-db45779423ccd2c5d4b1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-39b8e882229d8eff4eda.js"/><link as="fetch" rel="preload" href="/page-data/2022/use-mitmproxy-as-http-proxy/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3159585216.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/4202924991.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="5ezhey">.css-5ezhey{margin:0 auto;max-width:800px;padding:1.625rem;padding-top:2.4375rem;}</style><div class="css-5ezhey"><style data-emotion-css="1k6j4hi">.css-1k6j4hi{margin-bottom:2.4375rem;}</style><header class="css-1k6j4hi"><a style="text-shadow:none;background-image:none" href="/"><style data-emotion-css="6n7j50">.css-6n7j50{display:inline;}</style><h3 class="css-6n7j50">승귤입니다</h3></a><style data-emotion-css="1j0dwki">.css-1j0dwki{list-style=none;float:right;}</style><ul class="css-1j0dwki"><li style="margin-right:1rem;display:none"><a style="color:;text-decoration:none" href="/">Home</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/dev">Dev</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/diary">Diary</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/tags">Tags</a></li><li style="margin-right:1rem;display:inline-block"><a style="color:;text-decoration:none" href="/about">About</a></li></ul></header><div style="clear:both"><h1>안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자</h1><div><blockquote>
-<p>회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다. </p>
+<p>회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다.</p>
 </blockquote>
 <h2>준비물</h2>
 <p>안드로이드 스튜디오, 안드로이드 SDK → 안드로이드 가상 디바이스 를 만들기 위해서 필요하다.
-가상 디바이스를 만들고 나서 카카오페이지를 빌드한 다음 부터는 emualtor 명령어로 켜면됨.</p>
+가상 디바이스를 만들고 난 다음 부터는 emualtor 명령어로 켜면됨.</p>
 <blockquote>
 <p>주의</p>
 </blockquote>
 <p>안드로이드 가상 디바이스를 만들때는 play store 딱지가 없는 녀석으로 해야 proxy설정이 가능하다!</p>
-<h2>mitmproxy 사용해보기</h2>
-<p>​​
-<span
+<p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
     >
@@ -44,6 +42,8 @@
       />
   </a>
     </span></p>
+<h2>mitmproxy 사용해보기</h2>
+<p>​​</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># 설치
 brew install mitmproxy
 
@@ -99,25 +99,18 @@ adb shell settings put global http_proxy :0</code></pre></div>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.cer | head -1` &amp;&amp; cp mitmproxy-ca-cert.cer $hashed_name.0</code></pre></div>
 <h3>3. 인증서를 안드로이드 디바이스에 넣자.</h3>
 <p>순서대로 아래와 같이 실행해준다.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)
-
-    인증서를 복사할 AVD를 시작하자: emulator -avd &lt;avd_name> -writable-system (-show-kernel 커널로그 보기)
-
-    abd를 root계정으로 재시작 : adb root
-
-    보안 부팅 비활성화: adb shell avbctl disable-verification
-
-    디바이스 재부팅 : adb reboot
-
-    adb root 계정으로 재시작 : adb root
-
-    adb리마운트 : adb remount
-
-    2단계에서 만든 인증서를 카피하자: adb push &lt;인증서경로> /system/etc/security/cacerts
-
-    인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/&lt;인증서파일명>
-
-    디바이스 재시작: adb reboot</code></pre></div>
+<ol>
+<li>AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)</li>
+<li>인증서를 복사할 AVD를 시작하자: emulator -avd &#x3C;avd_name> -writable-system (-show-kernel 커널로그 보기)</li>
+<li>abd를 root계정으로 재시작 : adb root</li>
+<li>보안 부팅 비활성화: adb shell avbctl disable-verification</li>
+<li>디바이스 재부팅 : adb reboot</li>
+<li>adb root 계정으로 재시작 : adb root</li>
+<li>adb리마운트 : adb remount</li>
+<li>2단계에서 만든 인증서를 카피하자: adb push &#x3C;인증서경로> /system/etc/security/cacerts</li>
+<li>인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/&#x3C;인증서파일명></li>
+<li>디바이스 재시작: adb reboot</li>
+</ol>
 <p>여기까지하면 mitmproxy로 로그가 남는다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"

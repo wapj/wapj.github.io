@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 13 Feb 2022 15:55:03 GMT</lastBuildDate><item><title><![CDATA[안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자]]></title><description><![CDATA[회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…]]></description><link>https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</link><guid isPermaLink="false">https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</guid><pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
-&lt;p&gt;회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Feb 2022 00:23:36 GMT</lastBuildDate><item><title><![CDATA[안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자]]></title><description><![CDATA[회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…]]></description><link>https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</link><guid isPermaLink="false">https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</guid><pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;준비물&lt;/h2&gt;
 &lt;p&gt;안드로이드 스튜디오, 안드로이드 SDK → 안드로이드 가상 디바이스 를 만들기 위해서 필요하다.
-가상 디바이스를 만들고 나서 카카오페이지를 빌드한 다음 부터는 emualtor 명령어로 켜면됨.&lt;/p&gt;
+가상 디바이스를 만들고 난 다음 부터는 emualtor 명령어로 켜면됨.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;주의&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;안드로이드 가상 디바이스를 만들때는 play store 딱지가 없는 녀석으로 해야 proxy설정이 가능하다!&lt;/p&gt;
-&lt;h2&gt;mitmproxy 사용해보기&lt;/h2&gt;
-&lt;p&gt;​​
-&lt;span
+&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
@@ -41,6 +39,8 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;mitmproxy 사용해보기&lt;/h2&gt;
+&lt;p&gt;​​&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# 설치
 brew install mitmproxy
 
@@ -96,25 +96,18 @@ adb shell settings put global http_proxy :0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.cer | head -1` &amp;amp;&amp;amp; cp mitmproxy-ca-cert.cer $hashed_name.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;3. 인증서를 안드로이드 디바이스에 넣자.&lt;/h3&gt;
 &lt;p&gt;순서대로 아래와 같이 실행해준다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)
-
-    인증서를 복사할 AVD를 시작하자: emulator -avd &amp;lt;avd_name&gt; -writable-system (-show-kernel 커널로그 보기)
-
-    abd를 root계정으로 재시작 : adb root
-
-    보안 부팅 비활성화: adb shell avbctl disable-verification
-
-    디바이스 재부팅 : adb reboot
-
-    adb root 계정으로 재시작 : adb root
-
-    adb리마운트 : adb remount
-
-    2단계에서 만든 인증서를 카피하자: adb push &amp;lt;인증서경로&gt; /system/etc/security/cacerts
-
-    인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/&amp;lt;인증서파일명&gt;
-
-    디바이스 재시작: adb reboot&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)&lt;/li&gt;
+&lt;li&gt;인증서를 복사할 AVD를 시작하자: emulator -avd &amp;#x3C;avd_name&gt; -writable-system (-show-kernel 커널로그 보기)&lt;/li&gt;
+&lt;li&gt;abd를 root계정으로 재시작 : adb root&lt;/li&gt;
+&lt;li&gt;보안 부팅 비활성화: adb shell avbctl disable-verification&lt;/li&gt;
+&lt;li&gt;디바이스 재부팅 : adb reboot&lt;/li&gt;
+&lt;li&gt;adb root 계정으로 재시작 : adb root&lt;/li&gt;
+&lt;li&gt;adb리마운트 : adb remount&lt;/li&gt;
+&lt;li&gt;2단계에서 만든 인증서를 카피하자: adb push &amp;#x3C;인증서경로&gt; /system/etc/security/cacerts&lt;/li&gt;
+&lt;li&gt;인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/&amp;#x3C;인증서파일명&gt;&lt;/li&gt;
+&lt;li&gt;디바이스 재시작: adb reboot&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;여기까지하면 mitmproxy로 로그가 남는다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
