@@ -8,12 +8,12 @@ published: true
 ---
 
 
-> 회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다. 
+> 회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다.
 
 ## 준비물
 
 안드로이드 스튜디오, 안드로이드 SDK → 안드로이드 가상 디바이스 를 만들기 위해서 필요하다.
-가상 디바이스를 만들고 나서 카카오페이지를 빌드한 다음 부터는 emualtor 명령어로 켜면됨.
+가상 디바이스를 만들고 난 다음 부터는 emualtor 명령어로 켜면됨.
 
 
 > 주의
@@ -21,9 +21,10 @@ published: true
 안드로이드 가상 디바이스를 만들때는 play store 딱지가 없는 녀석으로 해야 proxy설정이 가능하다!
 
 
+![안드로이드가상디바이스 선택화면](images/0214/1.png)
+
 ## mitmproxy 사용해보기
 ​​
-![안드로이드가상디바이스 선택화면](images/0214/1.png)
 
 ```
 # 설치
@@ -32,6 +33,8 @@ brew install mitmproxy
 # 실행
 mitmproxy -p {포트}
 ```
+
+
 
 ## 안드로이드 에뮬레이터에 proxy 설정하기
 
@@ -84,28 +87,25 @@ hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.ce
 
 순서대로 아래와 같이 실행해준다.
 
-```
-    AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)
+1. AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)
 
-    인증서를 복사할 AVD를 시작하자: emulator -avd <avd_name> -writable-system (-show-kernel 커널로그 보기)
+2. 인증서를 복사할 AVD를 시작하자: emulator -avd <avd_name> -writable-system (-show-kernel 커널로그 보기)
 
-    abd를 root계정으로 재시작 : adb root
+3. abd를 root계정으로 재시작 : adb root
 
-    보안 부팅 비활성화: adb shell avbctl disable-verification
+4. 보안 부팅 비활성화: adb shell avbctl disable-verification
 
-    디바이스 재부팅 : adb reboot
+5. 디바이스 재부팅 : adb reboot
 
-    adb root 계정으로 재시작 : adb root
+6. adb root 계정으로 재시작 : adb root
 
-    adb리마운트 : adb remount
+7. adb리마운트 : adb remount
 
-    2단계에서 만든 인증서를 카피하자: adb push <인증서경로> /system/etc/security/cacerts
+8. 2단계에서 만든 인증서를 카피하자: adb push <인증서경로> /system/etc/security/cacerts
 
-    인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/<인증서파일명>
+9. 인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/<인증서파일명>
 
-    디바이스 재시작: adb reboot
-```
-
+10. 디바이스 재시작: adb reboot
 
 여기까지하면 mitmproxy로 로그가 남는다.
 
