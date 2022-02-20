@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Feb 2022 00:23:36 GMT</lastBuildDate><item><title><![CDATA[안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자]]></title><description><![CDATA[회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…]]></description><link>https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</link><guid isPermaLink="false">https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</guid><pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 20 Feb 2022 15:11:33 GMT</lastBuildDate><item><title><![CDATA[스프링 서버가 뜨는 동안 기다리지 말고, 알림으로 받자.]]></title><description><![CDATA[개요 스프링 서버는 보통 기동시 30초 이상 걸리는 경우가 굉장히 많다. 그래서 서버를 재시작 할때마다 3…]]></description><link>https://blog.gyus.me/2022/get_alert_end_of_server_boot/</link><guid isPermaLink="false">https://blog.gyus.me/2022/get_alert_end_of_server_boot/</guid><pubDate>Sun, 20 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
+&lt;p&gt;스프링 서버는 보통 기동시 30초 이상 걸리는 경우가 굉장히 많다. 그래서 서버를 재시작 할때마다 30초씩 넋을 놓고 기다리는 경우가 많이 있는데, 기다리지 않고 스크립트로 감시를 걸어둔 다음 알림으로 받을 수 있으면 좋을 것 같다. 하나씩 해보도록 하자.&lt;/p&gt;
+&lt;h3&gt;기동시 확인할 API&lt;/h3&gt;
+&lt;p&gt;스프링 부트 서버가 기동 되었는지 확인하는 API는 다음과 같다고 가정한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;서버URL&gt;test/info&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;스프링이라면 요런 식으로 만들 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@RestController&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@Slf4j&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ApiTestController&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;BuildProperties&lt;/span&gt; buildProperties&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@GetMapping&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/info&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;extInfo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        log&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;buildProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token char&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; buildProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; buildProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token char&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; buildProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;호출시 아래와 같은 정보를 문자열로 반환해 준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;api version : {버전정보}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;성공하면 api version 이 찍히는 것을 알았으니 특정 문자열이 터미널에 찍히는 것으로 알림을 받을 수 있다. iterm2에서는 트리거라는 기능으로 해당 기능을 제공하고 있다.&lt;/p&gt;
+&lt;h2&gt;서버를 계속 호출하는 쉘 스크립트 만들기&lt;/h2&gt;
+&lt;p&gt;특정 문자열이 들어오는지를 체크 후 iterm2 트리거로 등록 하여 알림을 받을 수 있다.
+마찬가지로 다른 서버에서도 비슷한 API를 만들어서 똑같이 알림을 받을 수 있도록 처리할 수 있을 것이다.&lt;/p&gt;
+&lt;p&gt;아래와 같은 쉘 스크립트를 만들어보자.
+while true가 있어서 3초마다 한번씩 무한으로 계속 실행된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+ &lt;span class=&quot;token assign-left variable&quot;&gt;SERVER&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;${1&lt;span class=&quot;token operator&quot;&gt;:-&lt;/span&gt;api}&lt;/span&gt;&quot;&lt;/span&gt;
+ &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$SERVER&lt;/span&gt;&quot;&lt;/span&gt;
+ &lt;span class=&quot;token assign-left variable&quot;&gt;SERVER_URL&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;http://localhost:9090/test/info&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;token assign-left variable&quot;&gt;STATUS&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -s -o /dev/null -I -w &lt;span class=&quot;token string&quot;&gt;&quot;%{http_code}&quot;&lt;/span&gt;  $SERVER_URL&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$STATUS&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+        &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;서버 기동 성공!&quot;&lt;/span&gt;
+        &lt;span class=&quot;token builtin class-name&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기서 성공시 서버 기동 성공!  을 줄 것이다.
+특정 문자열을 iterm2의 트리거로 등록하여 알림을 받아보자.&lt;/p&gt;
+&lt;h2&gt;iterm2에 트리거로 등록하기&lt;/h2&gt;
+&lt;p&gt;iterm2에는 아래와 같이 설정한다.&lt;/p&gt;
+&lt;p&gt;Profiles → Advanced → Triggers → Edit → Triggers → + 버튼 눌러 추가&lt;/p&gt;
+&lt;p&gt;→ Regular Expression : 서버 기동 성공.* , Action : Post Notification, Parameters : 노티시의 메세지, Instant : 체크, Enabled : 체크&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/23041eeb11df66e5e39225b89db75276/3a1b1/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 27.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABCElEQVQY002Q22rDMBBE/f+/0kKeWyjksa3BF2hISSCxI99kWbYsW76l8VRS2tKHg4Zld3ZHzshLVIyCUU1ZIact6oqBM4ayKNA2jX2LLNN9DKNSlus8YxoGi9HLNFkc1SsIPSTqGpw3oKy1JqbWcH5f9APNc1RlqRdWaHS/0WaxFAKtppcSTqeFkgK3ZQTWBbjNmsWi+h6+H+B4OCBNCFJCEEcRSBwjOp2sjs/ne+1ysUkcQjs8+QIbV+LRVZoeD+89Nt4AmjEct8/Yb18QvrkIgwCB52G/21nTLEksiTYzmBRO2w1g3Yq0/gLh1z8SsULqhtZ/RR16iD8+kaaJvfJ32MT9j/mCb43fc5KKddmTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;iterm2설정 1&quot;
+        title=&quot;iterm2설정 1&quot;
+        src=&quot;/static/23041eeb11df66e5e39225b89db75276/0a47e/2.png&quot;
+        srcset=&quot;/static/23041eeb11df66e5e39225b89db75276/8a4e8/2.png 150w,
+/static/23041eeb11df66e5e39225b89db75276/5a46d/2.png 300w,
+/static/23041eeb11df66e5e39225b89db75276/0a47e/2.png 600w,
+/static/23041eeb11df66e5e39225b89db75276/1cfc2/2.png 900w,
+/static/23041eeb11df66e5e39225b89db75276/c1b63/2.png 1200w,
+/static/23041eeb11df66e5e39225b89db75276/3a1b1/2.png 1686w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/191d908197e9695aee051258f5eab26d/d7ceb/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAkElEQVQI102P6woEIQiF5/2fsh8TBDtMRU1WVme1ZWEEUbx8Rw/vPYwxKKWAmdF7xxgDf1tr7V5rbedvV+Pe0GoFUdl7BxHBWgvnHJrAUkr4XBdUqMqggs7zRAhhQ3RpzilxitqEvQnOF9grYw7GoRflnPHIFZqTQGKMG5ifB1WAGrWugirw9lgYmRiJft99Abzd6TLg9fnZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;iterm2설정 2&quot;
+        title=&quot;iterm2설정 2&quot;
+        src=&quot;/static/191d908197e9695aee051258f5eab26d/0a47e/3.png&quot;
+        srcset=&quot;/static/191d908197e9695aee051258f5eab26d/8a4e8/3.png 150w,
+/static/191d908197e9695aee051258f5eab26d/5a46d/3.png 300w,
+/static/191d908197e9695aee051258f5eab26d/0a47e/3.png 600w,
+/static/191d908197e9695aee051258f5eab26d/1cfc2/3.png 900w,
+/static/191d908197e9695aee051258f5eab26d/c1b63/3.png 1200w,
+/static/191d908197e9695aee051258f5eab26d/d7ceb/3.png 1446w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;만들어둔 스크립트를 서버가 뜨는동안 실행 해두면 서버가 완전히 뜰때까지 감시를 하고 끝나면 알람을 주고 스트립트가 종료된다.&lt;/p&gt;
+&lt;p&gt;이제 서버 뜨는동안 잠깐 딴짓을 할 수 있다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[안드로이드의 에뮬레이터의 https 프록시로 mitmproxy 를 써보자]]></title><description><![CDATA[회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을…]]></description><link>https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</link><guid isPermaLink="false">https://blog.gyus.me/2022/use-mitmproxy-as-http-proxy/</guid><pubDate>Mon, 14 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;회사에서 안드로이드 에뮬레이터 띄워서 테스트시에 요청이 올바르게 오는지 필요해서 깔아봤는데, 인증서 설치가 매우 힘들었다. 안드로이드 API 버전을 8이하로 하면 매우 쉽게 된다고 한다. 그렇지만 그 이상으로 테스트 해야되는 경우 필요할 것 같아서 남겨둔다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;준비물&lt;/h2&gt;
