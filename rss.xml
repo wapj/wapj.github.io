@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 May 2022 01:55:45 GMT</lastBuildDate><item><title><![CDATA[NestJS에 대해서 알아보자]]></title><description><![CDATA[개요 NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다.  타입스크립트를 완벽 지원한다.  진보적인(progressive…]]></description><link>https://blog.gyus.me/2022/about-nestjs/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-nestjs/</guid><pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 May 2022 02:00:00 GMT</lastBuildDate><item><title><![CDATA[NestJS에 대해서 알아보자]]></title><description><![CDATA[개요 NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다.  타입스크립트를 완벽 지원한다.  진보적인(progressive…]]></description><link>https://blog.gyus.me/2022/about-nestjs/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-nestjs/</guid><pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다. &lt;/li&gt;
 &lt;li&gt;타입스크립트를 완벽 지원한다. &lt;/li&gt;
@@ -49,31 +49,28 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run start&lt;/co
 &lt;p&gt;대충 이런거 나옴 &lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 544px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/81485f4ac2713861dbba3f3096fd4007/41045/1.png&quot;
+    href=&quot;/static/72f37a7d3a83319ace969f0c6ba187c7/b3e51/3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABSUlEQVQ4y41T2W4DIQzk/39xX/YhldJrE0i5D9cDC0uiVA2SZQP2eGyMWJaF1nWl0+mNYoxUSqGcc9WQlFLdv7qEd5actWSMIe89Sxg6hDjOAfqfgIA4f13p43Ij+WOYYaiMwBQ6hDAYvg74rehTarKBAwE2AQCsl/5yyZdtI6VkLVtrzbYavcQK6QDGqgl2/RQQzn11Np1+ZnmXnhOZmmR32sHaPWwk9THXvbDMbAaYX5ioCx1sM788+yibaNOJJOtmR25bboCl5BHcbYA7zoqAq2kBAOggCM4VvMeVyl4458jxpfYtqzRxZL25VEuJqQkCDfueVRilH5U1mwG5Rz5VR5QUInRzqKzLvUS+Q6LO6lF4sF1zbh0fvXvmPPf1r3uB4R2PwrqPzOPXm8uDz93ZNLNiHhM4IkE/g2A//3EIvuKcCPc4g/0LjBoB4avzX0wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 30.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABBUlEQVQY05WNS2+CUBCF+f9/pLsuu2hi0/RhLSrR+ihiQC8iXsSrolhULF8RXLhq4km+OWcmkxlNt2KeDB99uOPDjKgNNoU/6oKm/cNIxoxnK1wZMZouscQc21P5bF3MztkNNoSblHl0RHvrR9xX+lTNLc/tBS+dJRVDcvdg0HT2iJnCHk+wbEGtblD9bKA3W7S7JpYjaPdMbOGRHDPiJEUbBQf8CESY4i5OTNRv4WeG0x1umCCXe+TqUBCs05zjVV9mXyUF2iKcU31/pdv5wvzu0ajrtFoGA7NPoSw7l9JzsgvXfblTStvGMbbj4PszpAyYeF6efZRSl3vZTWj8o+zy+ZaDf26OxNR2AHm6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;1&quot;
-        title=&quot;1&quot;
-        src=&quot;/static/81485f4ac2713861dbba3f3096fd4007/0a47e/1.png&quot;
-        srcset=&quot;/static/81485f4ac2713861dbba3f3096fd4007/8a4e8/1.png 150w,
-/static/81485f4ac2713861dbba3f3096fd4007/5a46d/1.png 300w,
-/static/81485f4ac2713861dbba3f3096fd4007/0a47e/1.png 600w,
-/static/81485f4ac2713861dbba3f3096fd4007/1cfc2/1.png 900w,
-/static/81485f4ac2713861dbba3f3096fd4007/c1b63/1.png 1200w,
-/static/81485f4ac2713861dbba3f3096fd4007/41045/1.png 2434w&quot;
-        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
+        src=&quot;/static/72f37a7d3a83319ace969f0c6ba187c7/b3e51/3.png&quot;
+        srcset=&quot;/static/72f37a7d3a83319ace969f0c6ba187c7/8a4e8/3.png 150w,
+/static/72f37a7d3a83319ace969f0c6ba187c7/5a46d/3.png 300w,
+/static/72f37a7d3a83319ace969f0c6ba187c7/b3e51/3.png 544w&quot;
+        sizes=&quot;(max-width: 544px) 100vw, 544px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -117,28 +114,31 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run start&lt;/co
 &lt;p&gt;다만 nestjs 단독으로만 보면 꾸준하게 사용이 늘어나는 것을 볼 수 있다. &lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 544px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/72f37a7d3a83319ace969f0c6ba187c7/b3e51/3.png&quot;
+    href=&quot;/static/81485f4ac2713861dbba3f3096fd4007/41045/1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 30.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABBUlEQVQY05WNS2+CUBCF+f9/pLsuu2hi0/RhLSrR+ihiQC8iXsSrolhULF8RXLhq4km+OWcmkxlNt2KeDB99uOPDjKgNNoU/6oKm/cNIxoxnK1wZMZouscQc21P5bF3MztkNNoSblHl0RHvrR9xX+lTNLc/tBS+dJRVDcvdg0HT2iJnCHk+wbEGtblD9bKA3W7S7JpYjaPdMbOGRHDPiJEUbBQf8CESY4i5OTNRv4WeG0x1umCCXe+TqUBCs05zjVV9mXyUF2iKcU31/pdv5wvzu0ajrtFoGA7NPoSw7l9JzsgvXfblTStvGMbbj4PszpAyYeF6efZRSl3vZTWj8o+zy+ZaDf26OxNR2AHm6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABSUlEQVQ4y41T2W4DIQzk/39xX/YhldJrE0i5D9cDC0uiVA2SZQP2eGyMWJaF1nWl0+mNYoxUSqGcc9WQlFLdv7qEd5actWSMIe89Sxg6hDjOAfqfgIA4f13p43Ij+WOYYaiMwBQ6hDAYvg74rehTarKBAwE2AQCsl/5yyZdtI6VkLVtrzbYavcQK6QDGqgl2/RQQzn11Np1+ZnmXnhOZmmR32sHaPWwk9THXvbDMbAaYX5ioCx1sM788+yibaNOJJOtmR25bboCl5BHcbYA7zoqAq2kBAOggCM4VvMeVyl4458jxpfYtqzRxZL25VEuJqQkCDfueVRilH5U1mwG5Rz5VR5QUInRzqKzLvUS+Q6LO6lF4sF1zbh0fvXvmPPf1r3uB4R2PwrqPzOPXm8uDz93ZNLNiHhM4IkE/g2A//3EIvuKcCPc4g/0LjBoB4avzX0wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;3&quot;
-        title=&quot;3&quot;
-        src=&quot;/static/72f37a7d3a83319ace969f0c6ba187c7/b3e51/3.png&quot;
-        srcset=&quot;/static/72f37a7d3a83319ace969f0c6ba187c7/8a4e8/3.png 150w,
-/static/72f37a7d3a83319ace969f0c6ba187c7/5a46d/3.png 300w,
-/static/72f37a7d3a83319ace969f0c6ba187c7/b3e51/3.png 544w&quot;
-        sizes=&quot;(max-width: 544px) 100vw, 544px&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/81485f4ac2713861dbba3f3096fd4007/0a47e/1.png&quot;
+        srcset=&quot;/static/81485f4ac2713861dbba3f3096fd4007/8a4e8/1.png 150w,
+/static/81485f4ac2713861dbba3f3096fd4007/5a46d/1.png 300w,
+/static/81485f4ac2713861dbba3f3096fd4007/0a47e/1.png 600w,
+/static/81485f4ac2713861dbba3f3096fd4007/1cfc2/1.png 900w,
+/static/81485f4ac2713861dbba3f3096fd4007/c1b63/1.png 1200w,
+/static/81485f4ac2713861dbba3f3096fd4007/41045/1.png 2434w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
