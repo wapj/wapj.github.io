@@ -1,4 +1,205 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 May 2022 02:00:00 GMT</lastBuildDate><item><title><![CDATA[NestJS에 대해서 알아보자]]></title><description><![CDATA[개요 NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다.  타입스크립트를 완벽 지원한다.  진보적인(progressive…]]></description><link>https://blog.gyus.me/2022/about-nestjs/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-nestjs/</guid><pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 May 2022 02:15:52 GMT</lastBuildDate><item><title><![CDATA[카프카에 대해서 알아보자]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2022/about-kafka/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-kafka/</guid><pubDate>Mon, 23 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;카프카에 대해서 알아보자&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;대용량, 대규모 메시지 데이터를 빠르게 처리하도록 개발된 메시징 플랫폼. &lt;/li&gt;
+&lt;li&gt;홈페이지에는 고성능 데이터 파이프라인, 스트리밍 분석, 데이터 통합, 미션 크리티컬한 애플리케이션을 위한 분산 이벤트 스트리밍 플랫폼으로 소개하고 있음. &lt;/li&gt;
+&lt;li&gt;기술에 보수적인 제조사, 통신사, 은행, 보험사 중 가장 큰 곳들은 대부분 사용한다고 함. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;카프카 설치 &lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://kafka.apache.org/downloads&quot;&gt;https://kafka.apache.org/downloads&lt;/a&gt; 에서 바이너리 버전을 받아서 압축 풀기. $HOME 디렉토리에 압축을 풀었다고 가정함   &lt;/li&gt;
+&lt;li&gt;나는 대충 최신 버전을 받았음 어차피 바이너리라...&lt;/li&gt;
+&lt;li&gt;직접다운로드 링크는 여기 &lt;a href=&quot;https://dlcdn.apache.org/kafka/3.1.1/kafka_2.13-3.1.1.tgz&quot;&gt;&lt;strong&gt;https://dlcdn.apache.org/kafka/3.1.1/kafka_2.13-3.1.1.tgz&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ffdfa682eef2b7bde62b21e0c476fcfd/eff3b/kafka1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABDUlEQVQoz5VSSW7DMBDT///kkwG/oJfUaZ0E8L7L+8pyhNZAD3FTAYSk0QzNGVq5rgvLsuA4DmzbRhiGOFv7vp++q2EYkKapIYrj2MD3fYRRhKKqMIwjJGdaloPsjFSVZYmKhW3bQmttzhVjddOg6nto7jVjmuftFcKGBYJpmrDMM/7oF+cNk1BT2dv1io/HA7m0SNKe5C1bXdb1UPQqVNd1CILAoOWsRs5qIGFHzN+E/1lKWJMkMeoizjCj4riuEfD+Q7ht22+wZnumUBx8v1zg3W5wPQ8eW/+83w083vM8N2aJeTU/pAkxTVAUxQF5XylAibsmyEKBEJhk7lmWGddlLGKc5Aoa+ZWeGPgFwEy62hqE9FMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;kafka1&quot;
+        title=&quot;kafka1&quot;
+        src=&quot;/static/ffdfa682eef2b7bde62b21e0c476fcfd/0a47e/kafka1.png&quot;
+        srcset=&quot;/static/ffdfa682eef2b7bde62b21e0c476fcfd/8a4e8/kafka1.png 150w,
+/static/ffdfa682eef2b7bde62b21e0c476fcfd/5a46d/kafka1.png 300w,
+/static/ffdfa682eef2b7bde62b21e0c476fcfd/0a47e/kafka1.png 600w,
+/static/ffdfa682eef2b7bde62b21e0c476fcfd/1cfc2/kafka1.png 900w,
+/static/ffdfa682eef2b7bde62b21e0c476fcfd/c1b63/kafka1.png 1200w,
+/static/ffdfa682eef2b7bde62b21e0c476fcfd/eff3b/kafka1.png 2072w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;  &lt;/p&gt;
+&lt;h3&gt;주키퍼 시작하기 &lt;/h3&gt;
+&lt;p&gt;카프카는 주키퍼에 의존성이 있음. 그러므로 주키퍼를 먼저 시작시켜줘야함.&lt;/p&gt;
+&lt;p&gt;다음 스크립트로 실행. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;~/kafka_2.13-3.1.1/bin/zookeeper-server-start.sh ~/kafka_2.13-3.1.1/config/zookeeper.properties&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;데몬모드&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-daemon 플래그를 붙이면 주키퍼를 데몬모드로 올릴 수 있음. (백그라운드에서 돈다는 뜻)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;잘은 모르겠지만, 뭔가 많은 로그가 올라가면서 주키퍼가 기동됨 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[2022-05-14 23:36:17,913] INFO   ______                  _                                           (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,913] INFO  |___  /                 | |                                          (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,913] INFO     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __    (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,914] INFO    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | &apos;_ \   / _ \ | &apos;__| (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,914] INFO   / /__  | (_) | | (_) | |   &amp;lt;  |  __/ |  __/ | |_) | |  __/ | |     (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,914] INFO  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_| (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,914] INFO                                               | |                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-05-14 23:36:17,914] INFO                                               |_|                      (org.apache.zookeeper.server.ZooKeeperServer)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;아파치 카프카 시작하기 &lt;/h2&gt;
+&lt;p&gt;다른 터미널 창에서 다음과 같이 실행&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;~/kafka_2.13-3.1.1/bin/kafka-server-start.sh ~/kafka_2.13-3.1.1/config/server.properties&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;뭔가 많이 뜨면서 에러가 안나면 성공. 포트는 9092 인듯 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[2022-05-14 23:39:24,954] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-05-14 23:39:24,956] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-05-14 23:39:24,956] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-05-14 23:39:24,958] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-05-14 23:39:24,974] INFO Log directory /tmp/kafka-logs not found, creating it. (kafka.log.LogManager)
+[2022-05-14 23:39:25,005] INFO Loading logs from log dirs ArraySeq(/tmp/kafka-logs) (kafka.log.LogManager)
+[2022-05-14 23:39:25,010] INFO Attempting recovery for all logs in /tmp/kafka-logs since no clean shutdown file was found (kafka.log.LogManager)
+[2022-05-14 23:39:25,017] INFO Loaded 0 logs in 11ms. (kafka.log.LogManager)
+[2022-05-14 23:39:25,018] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2022-05-14 23:39:25,020] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2022-05-14 23:39:25,315] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2022-05-14 23:39:25,480] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2022-05-14 23:39:25,484] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;$PATH에 환경변수 설정하기 &lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;kafka_2.13-3.1.1/bin&lt;/code&gt;  은 자주 사용하게 될 것이니, 귀찮으면 PATH에 등록해도 됨.   &lt;/p&gt;
+&lt;p&gt;.zshrc 나 .bash_profile등에 다음과 같이 하면됨. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;PATH=&quot;$PATH:~/kafka_2.13-3.1.1/bin&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;카프카와 주키퍼의 데이터 저장 디렉터리 변경하기 (옵션)&lt;/h3&gt;
+&lt;p&gt;주키퍼의 경우 : &lt;code class=&quot;language-text&quot;&gt;zookeeper.properties&lt;/code&gt;  의 dataDir 값을 변경하면 원하는 곳으로 데이터 저장 디렉터리를 변경할 수 있다. &lt;/p&gt;
+&lt;p&gt;카프카의 경우 : &lt;code class=&quot;language-text&quot;&gt;server.properties&lt;/code&gt;   의 log.dirs 를 원하는 디렉터리로 변경하기&lt;/p&gt;
+&lt;h3&gt;심볼릭 링크만들기 (옵션)&lt;/h3&gt;
+&lt;p&gt;kafka_2.13-3.1.1 이렇게 매번 타이핑하기 귀찮으니 &lt;code class=&quot;language-text&quot;&gt;kafka&lt;/code&gt;  로 심볼릭 링크를 만들자. &lt;/p&gt;
+&lt;p&gt;이렇게 하면  조금 편하게 카프카 디렉터리로 접근할 수 있다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ln -s kafka_2.13-3.1.1 kafka&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;토픽 만들고 삭제하기 &lt;/h2&gt;
+&lt;p&gt;만들기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./kafka/bin/kafka-topics.sh --create --topic andy-test-topic --bootstrap-server loc
+alhost:9092 --replication-factor 1 --partitions 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;삭제하기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./kafka/bin/kafka-topics.sh --delete --topic andy-test-topic --bootstrap-server loc
+alhost:9092&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;카프카 2.x.x를 사용하는 경우 --boostrap-server 대신 --zookeeper localhost:2181 을 사용해야함&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;토픽 조회하기 &lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./kafka-topics.sh --list --bootstrap-server localhost:9092
+andy-test-topic&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;--describe 를 사용하면 상세정보 나옴&lt;/p&gt;
+&lt;h2&gt;토픽에 메시지 보내기&lt;/h2&gt;
+&lt;p&gt;키를 지정하지 않고 메세지 보내기 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./kafka-console-producer.sh --broker-list localhost:9092 --topic andy-tes
+t-topic&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이것 저것 입력후 Ctrl + C 로 빠져나오기 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; 안녕하시요.
+&gt;hello kafka
+&gt;nice to meet you&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;키를 지정하려면 다음과 같이 해야함 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./kafka-console-producer.sh \
+  --broker-list localhost:9092 \
+  --topic andy-test-topic \
+  --property &quot;parse.key=true&quot; \
+  --property &quot;key.separator=:&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;컨슈머로 읽기&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic and
+y-test-topic --from-beginning&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;결과값&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;안녕하시요.
+hello kafka
+nice to meet you&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;카프카 테스트 프로젝트 &lt;/h2&gt;
+&lt;h3&gt;gradle 설정&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;confluent 저장소 추가 하기&lt;/strong&gt; &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;repositories {
+    mavenCentral()
+    maven {
+        url &quot;https://packages.confluent.io/maven&quot;
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;카프카 클라이언트 의존성 추가  (스트림즈도 공부할거라 스트림즈도 넣어줌)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;implementation &apos;org.codehaus.groovy:groovy-all:3.0.5&apos;
+testImplementation &apos;org.junit.jupiter:junit-jupiter-api:5.7.2&apos;
+testRuntimeOnly &apos;org.junit.jupiter:junit-jupiter-engine:5.7.2&apos;
+implementation &apos;org.apache.kafka:kafka-clients:3.1.1&apos;
+implementation &apos;org.apache.kafka:kafka-streams:3.1.1&apos;
+implementation &apos;org.slf4j:slf4j-api:1.7.36&apos;
+implementation &apos;org.slf4j:slf4j-simple:1.7.32&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Helloworld 클래스 만들기 &lt;/p&gt;
+&lt;p&gt;me.gyus.demos.kafka 패키지로 만들자. &lt;/p&gt;
+&lt;h3&gt;프로듀서 테스트&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package me.gyus.demos.kafka;
+
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.Properties;
+
+public class ProducerDemo {
+    private static final Logger log = LoggerFactory.getLogger(ProducerDemo.class);
+
+    public static void main(String [] args) {
+        log.info(&quot;I am a kafka Producer&quot;);
+        String bootstrapServers = &quot;127.0.0.1:9092&quot;;
+
+        Properties properties = new Properties();
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
+        // create the producer
+        KafkaProducer&amp;lt;String, String&gt; producer = new KafkaProducer&amp;lt;&gt;(properties);
+        for (int i=0;i&amp;lt;10; i++) {
+            String topic = &quot;demo_java&quot;;
+            String value = &quot;hello world &quot; + i;
+            String key = &quot;id_&quot; + i;
+            ProducerRecord&amp;lt;String, String&gt; producerRecord = new ProducerRecord&amp;lt;&gt;(topic, key, value);
+            producer.send(producerRecord, (metadata, e) -&gt; {
+                if (e == null) {
+                    log.info(&quot;Received new metadata. \n&quot; +
+                            &quot;Topic:&quot; + metadata.topic() + &quot;\n&quot; +
+                            &quot;Key:&quot; + producerRecord.key() + &quot;\n&quot; +
+                            &quot;Partition: &quot; + metadata.partition() + &quot;\n&quot; +
+                            &quot;Offset: &quot; + metadata.offset() + &quot;\n&quot; +
+                            &quot;Timestamp: &quot; + metadata.timestamp());
+                } else {
+                    log.error(&quot;Error while producing&quot;, e);
+                }
+            });
+
+            try{
+                Thread.sleep(1000);
+            } catch(InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        producer.flush();
+        producer.close();
+
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;참고 &lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.sohamkamani.com/install-and-run-kafka-locally/&quot;&gt;https://www.sohamkamani.com/install-and-run-kafka-locally/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NestJS에 대해서 알아보자]]></title><description><![CDATA[개요 NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다.  타입스크립트를 완벽 지원한다.  진보적인(progressive…]]></description><link>https://blog.gyus.me/2022/about-nestjs/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-nestjs/</guid><pubDate>Mon, 09 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;개요&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다. &lt;/li&gt;
 &lt;li&gt;타입스크립트를 완벽 지원한다. &lt;/li&gt;
