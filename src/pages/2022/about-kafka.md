@@ -8,12 +8,13 @@ published: true
 ---
 
 
-# 카프카에 대해서 알아보자
+## 카프카란?
 
 - 대용량, 대규모 메시지 데이터를 빠르게 처리하도록 개발된 메시징 플랫폼. 
 - 홈페이지에는 고성능 데이터 파이프라인, 스트리밍 분석, 데이터 통합, 미션 크리티컬한 애플리케이션을 위한 분산 이벤트 스트리밍 플랫폼으로 소개하고 있음. 
 - 기술에 보수적인 제조사, 통신사, 은행, 보험사 중 가장 큰 곳들은 대부분 사용한다고 함. 
 
+자세한 것은 [The Log](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)라는 글을 읽어보면 좋다. 
 
 
 ## 카프카 설치 
