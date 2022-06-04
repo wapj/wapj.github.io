@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Jun 2022 12:34:11 GMT</lastBuildDate><item><title><![CDATA[코틀린 참고 자료들]]></title><description><![CDATA[회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Jun 2022 12:36:22 GMT</lastBuildDate><item><title><![CDATA[코틀린 참고 자료들]]></title><description><![CDATA[회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
 우리팀에 공유했던 내용이긴 한데, 내용을 조금 더 붙여서 공유합니다.
 도움이 되면 좋겠습니다. 저는 현재 '코틀린 마이크로서비스 개발'은 한번 다 읽었고, 'Kotlin in…]]></description><link>https://blog.gyus.me/2022/kotlin_references/</link><guid isPermaLink="false">https://blog.gyus.me/2022/kotlin_references/</guid><pubDate>Sat, 04 Jun 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
 우리팀에 공유했던 내용이긴 한데, 내용을 조금 더 붙여서 공유합니다.
@@ -20,11 +20,11 @@
 &lt;li&gt;&lt;a href=&quot;https://github.com/woowacourse/service-apply&quot;&gt;코프링알은체하기 코드저장소&lt;/a&gt; : 꽤 도움됨&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=L9wqYQ-fXaM&quot;&gt;Kotlin Tips: The Elvis Operator&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://https//www.youtube.com/watch?v=Pu9JZkXoN5s%20&quot;&gt;Kotlin + Functional Programming&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.youtube.com/watch?v=VOZZTSuDMFE&amp;#x26;t=529s&quot;&gt;KotlinConf 2018 - Functional Programming in Kotlin with Λrrow&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=Pu9JZkXoN5s&quot;&gt;Kotlin + Functional Programming&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=VOZZTSuDMFE&quot;&gt;KotlinConf 2018 - Functional Programming in Kotlin with Λrrow&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://tv.kakao.com/channel/3693125/cliplink/414004682&quot;&gt;kotest가 있다면 TDD 묻고 BDD로 가!&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.youtube.com/watch?v=bhI1hMOcT-4&amp;#x26;t=3013s&quot;&gt;스프링캠프 2018 [TrackB Session2] : 쿠팡 Kotlin Backend 적용기&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.youtube.com/watch?v=eJF60hcz3EU&amp;#x26;t=28s&quot;&gt;Kotlin Coroutines 톺아보기&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=bhI1hMOcT-4&quot;&gt;스프링캠프 2018 [TrackB Session2] : 쿠팡 Kotlin Backend 적용기&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=eJF60hcz3EU&quot;&gt;Kotlin Coroutines 톺아보기&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;글&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://veluxer62.github.io/tutorials/take-advantage-of-kotlin-fixture/&quot;&gt;Take advantage of Kotlin Fixture&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://techblog.woowahan.com/5825/&quot;&gt;스프링에서 코틀린 스타일 테스트 코드 작성하기&lt;/a&gt;&lt;br&gt;
