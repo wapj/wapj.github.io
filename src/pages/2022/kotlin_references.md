@@ -30,6 +30,10 @@ published: true
 
 ## 영상
 
+[코프링 알은체하기 : 우아한 테크 세미나](https://www.youtube.com/watch?v=ewBri47JWII)
+- [코프링알은체하기 코드저장소](https://github.com/woowacourse/service-apply) : 꽤 도움됨
+
+
 [Kotlin Tips: The Elvis Operator](https://www.youtube.com/watch?v=L9wqYQ-fXaM)  
 [Kotlin + Functional Programming](https://https//www.youtube.com/watch?v=Pu9JZkXoN5s%20)  
 [KotlinConf 2018 - Functional Programming in Kotlin with Λrrow](https://www.youtube.com/watch?v=VOZZTSuDMFE&t=529s)  
