@@ -19,11 +19,13 @@ published: true
 지극히 주관적인 관점으로 모은 링크이므로 내용이 좋은지 나쁜지는 보고 판단하셔요~ 저도 아직 잘모릅니다.
 
 ## 책
-[Kotlin in Action](http://www.yes24.com/Product/Goods/55148593)
-[이펙티브 코틀린](http://www.yes24.com/Product/Goods/106225986)
-[코틀린 완벽 가이드](http://www.yes24.com/Product/Goods/107698728)
-[코틀린으로 배우는 함수형 프로그래밍](http://www.yes24.com/Product/Goods/84899008)
+
+[Kotlin in Action](http://www.yes24.com/Product/Goods/55148593)  
+[이펙티브 코틀린](http://www.yes24.com/Product/Goods/106225986)  
+[코틀린 완벽 가이드](http://www.yes24.com/Product/Goods/107698728)  
+[코틀린으로 배우는 함수형 프로그래밍](http://www.yes24.com/Product/Goods/84899008)  
 [코틀린 마이크로서비스 개발](http://www.yes24.com/Product/Goods/68796734)
+
 
 
 ## 영상
@@ -33,7 +35,6 @@ published: true
 [KotlinConf 2018 - Functional Programming in Kotlin with Λrrow](https://www.youtube.com/watch?v=VOZZTSuDMFE&t=529s)  
 [kotest가 있다면 TDD 묻고 BDD로 가!](https://tv.kakao.com/channel/3693125/cliplink/414004682)  
 [스프링캠프 2018 \[TrackB Session2\] : 쿠팡 Kotlin Backend 적용기](https://www.youtube.com/watch?v=bhI1hMOcT-4&t=3013s)  
-
 [Kotlin Coroutines 톺아보기](https://www.youtube.com/watch?v=eJF60hcz3EU&t=28s)
 
 
