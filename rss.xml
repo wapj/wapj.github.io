@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 May 2022 02:21:09 GMT</lastBuildDate><item><title><![CDATA[카프카에 대해서 알아보자]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2022/about-kafka/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-kafka/</guid><pubDate>Mon, 23 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;카프카란?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Jun 2022 12:19:56 GMT</lastBuildDate><item><title><![CDATA[코틀린 참고 자료들]]></title><description><![CDATA[회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
+우리팀에 공유했던 내용이긴 한데, 내용을 조금 더 붙여서 공유합니다.
+도움이 되면 좋겠습니다. 저는 현재 '코틀린 마이크로서비스 개발'은 한번 다 읽었고, 'Kotlin in…]]></description><link>https://blog.gyus.me/2022/kotlin_references/</link><guid isPermaLink="false">https://blog.gyus.me/2022/kotlin_references/</guid><pubDate>Sat, 04 Jun 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
+우리팀에 공유했던 내용이긴 한데, 내용을 조금 더 붙여서 공유합니다.
+도움이 되면 좋겠습니다.&lt;/p&gt;
+&lt;p&gt;저는 현재 &apos;코틀린 마이크로서비스 개발&apos;은 한번 다 읽었고, &apos;Kotlin in Action&apos;을 읽고 있습니다.
+코틀린 완벽 가이드는 알고보니 함수형으로 코딩하도록 하는 거라서 일단
+기본을 먼저 봐야될 듯하여 Kotlin in Action을 먼저 읽고 있습니다.
+작년에 이미 보긴 했었는데, 그 때는 일로 하는게 아니었던지라 내용들이 새롭게 다가오네요..^^;&lt;/p&gt;
+&lt;p&gt;지극히 주관적인 관점으로 모은 링크이므로 내용이 좋은지 나쁜지는 보고 판단하셔요~ 저도 아직 잘모릅니다.&lt;/p&gt;
+&lt;h2&gt;책&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.yes24.com/Product/Goods/55148593&quot;&gt;Kotlin in Action&lt;/a&gt;
+&lt;a href=&quot;http://www.yes24.com/Product/Goods/106225986&quot;&gt;이펙티브 코틀린&lt;/a&gt;
+&lt;a href=&quot;http://www.yes24.com/Product/Goods/107698728&quot;&gt;코틀린 완벽 가이드&lt;/a&gt;
+&lt;a href=&quot;http://www.yes24.com/Product/Goods/84899008&quot;&gt;코틀린으로 배우는 함수형 프로그래밍&lt;/a&gt;
+&lt;a href=&quot;http://www.yes24.com/Product/Goods/68796734&quot;&gt;코틀린 마이크로서비스 개발&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;영상&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=L9wqYQ-fXaM&quot;&gt;Kotlin Tips: The Elvis Operator&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://https//www.youtube.com/watch?v=Pu9JZkXoN5s%20&quot;&gt;Kotlin + Functional Programming&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=VOZZTSuDMFE&amp;#x26;t=529s&quot;&gt;KotlinConf 2018 - Functional Programming in Kotlin with Λrrow&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://tv.kakao.com/channel/3693125/cliplink/414004682&quot;&gt;kotest가 있다면 TDD 묻고 BDD로 가!&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=bhI1hMOcT-4&amp;#x26;t=3013s&quot;&gt;스프링캠프 2018 [TrackB Session2] : 쿠팡 Kotlin Backend 적용기&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=eJF60hcz3EU&amp;#x26;t=28s&quot;&gt;Kotlin Coroutines 톺아보기&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;글&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://veluxer62.github.io/tutorials/take-advantage-of-kotlin-fixture/&quot;&gt;Take advantage of Kotlin Fixture&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://techblog.woowahan.com/5825/&quot;&gt;스프링에서 코틀린 스타일 테스트 코드 작성하기&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://lenditkr.github.io/kotlin/junit/&quot;&gt;Kotlin으로 테스트 코드를 작성해보자&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://coding-food-court.tistory.com/157&quot;&gt;Kotlin UInit Test 하는 법&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://sabarada.tistory.com/191&quot;&gt;[mockk] 코틀린 테스트 프레임워크에 대해서 알아보자&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://jessyt.tistory.com/172&quot;&gt;Study/test [Kotlin] 테스트 코드 쉽게 작성하기 ( KotlinFixture, MockK,&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://juahnpop.tistory.com/251&quot;&gt;웹에서 코틀린 프로그래밍 언어 연습 및 학습 하는 방법&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://veluxer62.github.io/tutorials/take-advantage-of-kotlin-fixture/&quot;&gt;Take advantage of Kotlin Fixture&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://veluxer62.github.io/tutorials/getting-started-with-kotest/&quot;&gt;Getting Started With Kotest&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://myungpyo.medium.com/reading-coroutine-official-guide-thoroughly-part-0-20176d431e9d&quot;&gt;코루틴 공식 가이드 읽고 분석하기— Part 0&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://javacan.tistory.com/entry/Kotlin-in-action-study-summary&quot;&gt;코틀린 인 액션 스터디 정리 자료&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://thdev.tech/kotlin/androiddev/2017/10/03/Kotlin-Generics/&quot;&gt;Kotlin Generics 정의&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://medium.com/til-kotlin-ko/explanation-hey-kotlin-how-it-works-ko-b2a05c80c75d&quot;&gt;해설판: Hey Kotlin, how it works? [기초편]&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://todd.ginsberg.com/post/springboot-reactive-kotlin-coroutines/&quot;&gt;Reactive Spring Boot with Kotlin Coroutines&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://tech.lezhin.com/2020/07/15/kotlin-webflux&quot;&gt;Kotlin과 Spring WebFlux 기반의 컨텐츠 인증 서비스 개발 후기&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a&quot;&gt;Kotlin Cheat Sheet&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://jjeda.tistory.com/category/Kotlin&quot;&gt;https://jjeda.tistory.com/category/Kotlin&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카프카에 대해서 알아보자]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2022/about-kafka/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-kafka/</guid><pubDate>Mon, 23 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;카프카란?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;대용량, 대규모 메시지 데이터를 빠르게 처리하도록 개발된 메시징 플랫폼. &lt;/li&gt;
 &lt;li&gt;홈페이지에는 고성능 데이터 파이프라인, 스트리밍 분석, 데이터 통합, 미션 크리티컬한 애플리케이션을 위한 분산 이벤트 스트리밍 플랫폼으로 소개하고 있음. &lt;/li&gt;
@@ -5297,32 +5337,7 @@ $ ipython kernel &lt;span class=&quot;token function&quot;&gt;install&lt;/span&g
 sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;실행후에 아래와 같이 pypy 정보가 나오면 성공이다. python3.6.1 과 호환되는 pypy7.1.1 버전을 쓰고 있음을 알 수 있다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&apos;3.6.1 (784b254d6699, Apr 14 2019, 10:22:55)
-[PyPy 7.1.1-beta0 with GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)]&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[gatsby helmet 사용하기]]></title><description><![CDATA[설치  설정  사용법 나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다. 끝~]]></description><link>https://blog.gyus.me/2019/gatsby-use-helmet/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-use-helmet/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-react-helmet react-helmet&lt;/code&gt;&lt;/p&gt;
-&lt;h3&gt;설정&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
-  plugins: [`gatsby-plugin-react-helmet`]
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;사용법&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &quot;react&quot;
-import { Helmet } from &quot;react-helmet&quot;
-
-class Application extends React.Component {
-  render() {
-    return (
-      &amp;lt;div className=&quot;application&quot;&gt;
-        &amp;lt;Helmet&gt;
-        &amp;lt;meta charSet=&quot;utf-8&quot; /&gt;
-        &amp;lt;title&gt;My Title&amp;lt;/title&gt;
-        &amp;lt;link rel=&quot;canonical&quot; href=&quot;http://mysite.com/example&quot; /&gt;
-        &amp;lt;/Helmet&gt;
-    &amp;lt;/div&gt;
-    )
-  }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다.&lt;/p&gt;
-&lt;p&gt;끝~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개츠비에 구글 아날리틱스 달기]]></title><description><![CDATA[설치  사용법  에 아래와 같이 설정해야한다. 클릭수를 추적하고 싶으면??  컴포넌트를 쓰자 요렇게 쓰면 된다고 함 그럼 또 다음에 보아요~ 안녕~]]></description><link>https://blog.gyus.me/2019/gatsby-google-analytics/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-google-analytics/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
+[PyPy 7.1.1-beta0 with GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)]&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[개츠비에 구글 아날리틱스 달기]]></title><description><![CDATA[설치  사용법  에 아래와 같이 설정해야한다. 클릭수를 추적하고 싶으면??  컴포넌트를 쓰자 요렇게 쓰면 된다고 함 그럼 또 다음에 보아요~ 안녕~]]></description><link>https://blog.gyus.me/2019/gatsby-google-analytics/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-google-analytics/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-google-analytics&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;사용법&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; 에 아래와 같이 설정해야한다.&lt;/p&gt;
@@ -5364,7 +5379,32 @@ export default () =&gt; {
     &amp;lt;/OutboundLink&gt;
   &amp;lt;/div&gt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;그럼 또 다음에 보아요~ 안녕~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개츠비로 코드하이라이팅하기]]></title><description><![CDATA[를 써야된다고 함 설치 이 글을 쓰는 시점에는 하이라이팅이 안되고 있는 중이다..ㅎㅎ gatsby-transformer-remark 는 미리 설치를 해둔 상태여야한다. gatsby-config.js 설정 CSS include PrismJS…]]></description><link>https://blog.gyus.me/2019/gatsby-code-highlight/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-code-highlight/</guid><pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-remark-prismjs&lt;/code&gt; 를 써야된다고 함&lt;/p&gt;
+&lt;p&gt;그럼 또 다음에 보아요~ 안녕~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[gatsby helmet 사용하기]]></title><description><![CDATA[설치  설정  사용법 나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다. 끝~]]></description><link>https://blog.gyus.me/2019/gatsby-use-helmet/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-use-helmet/</guid><pubDate>Sat, 18 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;설치&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save gatsby-plugin-react-helmet react-helmet&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;설정&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  plugins: [`gatsby-plugin-react-helmet`]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;사용법&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &quot;react&quot;
+import { Helmet } from &quot;react-helmet&quot;
+
+class Application extends React.Component {
+  render() {
+    return (
+      &amp;lt;div className=&quot;application&quot;&gt;
+        &amp;lt;Helmet&gt;
+        &amp;lt;meta charSet=&quot;utf-8&quot; /&gt;
+        &amp;lt;title&gt;My Title&amp;lt;/title&gt;
+        &amp;lt;link rel=&quot;canonical&quot; href=&quot;http://mysite.com/example&quot; /&gt;
+        &amp;lt;/Helmet&gt;
+    &amp;lt;/div&gt;
+    )
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;나는 구글 아날리스틱 적용이랑 메타의 타이틀을 페이지마다 바꾸는데 사용했다.&lt;/p&gt;
+&lt;p&gt;끝~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개츠비로 코드하이라이팅하기]]></title><description><![CDATA[를 써야된다고 함 설치 이 글을 쓰는 시점에는 하이라이팅이 안되고 있는 중이다..ㅎㅎ gatsby-transformer-remark 는 미리 설치를 해둔 상태여야한다. gatsby-config.js 설정 CSS include PrismJS…]]></description><link>https://blog.gyus.me/2019/gatsby-code-highlight/</link><guid isPermaLink="false">https://blog.gyus.me/2019/gatsby-code-highlight/</guid><pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-remark-prismjs&lt;/code&gt; 를 써야된다고 함&lt;/p&gt;
 &lt;h3&gt;설치&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;이 글을 쓰는 시점에는 하이라이팅이 안되고 있는 중이다..ㅎㅎ&lt;/p&gt;
