@@ -35,11 +35,11 @@ published: true
 
 
 [Kotlin Tips: The Elvis Operator](https://www.youtube.com/watch?v=L9wqYQ-fXaM)  
-[Kotlin + Functional Programming](https://https//www.youtube.com/watch?v=Pu9JZkXoN5s%20)  
-[KotlinConf 2018 - Functional Programming in Kotlin with Λrrow](https://www.youtube.com/watch?v=VOZZTSuDMFE&t=529s)  
+[Kotlin + Functional Programming](https://www.youtube.com/watch?v=Pu9JZkXoN5s)  
+[KotlinConf 2018 - Functional Programming in Kotlin with Λrrow](https://www.youtube.com/watch?v=VOZZTSuDMFE)  
 [kotest가 있다면 TDD 묻고 BDD로 가!](https://tv.kakao.com/channel/3693125/cliplink/414004682)  
-[스프링캠프 2018 \[TrackB Session2\] : 쿠팡 Kotlin Backend 적용기](https://www.youtube.com/watch?v=bhI1hMOcT-4&t=3013s)  
-[Kotlin Coroutines 톺아보기](https://www.youtube.com/watch?v=eJF60hcz3EU&t=28s)
+[스프링캠프 2018 \[TrackB Session2\] : 쿠팡 Kotlin Backend 적용기](https://www.youtube.com/watch?v=bhI1hMOcT-4)  
+[Kotlin Coroutines 톺아보기](https://www.youtube.com/watch?v=eJF60hcz3EU)
 
 
 ## 글
