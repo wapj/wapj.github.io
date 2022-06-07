@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Jun 2022 12:36:22 GMT</lastBuildDate><item><title><![CDATA[코틀린 참고 자료들]]></title><description><![CDATA[회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[승귤입니다]]></title><description><![CDATA[판교에 정착한 아이티노동자의 개발 잡설들이 올라옵니다.]]></description><link>https://blog.gyus.me</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jun 2022 00:27:40 GMT</lastBuildDate><item><title><![CDATA[코틀린 참고 자료들]]></title><description><![CDATA[회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
 우리팀에 공유했던 내용이긴 한데, 내용을 조금 더 붙여서 공유합니다.
 도움이 되면 좋겠습니다. 저는 현재 '코틀린 마이크로서비스 개발'은 한번 다 읽었고, 'Kotlin in…]]></description><link>https://blog.gyus.me/2022/kotlin_references/</link><guid isPermaLink="false">https://blog.gyus.me/2022/kotlin_references/</guid><pubDate>Sat, 04 Jun 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.
 우리팀에 공유했던 내용이긴 한데, 내용을 조금 더 붙여서 공유합니다.
@@ -24,7 +24,10 @@
 &lt;a href=&quot;https://www.youtube.com/watch?v=VOZZTSuDMFE&quot;&gt;KotlinConf 2018 - Functional Programming in Kotlin with Λrrow&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://tv.kakao.com/channel/3693125/cliplink/414004682&quot;&gt;kotest가 있다면 TDD 묻고 BDD로 가!&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://www.youtube.com/watch?v=bhI1hMOcT-4&quot;&gt;스프링캠프 2018 [TrackB Session2] : 쿠팡 Kotlin Backend 적용기&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.youtube.com/watch?v=eJF60hcz3EU&quot;&gt;Kotlin Coroutines 톺아보기&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=eJF60hcz3EU&quot;&gt;Kotlin Coroutines 톺아보기&lt;/a&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=RBQOlv0aRl4&quot;&gt;#살아있다 #자프링외길12년차 #코프링2개월생존기&lt;/a&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=Ou_-DFaAUhQ&quot;&gt;스프링캠프 2019 [Track 1 Session 6] : Kotlin + Spring Data JPA (김태호)&lt;/a&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=1OzBh2Uuj2s&quot;&gt;코드스피츠90-코틀린 언어편 1차&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;글&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://veluxer62.github.io/tutorials/take-advantage-of-kotlin-fixture/&quot;&gt;Take advantage of Kotlin Fixture&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://techblog.woowahan.com/5825/&quot;&gt;스프링에서 코틀린 스타일 테스트 코드 작성하기&lt;/a&gt;&lt;br&gt;
@@ -42,7 +45,9 @@
 &lt;a href=&quot;https://todd.ginsberg.com/post/springboot-reactive-kotlin-coroutines/&quot;&gt;Reactive Spring Boot with Kotlin Coroutines&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://tech.lezhin.com/2020/07/15/kotlin-webflux&quot;&gt;Kotlin과 Spring WebFlux 기반의 컨텐츠 인증 서비스 개발 후기&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a&quot;&gt;Kotlin Cheat Sheet&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://jjeda.tistory.com/category/Kotlin&quot;&gt;https://jjeda.tistory.com/category/Kotlin&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카프카에 대해서 알아보자]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2022/about-kafka/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-kafka/</guid><pubDate>Mon, 23 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;카프카란?&lt;/h2&gt;
+&lt;a href=&quot;https://jjeda.tistory.com/category/Kotlin&quot;&gt;https://jjeda.tistory.com/category/Kotlin&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;저장소&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/spring-projects-experimental/spring-fu&quot;&gt;spring-fu&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[카프카에 대해서 알아보자]]></title><description><![CDATA[…]]></description><link>https://blog.gyus.me/2022/about-kafka/</link><guid isPermaLink="false">https://blog.gyus.me/2022/about-kafka/</guid><pubDate>Mon, 23 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;카프카란?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;대용량, 대규모 메시지 데이터를 빠르게 처리하도록 개발된 메시징 플랫폼. &lt;/li&gt;
 &lt;li&gt;홈페이지에는 고성능 데이터 파이프라인, 스트리밍 분석, 데이터 통합, 미션 크리티컬한 애플리케이션을 위한 분산 이벤트 스트리밍 플랫폼으로 소개하고 있음. &lt;/li&gt;
