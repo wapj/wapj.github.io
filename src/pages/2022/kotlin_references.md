@@ -40,7 +40,9 @@ published: true
 [kotest가 있다면 TDD 묻고 BDD로 가!](https://tv.kakao.com/channel/3693125/cliplink/414004682)  
 [스프링캠프 2018 \[TrackB Session2\] : 쿠팡 Kotlin Backend 적용기](https://www.youtube.com/watch?v=bhI1hMOcT-4)  
 [Kotlin Coroutines 톺아보기](https://www.youtube.com/watch?v=eJF60hcz3EU)
-
+[#살아있다 #자프링외길12년차 #코프링2개월생존기](https://www.youtube.com/watch?v=RBQOlv0aRl4)
+[스프링캠프 2019 [Track 1 Session 6] : Kotlin + Spring Data JPA (김태호)](https://www.youtube.com/watch?v=Ou_-DFaAUhQ)
+[코드스피츠90-코틀린 언어편 1차](https://www.youtube.com/watch?v=1OzBh2Uuj2s)
 
 ## 글
 
@@ -61,3 +63,8 @@ published: true
 [Kotlin과 Spring WebFlux 기반의 컨텐츠 인증 서비스 개발 후기](https://tech.lezhin.com/2020/07/15/kotlin-webflux)  
 [Kotlin Cheat Sheet](https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a)  
 [https://jjeda.tistory.com/category/Kotlin](https://jjeda.tistory.com/category/Kotlin)
+
+
+## 저장소
+
+[spring-fu](https://github.com/spring-projects-experimental/spring-fu)
